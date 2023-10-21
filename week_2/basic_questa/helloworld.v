@@ -1,0 +1,14 @@
+module basic_gate(a, b, y1, y2, y3, y4, y5, y6, y7);
+	
+	input a,b;
+	output y1, y2, y3, y4, y5, y6, y7;
+	
+	assign y1 = ~a;		//not
+	assign y2 = a&b;		//and
+	assign y3 = a|b;		//or
+	assign y4 = ~(a|b);	//nor
+	assign y5 = ~(a&b);	//nand
+	assign y6 = (a^b);	//xor
+	assign y7 = ~(a^b);	//xnor
+
+endmodule

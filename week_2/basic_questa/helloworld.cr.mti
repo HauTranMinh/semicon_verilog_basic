@@ -1,0 +1,15 @@
+D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld_test.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld_test.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Helloworld_testbench
+
+Top level modules:
+	Helloworld_testbench
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module basic_gate
+
+Top level modules:
+	basic_gate
+
+} {} {}}
