@@ -40,4 +40,14 @@ module half_adder_tb();
     
   end
   
+  initial begin
+      $display("Input A = %b", A);
+      $display("Input B = %b", B);
+      
+      // Add a delay to wait for simulation to complete
+      #20;
+      $display("Output SUM  = %b", Sum);
+      $display("Output COUT = %b", Carry);
+    end
+
 endmodule

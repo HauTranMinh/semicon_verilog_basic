@@ -5,7 +5,7 @@ module fulladder_tb();
 
 	wire Sum, Cout;
 
-	fulladder uut(
+	fulladder dut(
 		.Sum(Sum),
 		.Cout(Cout),
 		.in1(in1),
