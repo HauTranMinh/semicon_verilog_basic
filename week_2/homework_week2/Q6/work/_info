@@ -1,0 +1,38 @@
+m255
+K4
+z2
+13
+cModel Technology
+dD:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1698145605
+V1:LPoZTKoT2ZO0FPME_8O2
+04 7 4 work example fast 0
+=1-6c24087848a9-6537a545-11c-6488
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vexample
+I]H80OQH2gNhPlg28VJlz40
+V`JN@9S9cnhjKRR_L]QIcM3
+dD:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q6
+w1698145555
+8D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q6/Q6.v
+FD:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q6/Q6.v
+L0 1
+OL;L;10.2c;57
+r1
+31
+o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s110 1698145595
+!i10b 1
+!s100 KHDb2LZH:HzMK9b@T>?]Z2
+!s85 0
+!s108 1698145595.171000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q6/Q6.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q6/Q6.v|
+!i111 0
