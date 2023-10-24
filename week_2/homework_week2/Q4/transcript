@@ -1,0 +1,79 @@
+# Compile of Q4.v was successful.
+# Compile of Q4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.Q4_tb
+# vsim -voptargs=+acc work.Q4_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.Q4_tb(fast)
+add wave -position insertpoint  \
+sim:/Q4_tb/a \
+sim:/Q4_tb/b \
+sim:/Q4_tb/c \
+sim:/Q4_tb/d \
+sim:/Q4_tb/e \
+sim:/Q4_tb/f
+run all
+# Invalid time value: all
+run -all
+# x =  48
+# y =   0
+# z =   x
+# Compile of Q4.v was successful.
+# Compile of Q4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.Q4_tb
+# vsim -voptargs=+acc work.Q4_tb 
+# Loading work.Q4_tb(fast)
+add wave -position insertpoint  \
+sim:/Q4_tb/a \
+sim:/Q4_tb/b \
+sim:/Q4_tb/c \
+sim:/Q4_tb/d \
+sim:/Q4_tb/e \
+sim:/Q4_tb/f
+run -all
+# x =  48
+# y =   0
+# z =   x
+# Compile of Q4.v was successful.
+# Compile of Q4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.Q4_tb
+# vsim -voptargs=+acc work.Q4_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.Q4_tb(fast)
+add wave -position insertpoint  \
+sim:/Q4_tb/a \
+sim:/Q4_tb/b \
+sim:/Q4_tb/c \
+sim:/Q4_tb/d \
+sim:/Q4_tb/e \
+sim:/Q4_tb/f
+run -all
+# x =  48
+# y =   0
+# z =  45
+# Compile of Q4.v was successful.
+# Compile of Q4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of Q4.v was successful.
+# Compile of Q4_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.Q4_tb
+# vsim -voptargs=+acc work.Q4_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.Q4_tb(fast)
+add wave -position insertpoint  \
+sim:/Q4_tb/a \
+sim:/Q4_tb/b \
+sim:/Q4_tb/c \
+sim:/Q4_tb/d \
+sim:/Q4_tb/e \
+sim:/Q4_tb/f
+run -all
+# x =  24
+# y =  72
+# z =  90

@@ -9,10 +9,10 @@ dD:/SEMICON_VERILOG_COURCES/week_2/basic_questa
 !i10e 25
 !i10f 100
 T_opt
-!s110 1698142725
-VcjLQ;A5zzNo@]oZec`4;[2
+!s110 1698144685
+V=Ho9@:63AiM=1I1QhoQ<`3
 04 5 4 work Q4_tb fast 0
-=1-6c24087848a9-65379a05-334-61c4
+=1-6c24087848a9-6537a1ac-330-3f08
 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
 OL;O;10.2c;57
@@ -29,20 +29,19 @@ r1
 31
 Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 n@q4
-Z4 !s110 1698142710
 !s100 @^B^0?Q2X4h0?OSRSSU[30
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4.v|
-!s108 1698142710.328000
+!s110 1698144671
+!s108 1698144671.938000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4.v|
 !i10b 1
 !s85 0
 !i111 0
 vQ4_tb
-R4
-IgEi_Whl2;<1m9kElc7L>@0
-Z5 V`JN@9S9cnhjKRR_L]QIcM3
+IM1;XQEC6=TWOhFI5N]2]b3
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
 R1
-w1698142705
+w1698144669
 8D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4_tb.v
 FD:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4_tb.v
 L0 1
@@ -52,9 +51,10 @@ r1
 R3
 n@q4_tb
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4_tb.v|
+!s110 1698144672
 !i10b 1
-!s100 Qd<1]mhe]PSZ;nH>28Zzc2
+!s100 ef4B_gjSmPJn@9aS9V=F=0
 !s85 0
-!s108 1698142710.417000
+!s108 1698144672.015000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/homework_week2/Q4/Q4_tb.v|
 !i111 0

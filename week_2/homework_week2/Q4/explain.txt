@@ -1,0 +1,6 @@
+để nhân chia 1 số bằng phương pháp dịch bit ta cần phải xác định số nhân hoặc chia có phải là bội số của 2 không vd như 2 4 8 16 
+
+từ đó nếu như ta muốn nhân 1 số bất kì bằng phương pháp này thì ta thực hiện lần lược dịch bit theo thứ của bậc n của số nhân hoặc số chia
+
+VD: 	để nhân 1 số cho 8 thì: 8 = 2^n = 2^3 	=> ta thực hiện phép dịch sang trái n = 3 bits 
+	để nhân 1 số cho 16 thì: 16 = 2^n = 2^4 => ta thực hiện phép dịch sang phải n = 4 bits 
