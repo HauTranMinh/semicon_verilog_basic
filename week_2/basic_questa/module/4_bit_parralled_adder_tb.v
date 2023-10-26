@@ -1,0 +1,37 @@
+module testbench;
+
+    reg [3:0] A, B;
+    reg OP;
+    reg [3:0] Sum;
+    wire Overflow, Carry_out;
+
+    // Instantiate the parallel_adder module
+    paralled_adder dut(
+        .A(A),
+        .B(B),
+        .OP(OP),
+        .Sum(Sum),
+        .Overflow(Overflow),
+        .Carry_out(Carry_out));
+
+    // Initialize inputs
+    initial begin
+        A = 4'b1101;
+        B = 4'b0110;
+        OP = 1'b1;  // You can change this to test addition/subtraction
+
+        // Add a delay to allow for propagation
+        #10;
+        
+        // Display the results
+        $display("A = %b, B = %b, OP = %b, Sum = %b, Overflow = %b, Carry_out = %b",
+            A, B, OP, Sum, Overflow, Carry_out);
+        
+        // Add a delay to wait for simulation to complete
+        #10;
+        
+        // End the simulation
+        //$finish;
+    end
+
+endmodule

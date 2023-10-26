@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/questasim64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+Va2efi`]zbZ8R]TdHc6EG03
+04 9 4 work fulladder fast 0
+=1-6c24087848a9-653a5575-341-61c8
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.2c;57
+Z3 dC:/questasim64_10.2c/examples
+!s110 1698321782
+T_opt1
+!s110 1698321807
+V:iz1MkzhVVb8YH[nVQEdJ1
+04 12 4 work fulladder_tb fast 0
+=1-6c24087848a9-653a558f-107-dcc
+R1
+n@_opt1
+R2
+vfulladder
+Z4 !s110 1698321772
+I]2e_5C@^6zSdnEUSQXH[G0
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 dD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module
+w1698321767
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v
+L0 1
+Z7 OL;L;10.2c;57
+r1
+31
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v|
+!s100 K^W7MhIL0BAU<9>PacbGW3
+!s108 1698321772.729000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v|
+!i10b 1
+!s85 0
+!i111 0
+vfulladder_tb
+R4
+IIPSZ[H[f@l[14?n]]61>?0
+R5
+R6
+w1698321634
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s100 Y6]9lbST`2J_MEz>lUa3S0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v|
+!s108 1698321772.826000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v|
+!i10b 1
+!s85 0
+!i111 0
+vhalf_adder_tb
+IKB77maAzS<]B9]KzY_c[^0
+R5
+R6
+w1698030989
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s100 n^RP:;^BUN]W]EoLW>[O]3
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v|
+!s110 1698321773
+!i10b 1
+!s85 0
+!s108 1698321773.032000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v|
+!i111 0
+vhalfadder
+R4
+Ibk1L[6Cngl42IBG6Z@Im>0
+R5
+R6
+w1698031442
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v
+L0 1
+R7
+r1
+31
+R8
+!s100 BJS>26CS8YcObg5TEgThm0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v|
+!s108 1698321772.921000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v|
+!i10b 1
+!s85 0
+!i111 0
+vparalled_adder
+IfR=oeGzz9oVbfXBGizBFi1
+R5
+R6
+w1698321625
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder.v
+L0 1
+R7
+r1
+31
+R8
+R4
+!s100 2WMA<Wf9XhEiL<7=@FTdO3
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder.v|
+!s108 1698321772.568000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder.v|
+!i10b 1
+!s85 0
+!i111 0
+vtestbench
+R4
+IhBA`B>C`7i7?Efc=U;?5o2
+R5
+R6
+w1698154373
+8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s100 Tf9zDQhY``AYS2WGJaC:03
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder_tb.v|
+!s108 1698321772.642000
+!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/4_bit_parralled_adder_tb.v|
+!i10b 1
+!s85 0
+!i111 0
