@@ -1,9 +1,9 @@
-D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v
+D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module half_adder_tb
+-- Compiling module Serial_8bits_adder
 
 Top level modules:
-	half_adder_tb
+	Serial_8bits_adder
 
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -12,12 +12,19 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	fulladder_tb
 
-} {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module halfadder
+-- Compiling module half_adder_tb
 
 Top level modules:
-	halfadder
+	half_adder_tb
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Serial_8bits_adder_tb
+
+Top level modules:
+	Serial_8bits_adder_tb
 
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -25,5 +32,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	fulladder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module halfadder
+
+Top level modules:
+	halfadder
 
 } {} {}}
