@@ -9,10 +9,10 @@ Z0 dC:/questasim64_10.2c/examples
 !i10e 25
 !i10f 100
 T_opt
-!s110 1698459570
-VokemORg8BQl<3iN9KGfM63
+!s110 1698480910
+V9UgJVi?dSZ9O]o>z_EG;Z0
 04 22 4 work Serial_32bits_adder_tb fast 0
-=1-6c24087848a9-653c6fb2-8a-5704
+=1-6c24087848a9-653cc30e-229-4c98
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
 Z2 OL;O;10.2c;57
@@ -46,10 +46,10 @@ Z6 OL;L;10.2c;57
 r1
 31
 Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z8 !s110 1698459563
+Z8 !s110 1698480900
 !s100 K^W7MhIL0BAU<9>PacbGW3
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v|
-!s108 1698459563.240000
+!s108 1698480900.505000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder.v|
 !i10b 1
 !s85 0
@@ -69,7 +69,7 @@ r1
 R7
 !s100 Y6]9lbST`2J_MEz>lUa3S0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v|
-!s108 1698459563.277000
+!s108 1698480900.550000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/fulladder_tb.v|
 !i10b 1
 !s85 0
@@ -89,7 +89,7 @@ r1
 R7
 !s100 n^RP:;^BUN]W]EoLW>[O]3
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v|
-!s108 1698459563.354000
+!s108 1698480900.630000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder_tb.v|
 !i10b 1
 !s85 0
@@ -109,7 +109,7 @@ r1
 R7
 !s100 BJS>26CS8YcObg5TEgThm0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v|
-!s108 1698459563.316000
+!s108 1698480900.590000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/halfadder.v|
 !i10b 1
 !s85 0
@@ -136,43 +136,43 @@ Z9 !s110 1698321772
 !i111 0
 vSerial_32bits_adder
 R8
-IkFiMlOPOR7nQ>bR2z2KNg0
+IZ@B7R=Po?9kBAO[;JX3Qi3
 R4
 R5
-w1698459485
-8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder.v
-FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder.v
+w1698480495
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder.v
 L0 1
 R6
 r1
 31
 R7
 n@serial_32bits_adder
-!s100 UL0BQ=k1HkTgS7]eheA6f3
-!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder.v|
-!s108 1698459563.394000
-!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder.v|
+!s100 mGfmf7E[keU^b[jie`X2Z3
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder.v|
+!s108 1698480900.668000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder.v|
 !i10b 1
 !s85 0
 !i111 0
 vSerial_32bits_adder_tb
 R8
-Il?]7=jfSSJIUW1UVaYO283
+ISen>KDGha@W_L1`BfXcm_0
 R4
 R5
-w1698459557
-8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder_tb.v
-FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder_tb.v
+w1698480895
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder_tb.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder_tb.v
 L0 1
 R6
 r1
 31
 R7
 n@serial_32bits_adder_tb
-!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder_tb.v|
-!s100 Eiz2hB^jc0Q?dK0V<j9AU3
-!s108 1698459563.433000
-!s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_32bits_adder_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder_tb.v|
+!s100 K2:X;79UZW`J^VCfjFGWR2
+!s108 1698480900.707000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\Serial_32bits_adder_tb.v|
 !i10b 1
 !s85 0
 !i111 0
@@ -181,7 +181,7 @@ R8
 Ia_JOk@^ZE?WR>eb_F;A702
 R4
 R5
-w1698415925
+w1698479557
 8D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v
 FD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v
 L0 1
@@ -192,7 +192,7 @@ R7
 n@serial_8bits_adder
 !s100 0QdMehY@9k<O8KFY2]DNY2
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v|
-!s108 1698459563.473000
+!s108 1698480900.746000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder.v|
 !i10b 1
 !s85 0
@@ -215,7 +215,7 @@ n@serial_8bits_adder_tb
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder_tb.v|
 !i10b 1
 !s85 0
-!s108 1698459563.512000
+!s108 1698480900.785000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module/Serial_8bits_adder_tb.v|
 !i111 0
 vtestbench

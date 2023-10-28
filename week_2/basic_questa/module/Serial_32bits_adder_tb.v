@@ -16,16 +16,16 @@ module Serial_32bits_adder_tb;
 
 	// Initialize inputs
 	initial begin
-		A = 32'b11001100110011001100110011001100;
-		B = 32'b10101010101010101010101010101010;
+		A = 15'hABCD1234;
+		B = 15'hDCBA4312;
 		Cin = 1'b0;
 
 		// Add a delay to allow for propagation
 		#10;
 
 		// Change inputs for additional test cases
-		A = 32'b11110000111100001111000011110000;
-		B = 32'b00001111000011110000111100001111;
+		A = 15'h1234ABCD;
+		B = 15'h4321DCBA;
 		Cin = 1'b1;
 
 		#10;
