@@ -1,0 +1,50 @@
+D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder_tb.v {1 {vlog -work work -vopt {D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_4bits_adder_tb.v}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Serial_4bits_adder_tb
+
+Top level modules:
+	Serial_4bits_adder_tb
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub.v {1 {vlog -work work -vopt {D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_8bits_add_sub.v}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Serial_8bits_add_sub
+
+Top level modules:
+	Serial_8bits_add_sub
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module halfadder
+
+Top level modules:
+	halfadder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fulladder_tb
+
+Top level modules:
+	fulladder_tb
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module half_adder_tb
+
+Top level modules:
+	half_adder_tb
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Serial_4bits_adder
+
+Top level modules:
+	Serial_4bits_adder
+
+} {} {}}
