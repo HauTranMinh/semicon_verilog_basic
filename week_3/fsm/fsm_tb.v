@@ -18,7 +18,7 @@ module fsm_tb;
 
   // Clock generation
   always begin
-    #5 clk = ~clk;
+    #1 clk = ~clk;
   end
 
   // Initial values
