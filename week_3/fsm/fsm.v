@@ -6,7 +6,19 @@ module fsm(data_in, signal_out, clk, rst_n, state, next_state);
 	reg [1:0] state, next_state;
 	reg signal;
 	
+	// Flips_flops
 	always @(posedge clk or negedge rst_n) begin
+		if (~rst_n) begin
+			// reset 
+			state <= 2'b00;
+		end
+		else begin
+			state <= next_state;
+		end
+	end
+
+
+	always @(data_in or state) begin
 		case (state)
 			// state A: 00 
 			2'b00: 
@@ -55,17 +67,6 @@ module fsm(data_in, signal_out, clk, rst_n, state, next_state);
 		endcase
 	end
 
-
-	// Flips_flops
-	always @(posedge clk or negedge rst_n) begin
-		if (~rst_n) begin
-			// reset 
-			next_state <= 2'b00;
-		end
-		else begin
-			state <= next_state;
-		end
-	end
 
 	assign signal_out = signal;
 

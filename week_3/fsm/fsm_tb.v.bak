@@ -1,4 +1,4 @@
-module fsm_tb();
+module fsm_tb;
   reg clk;
   reg rst_n;
   wire [1:0] state, next_state;
@@ -17,43 +17,38 @@ module fsm_tb();
   );
 
   // Clock generation
-  // always begin
-  //   #1 clk = ~clk;
-  // end
-
-  initial begin
-    clk = 0;
-    forever #5 clk = ~clk;
+  always begin
+    #5 clk = ~clk;
   end
 
   // Initial values
   initial begin
     clk = 0;
     rst_n = 0;
-    #5;
+    //state = 2'b00;
+    //data_in = 0;
+
     // Apply a reset and allow time for it to settle
     rst_n = 1;
-    #5;
-    // test reset system
     #5 rst_n = 0;
     #5 rst_n = 1;
 
     // Test sequence: "10011001111010"
-    #12 data_in = 1;
-    #12 data_in = 0;
-    #12 data_in = 0;
-    #12 data_in = 1;
-    #12 data_in = 1;
-    #12 data_in = 0;
-    #12 data_in = 0;
-    #12 data_in = 1;
-    #12 data_in = 1;
-    #12 data_in = 1;
-    #12 data_in = 0;
-    #12 data_in = 1;
-    #12 data_in = 0;
+    #5 data_in = 1;
+    #5 data_in = 0;
+    #5 data_in = 0;
+    #5 data_in = 1;
+    #5 data_in = 1;
+    #5 data_in = 0;
+    #5 data_in = 0;
+    #5 data_in = 1;
+    #5 data_in = 1;
+    #5 data_in = 1;
+    #5 data_in = 0;
+    #5 data_in = 1;
+    #5 data_in = 0;
     // Add more delays or additional data_in values if needed
-    #50;
+    #20;
     // Finish the simulation
     $finish;
   end
@@ -65,4 +60,13 @@ module fsm_tb();
 
 endmodule
 
-
+// Run the simulation
+// initial begin
+//   $dumpfile("fsm_tb.vcd");
+//   $dumpvars(0, fsm_tb);
+//   $display("Starting FSM testbench...");
+//   $monitor("Time: %t, State: %b, Signal Out: %b", $time, state, signal_out);
+//   $timeformat(-9, 1, " ns", 10);
+//   $start = 0;
+//   #1000 $stop;
+// end

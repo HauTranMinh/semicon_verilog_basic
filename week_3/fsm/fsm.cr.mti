@@ -1,8 +1,1 @@
-D:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module fsm
 
-Top level modules:
-	fsm
-
-} {} {}}
