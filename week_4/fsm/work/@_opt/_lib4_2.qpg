@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dD:/SEMICON_VERILOG_COURCES/week_3/module_adder_update
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1699156231
+VS>:8;59^O:Q3BPR49Re[k0
+Z1 04 6 4 work fsm_tb fast 0
+=1-6c24087848a9-65471107-384-468
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OL;O;10.2c;57
+T_opt1
+VbUoM7dSQF^f0U]j:kJFWo1
+R1
+=1-6c24087848a9-65463dbb-22b-326c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R3
+Z4 dD:/SEMICON_VERILOG_COURCES/week_3/module_adder_update
+!s110 1699102139
+T_opt2
+Vh6d>BkS1`LaifHk8QP?i83
+04 3 4 work fsm fast 0
+R1
+=1-6c24087848a9-65471051-318-40b0
+R2
+n@_opt2
+R3
+R4
+!s110 1699156049
+vfsm
+IKZ2Z]_bZTBK5oVZfhaj[j3
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 dD:/SEMICON_VERILOG_COURCES/week_3/fsm
+w1699156187
+8D:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v
+FD:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v
+L0 1
+Z7 OL;L;10.2c;57
+r1
+31
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z9 !s110 1699156223
+!s100 ?MdbZHMN;>Olk4S4FRjkG2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v|
+!s108 1699156223.936000
+!s107 D:/SEMICON_VERILOG_COURCES/week_3/fsm/fsm.v|
+!i10b 1
+!s85 0
+!i111 0
+vfsm_tb
+R9
+I^z^2AL^e;UM7KOY[i9SmE3
+R5
+R6
+w1699156213
+8D:\SEMICON_VERILOG_COURCES\week_3\fsm\fsm_tb.v
+FD:\SEMICON_VERILOG_COURCES\week_3\fsm\fsm_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_3\fsm\fsm_tb.v|
+!i10b 1
+!s100 6Fk5mK>JYQJTbmDH@INDU1
+!s85 0
+!s108 1699156223.983000
+!s107 D:\SEMICON_VERILOG_COURCES\week_3\fsm\fsm_tb.v|
+!i111 0
