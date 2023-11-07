@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/homework_1.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/homework_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 homework_1.ngc homework_1.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o homework_1_map.ncd homework_1.ngd homework_1.pcf 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/homework_1.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/homework_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 homework_1.ngc homework_1.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o homework_1_map.ncd homework_1.ngd homework_1.pcf 

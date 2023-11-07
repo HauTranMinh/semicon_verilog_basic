@@ -1,0 +1,3 @@
+verilog isim_temp "../basic_questa/helloworld.v"
+verilog isim_temp "../basic_questa/helloworld_test.v"
+verilog isim_temp "D:/xilin_setup/14.7/ISE_DS/ISE//verilog/src/glbl.v"

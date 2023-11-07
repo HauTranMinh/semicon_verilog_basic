@@ -2,7 +2,7 @@ module testbench ();
 	
 	reg x0, x1;
 	reg [3:0] a0, a1, a2;
-	wire [3:0] y0, y1;
+	wire [3:0] y0,  y1;
 	
 
 	homework_3 uut(

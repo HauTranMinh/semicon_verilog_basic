@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/halfadder.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/halfadder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o halfadder_map.ncd halfadder.ngd halfadder.pcf 

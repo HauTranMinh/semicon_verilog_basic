@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Helloworld_testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Helloworld_testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Helloworld_testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Helloworld_testbench.syr" 

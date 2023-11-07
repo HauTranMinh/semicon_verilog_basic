@@ -18,10 +18,10 @@ Z2 OL;O;10.2c;57
 Z3 dD:/SEMICON_VERILOG_COURCES/week_2/basic_questa/module
 !s110 1698647675
 T_opt1
-!s110 1698650274
-VC25fIz@eU;>zP<KNI5aCJ1
+!s110 1698756163
+VL_42a1cXz3zgT`J?D1dVC2
 04 23 4 work Serial_8bits_add_sub_tb fast 0
-=1-6c24087848a9-653f58a2-201-1f80
+=1-6c24087848a9-6540f643-22c-2c3c
 R1
 n@_opt1
 R2
@@ -37,10 +37,10 @@ Z6 OL;L;10.2c;57
 r1
 31
 Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z8 !s110 1698650265
+Z8 !s110 1698756151
 !s100 K^W7MhIL0BAU<9>PacbGW3
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder.v|
-!s108 1698650265.251000
+!s108 1698756151.464000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder.v|
 !i10b 1
 !s85 0
@@ -60,7 +60,7 @@ r1
 R7
 !s100 Y6]9lbST`2J_MEz>lUa3S0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder_tb.v|
-!s108 1698650265.297000
+!s108 1698756151.510000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/fulladder_tb.v|
 !i10b 1
 !s85 0
@@ -80,7 +80,7 @@ r1
 R7
 !s100 n^RP:;^BUN]W]EoLW>[O]3
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder_tb.v|
-!s108 1698650265.376000
+!s108 1698756151.599000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder_tb.v|
 !i10b 1
 !s85 0
@@ -100,7 +100,7 @@ r1
 R7
 !s100 BJS>26CS8YcObg5TEgThm0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder.v|
-!s108 1698650265.336000
+!s108 1698756151.555000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/halfadder.v|
 !i10b 1
 !s85 0
@@ -121,19 +121,19 @@ R7
 n@serial_4bits_adder
 !s100 mGHnT4nEHZGlU;H?D0C?Y1
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder.v|
-!s108 1698650265.414000
+!s108 1698756151.642000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder.v|
 !i10b 1
 !s85 0
 !i111 0
 vSerial_4bits_adder_tb
 R8
-I]mSRE3zW=]Enh[DAaL_310
+IkjTGz2nchKPFVVmB_dJ2J3
 R4
 R5
-w1698647574
-8D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_4bits_adder_tb.v
-FD:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_4bits_adder_tb.v
+w1698749367
+8D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder_tb.v
 L0 1
 R6
 r1
@@ -141,20 +141,20 @@ r1
 R7
 n@serial_4bits_adder_tb
 !s100 <T1WTYgzhLjTWfJ88>Mb23
-!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_4bits_adder_tb.v|
-!s108 1698650265.453000
-!s107 D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_4bits_adder_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder_tb.v|
+!s108 1698756151.686000
+!s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_4bits_adder_tb.v|
 !i10b 1
 !s85 0
 !i111 0
 vSerial_8bits_add_sub
 R8
-Ibg4JaA2h_B8MkJkOQPMCA2
+IT]9V^^XAh5N6QJ57dQAmM1
 R4
 R5
-w1698650063
-8D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_8bits_add_sub.v
-FD:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_8bits_add_sub.v
+w1698745630
+8D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub.v
+FD:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub.v
 L0 1
 R6
 r1
@@ -162,18 +162,18 @@ r1
 R7
 n@serial_8bits_add_sub
 !s100 oeAE78iXz<z?hN?3Ro;f11
-!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_8bits_add_sub.v|
-!s108 1698650265.493000
-!s107 D:\SEMICON_VERILOG_COURCES\week_3\module_adder_update\Serial_8bits_add_sub.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub.v|
+!s108 1698756151.731000
+!s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub.v|
 !i10b 1
 !s85 0
 !i111 0
 vSerial_8bits_add_sub_tb
 R8
-If?LYEjY_Abod`HGF=G]nc1
+I`3gzheGe=8FXlASUTkYd_0
 R4
 R5
-w1698650262
+w1698650541
 8D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub_tb.v
 FD:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub_tb.v
 L0 1
@@ -182,10 +182,10 @@ r1
 31
 R7
 n@serial_8bits_add_sub_tb
+!s100 3bIAR3fMeSIKkeT]j__3e1
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub_tb.v|
 !i10b 1
-!s100 f7l;ME0S]k7QLm8QlDm^;1
 !s85 0
-!s108 1698650265.531000
+!s108 1698756151.773000
 !s107 D:/SEMICON_VERILOG_COURCES/week_3/module_adder_update/Serial_8bits_add_sub_tb.v|
 !i111 0

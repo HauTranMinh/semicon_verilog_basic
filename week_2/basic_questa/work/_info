@@ -9,31 +9,31 @@ Z0 dC:/questasim64_10.2c/examples
 !i10e 25
 !i10f 100
 T_opt
-VYLZ7aJmH65D>PYZ^IP;k?2
-Z1 04 10 4 work basic_gate fast 0
-=1-6c24087848a9-6533a6e6-d9-b74
-o-quiet -auto_acc_if_foreign -work work
+V?k@84aMc7U`7<4zloQVbN1
+Z1 04 13 4 work half_adder_tb fast 0
+=1-6c24087848a9-6535e608-2de-3e1c
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
-Z2 OL;O;10.2c;57
-Z3 dC:/questasim64_10.2c/examples
-!s110 1697883878
+Z3 OL;O;10.2c;57
+Z4 dC:/questasim64_10.2c/examples
+!s110 1698031113
 T_opt1
-V^_gihaQTIcYgM9^iLBc8f0
-04 20 4 work Helloworld_testbench fast 0
-=1-6c24087848a9-6533a6f3-29e-2138
-Z4 o-quiet -auto_acc_if_foreign -work work +acc
-n@_opt1
-R2
-R3
-!s110 1697883891
-T_opt2
-!s110 1697884019
-V<dK`1FP27Q;<G0bENOkXf3
+V;V9Wn0`X3eaR7JfJM=bEY0
 R1
-=1-6c24087848a9-6533a773-14e-601c
+=1-6c24087848a9-6535ee08-4c-6244
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R3
 R4
-n@_opt2
+!s110 1698033160
+T_opt2
+!s110 1698034386
+VNBbz8NHR4j4fNzkX;H8j81
+04 12 4 work fulladder_tb fast 0
+=1-6c24087848a9-6535f2d2-164-5358
 R2
+n@_opt2
+R3
 vbasic_gate
 I5>NGn<jTkN03d74`DU1JZ1
 Z5 V`JN@9S9cnhjKRR_L]QIcM3
@@ -54,20 +54,100 @@ Z9 !s110 1697883776
 !i10b 1
 !s85 0
 !i111 0
+vfulladder
+IZYUVQJ90>nnO6@6:]Y7oW1
+R5
+R6
+w1698031990
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder.v
+L0 1
+R7
+r1
+31
+R8
+Z10 !s110 1698034367
+!s100 deI[8`TnaC9jY8Q>S=m@92
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder.v|
+!s108 1698034367.073000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder.v|
+!i10b 1
+!s85 0
+!i111 0
+vfulladder_tb
+R10
+Ik<F6f_?Kdaf:beF1dEaF>3
+R5
+R6
+w1698034363
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder_tb.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder_tb.v|
+!s100 Y6]9lbST`2J_MEz>lUa3S0
+!s108 1698034367.161000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\fulladder_tb.v|
+!i10b 1
+!s85 0
+!i111 0
+vhalf_adder_tb
+R10
+I@0daZ=4mDf8j9IG]JK?F?2
+R5
+R6
+w1698030989
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder_tb.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s100 n^RP:;^BUN]W]EoLW>[O]3
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder_tb.v|
+!i10b 1
+!s85 0
+!s108 1698034367.319000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder_tb.v|
+!i111 0
+vhalfadder
+R10
+Id@Jl11f=C7z4g^9Vn?kHT0
+R5
+R6
+w1698031442
+8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder.v
+FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder.v
+L0 1
+R7
+r1
+31
+R8
+!s100 BJS>26CS8YcObg5TEgThm0
+!s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder.v|
+!s108 1698034367.245000
+!s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\module\halfadder.v|
+!i10b 1
+!s85 0
+!i111 0
 vhelloworld_test
 R5
 r1
 31
 IF34WkDY]Z^Q_1iDi;MPa@2
 R6
-Z10 w1697638871
-Z11 8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v
-Z12 FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v
+Z11 w1697638871
+Z12 8D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v
+Z13 FD:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v
 L0 4
 R7
-Z13 !s108 1697638879.010000
-Z14 !s107 helloworld.v|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v|
-Z15 !s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v|
+Z14 !s108 1697638879.010000
+Z15 !s107 helloworld.v|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v|
 R8
 !s100 F;L]6DLYl4MemnVUQ]F=d2
 !s85 0
@@ -87,28 +167,28 @@ r1
 31
 R8
 n@helloworld_testbench
-!i10b 1
 !s100 N;Jj?md@Ra;mnP^74JCgQ1
-!s85 0
 !s108 1697883776.354000
 !s107 D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld_test.v|
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_2/basic_questa/helloworld_test.v|
+!i10b 1
+!s85 0
 !i111 0
 vhomework_1
 Ii4kcjoVl7cNYC7dhFJ8I?3
 R5
 R6
-R10
-Fhelloworld.v
 R11
+Fhelloworld.v
 R12
+R13
 L0 1
 R7
 r1
 31
-R13
 R14
 R15
+R16
 R8
 !s110 1697638879
 !s100 AHhfI61Jz7L[Uen5^@BZa2
@@ -120,13 +200,13 @@ ITX]>TZ1VAYGcP2203cSz:3
 R5
 R6
 w1697639337
-R11
 R12
+R13
 L0 1
 R7
 r1
 31
-R15
+R16
 R8
 !s107 D:\SEMICON_VERILOG_COURCES\week_2\basic_questa\helloworld_test.v|
 !s100 =5TdmgH4z=[?O3MMoZLN`1

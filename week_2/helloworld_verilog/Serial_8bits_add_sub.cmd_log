@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Serial_8bits_add_sub.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Serial_8bits_add_sub.syr" 

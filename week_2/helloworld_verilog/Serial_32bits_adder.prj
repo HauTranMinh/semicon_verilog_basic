@@ -1,0 +1,4 @@
+verilog work "../basic_questa/module/halfadder.v"
+verilog work "../basic_questa/module/fulladder.v"
+verilog work "../basic_questa/module/Serial_8bits_adder.v"
+verilog work "../basic_questa/module/Serial_32bits_adder.v"

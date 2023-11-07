@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 testbench.ngc testbench.ngd  
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 testbench.ngc testbench.ngd  

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/testbench/C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C[11:0]</obj_property>
+      <obj_property name="ObjectShortName">C[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/D" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">D[11:0]</obj_property>
+      <obj_property name="ObjectShortName">D[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/E" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">E[11:0]</obj_property>
+      <obj_property name="ObjectShortName">E[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">A[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[11:0]</obj_property>
+      <obj_property name="ObjectShortName">B[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

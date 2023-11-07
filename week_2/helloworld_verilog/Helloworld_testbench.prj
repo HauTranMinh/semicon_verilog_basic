@@ -1,0 +1,2 @@
+verilog work "../basic_questa/helloworld.v"
+verilog work "../basic_questa/helloworld_test.v"

@@ -1,0 +1,4 @@
+verilog work "../../week_3/module_adder_update/halfadder.v"
+verilog work "../../week_3/module_adder_update/fulladder.v"
+verilog work "../../week_3/module_adder_update/Serial_4bits_adder.v"
+verilog work "../../week_3/module_adder_update/Serial_8bits_add_sub.v"

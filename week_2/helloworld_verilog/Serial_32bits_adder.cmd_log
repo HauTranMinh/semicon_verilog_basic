@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Serial_32bits_adder.xst" -ofn "D:/SEMICON_VERILOG_COURCES/week_2/helloworld_verilog/Serial_32bits_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Serial_32bits_adder.ngc Serial_32bits_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Serial_32bits_adder_map.ncd Serial_32bits_adder.ngd Serial_32bits_adder.pcf 
