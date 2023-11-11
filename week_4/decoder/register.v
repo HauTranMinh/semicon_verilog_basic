@@ -78,7 +78,7 @@ module register(
 			svlerr_reg <= 1'b0;
 		end
 	end
-
+//=================================================================================//
 	assign psvlerr = svlerr_reg;
 
 //----------------------pready-------------------------------//
@@ -94,6 +94,8 @@ module register(
 			ready_reg <= 1'b0;
 		end
 	end
-// done //
+
+	assign pready = ready_reg;
+
 	
 endmodule

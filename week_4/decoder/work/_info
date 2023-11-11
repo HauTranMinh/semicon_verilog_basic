@@ -8,63 +8,114 @@ Z0 dD:/SEMICON_VERILOG_COURCES/week_3/fsm
 !i10d 8192
 !i10e 25
 !i10f 100
+T_opt
+Z1 V@S`K4;81dAH<jH05bYjVJ3
+Z2 04 7 4 work decoder fast 0
+Z3 04 11 4 work decoder_sub fast 0
+Z4 04 10 4 work decoder_tb fast 0
+Z5 04 8 4 work register fast 0
+Z6 =1-6c24087848a9-654f96fd-3af-3024
+Z7 o-quiet -auto_acc_if_foreign -work work +acc
+Z8 n@_opt
+Z9 OL;O;10.2c;57
+Z10 dD:/SEMICON_VERILOG_COURCES/week_3/fsm
+Z11 !s110 1699714814
+T_opt1
+Z12 V@biG_zmU1VX@ldjOW7klL0
+R2
+R4
+Z13 =1-6c24087848a9-654f969d-162-5a14
+R7
+Z14 n@_opt1
+R9
+R10
+Z15 !s110 1699714717
+T_opt2
+Z16 VNfE?MkX>fWiW_ed`<QO1R1
+R5
+Z17 =1-6c24087848a9-654f96f1-112-4cd8
+R7
+Z18 n@_opt2
+R9
+R10
+Z19 !s110 1699714801
 vdecoder
-Z1 !s100 AcR]HiNczJX4iJ2NL@E>m2
-Z2 IXH7dB=5TJZf<fKcjNfN9l3
-Z3 V`JN@9S9cnhjKRR_L]QIcM3
-Z4 dD:/SEMICON_VERILOG_COURCES/week_4/decoder
-Z5 w1699684866
-Z6 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v
-Z7 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v
+Z20 !s100 9GhaanR^IRmmnJd1ohQkH0
+Z21 I4_FbDfFJg1NX96[2RHCBV1
+Z22 V`JN@9S9cnhjKRR_L]QIcM3
+Z23 dD:/SEMICON_VERILOG_COURCES/week_4/decoder
+Z24 w1699714609
+Z25 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v
+Z26 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v
 L0 1
-Z8 OL;L;10.2c;57
+Z27 OL;L;10.2c;57
 r1
 31
-Z9 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v|
-Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z11 !s110 1699684871
-Z12 !s108 1699684871.988000
-Z13 !s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v|
+Z29 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z30 !s110 1699714879
+Z31 !s108 1699714879.775000
+Z32 !s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder_sub
-Z14 !s100 hC;eL7k3GVdcUE091izC03
-Z15 IzT9RmY>ML>`XK`0AVeBh<0
-R3
-R4
-Z16 w1699683720
-Z17 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v
-Z18 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v
+R30
+Z33 !s100 hC;eL7k3GVdcUE091izC03
+Z34 IzT9RmY>ML>`XK`0AVeBh<0
+R22
+R23
+Z35 w1699714677
+Z36 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v
+Z37 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v
 L0 1
-R8
+R27
 r1
 31
-Z19 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v|
-R10
-Z20 !s110 1699684872
+Z38 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v|
+R29
+Z39 !s108 1699714879.822000
+Z40 !s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v|
 !i10b 1
 !s85 0
-Z21 !s108 1699684872.032000
-Z22 !s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v|
 !i111 0
+vdecoder_tb
+R30
+!i10b 1
+Z41 !s100 LkFi4>QTjPFFb_W7=BWAz3
+Z42 IE6i^@32<D;7oLV]oKNf570
+R22
+R23
+w1699714875
+Z43 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_tb.v
+Z44 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_tb.v
+L0 1
+R27
+r1
+!s85 0
+31
+!s108 1699714879.901000
+!s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_tb.v|
+Z45 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_tb.v|
+!i111 0
+R29
 vregister
-R20
-!i10b 1
-!s100 @eWKK?@S^BLAOCo^eBlYk3
-IB31PMMz5CQ`N5NhBLmDLW3
-R3
-R4
-w1699684852
-Z23 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v
-Z24 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v
+R30
+Z46 !s100 jN0C?gzjgeRGQY=>Ij62l3
+Z47 I];ijEHGRZeDdz=B25F@Zc1
+R22
+R23
+Z48 w1699714220
+Z49 8D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v
+Z50 FD:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v
 L0 1
-R8
+R27
 r1
-!s85 0
 31
-!s108 1699684872.073000
-!s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v|
-Z25 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v|
+Z51 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v|
+R29
+!i10b 1
+!s85 0
+Z52 !s108 1699714879.861000
+Z53 !s107 D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v|
 !i111 0
-R10

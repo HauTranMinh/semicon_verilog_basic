@@ -29,6 +29,48 @@ module decoder_tb();
 		pclk = 0;
 		preset_n = 0;
 		#50;
+
+		pclk = 0;
+		preset_n = 0;
+		psel = 0;
+		penable = 0;
+		pwrite = 0;
+		#5;
+		paddr = 8'h00;
+		pwdata = 8'haa;
+		#30;
+
+		pclk = 1;
+		preset_n = 1;
+		psel = 1;
+		penable = 1;
+		pwrite = 1;
+		#5;
+		paddr = 8'h01;
+		pwdata = 8'hfa;
+		#30;
+
+		pclk = 1;
+		preset_n = 1;
+		psel = 1;
+		penable = 1;
+		pwrite = 1;
+		#5;
+		paddr = $random();
+		pwdata = $random();
+		#30;
+
+		pclk = 1;
+		preset_n = 1;
+		psel = 1;
+		penable = 1;
+		pwrite = 1;
+		#5;
+		paddr = $random();
+		pwdata = $random();
+		#30;
+
+		$finish;
 	end
 	
 endmodule

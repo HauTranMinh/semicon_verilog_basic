@@ -8,9 +8,9 @@ module decoder (
 	output pready,
 	output psvlerr);
 // INTERNAL CONNECTION //
-	reg [7:0] select_reg;
-	reg ready_reg;
-	reg svlerr_reg;
+	wire [7:0] select_reg;
+	// reg ready_reg;
+	// reg svlerr_reg;
 //---------------------------------------------------------------//
 
 //------------------------DECODER SUB----------------------------//
@@ -27,12 +27,12 @@ module decoder (
 		.pwrite(pwrite),
 		.select_reg(select_reg),
 		.pwdata(pwdata),
-		.pready(ready_reg),
-		.psvlerr(svlerr_reg));
+		.pready(pready),
+		.psvlerr(psvlerr));
 
 //================================================================//
-	assign pready = ready_reg;
-	assign psvlerr = svlerr_reg;
+	// assign pready = ready_reg;
+	// assign psvlerr = svlerr_reg;
 //  done  //
 
 endmodule
