@@ -1,0 +1,39 @@
+TASK:
+
+	Task được sử dụng khi bất kì 1 trong các điều kiện sau đây đúng (TRUE) trong 1 procedure:
+		Có delay, timing, sự kiện điều khiển cấu trúc ở trong procedure.
+		Trong procedure có 0 hoặc nhiều hơn 1 arguments ngõ ra.
+		Trong procedure không có bất kì input arguments nào.		
+	
+	
+	Được định nghĩa bởi task và endtask.
+	Có thể dùng biến global, hoặc local phụ thuộc vào chương trình được viết, không có khái niệm con trỏ trong verilog.
+	Có thể định nghĩa task ở 1 file khác và include như 1 thư viện gần giống với C (`include "task.v") => syntax có dạng nó đóng vai
+	trò như 1 header trong C. Lưu ý file này thường được khai báo sau khi khai báo các biến toàn cục trong module.
+	Có thể sử dụng keywords disable để ngừng task.
+	Task có thể có 0 hoặc nhiều Arguments nưhng sẽ KHÔNG trả về bất kì giá trị nào cả nó chỉ thực hiện hành vi được khai báo.
+	Nhưng Functions thì có return giá trị value.
+	Task có thể sử dụng được cả 2 phép gán. Non blocking hoặc blocking.
+
+Functions:
+	
+	Function được sử dụng khi tất cả các điều kiện sau đây đúng (TRUE) trong 1 procedure:
+		1 function sẽ không thể "advance simulation-time" khi sử dụng các cấu trúc #,@,...
+			 => nghĩa là function luôn được thực thi tại thời điểm 0 trong simulation.
+			 => không thể bao gồm delay, timing, event control constructs ở trong 1 functions
+		1 function không được có phép gán non-blocking trong đó.
+		1 function cần có 1 phạm vi mặc định được gắn với 1 bit có dạng wire datatype là REG để trả về giá trị.
+		Sẽ không thể khai báo bất kì đối tượng nào trùng tên với tên của function đã được khai báo trong cùng 1 chương trình.
+	
+	Được định nghĩa bởi function và endfunction.
+	Gần giống với hàm con trong C.
+	Phải có ít nhất 1 input arguments và trả về duy nhất 1 value.
+	Function không thể có output arguments, in-out arguments.
+	tương tự như task có thể được include vào chương trình qua keywords (`include"funcitons_name.v").
+	
+
+=============>>>>>>>>>>>>> cả task và function đều có thể tổng hợp được (synthesizable), thường được dùng trong mạch tổ hợp
+				tuy nhiên TASK vẫn có thể dùng được trong mạch đồng bộ hoặc tổ hợp.
+
+	
+	
