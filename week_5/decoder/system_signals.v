@@ -1,7 +1,7 @@
 module system_signal(
 	// I/O ports declare
 	output sys_clk,
-	output sys_resetns);
+	output sys_resetn);
 	
 	initial begin
 		sys_clk = 0;
