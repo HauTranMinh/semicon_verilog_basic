@@ -2,7 +2,7 @@ module decoder (
 	input pclk,
 	input preset_n,
 	input psel,
-	input penable,
+	input penable,	
 	input pwrite,
 	input [7:0] paddr, pwdata,
 

@@ -49,17 +49,27 @@ module CPU_model(
 			$display("at %0t acces phase of writing data", $time);
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
-				while(!cpu_pready) 
-					begin
-						@(posedge cpu_pclk);
-					end
-				address_reg = 8'h00;
-				pwrite_reg = 1'b0;
-				psel_reg = 1'b0;
-				data_reg = 8'h00;
-				penable_reg = 1'b0;
-			$display("at %0t transfer done", $time);
-	
+				#1;
+				if(!cpu_pslverr) begin
+					while(!cpu_pready) 
+						begin
+							@(posedge cpu_pclk);
+						end
+						address_reg = 8'h00;
+						pwrite_reg = 1'b0;
+						psel_reg = 1'b0;
+						data_reg = 8'h00;
+						penable_reg = 1'b0;
+					$display("at %0t transfer done", $time);
+				end
+				else begin
+					address_reg = 8'h00;
+					pwrite_reg = 1'b0;
+					psel_reg = 1'b0;
+					data_reg = 8'h00;
+					penable_reg = 1'b0;
+					$display("at %0t write transfer has a error", $time);
+				end
 		end
 	endtask
 //==================================================================//
@@ -83,15 +93,24 @@ module CPU_model(
 
 			@(posedge cpu_pclk); // T3 end of access phase
 				#1;
-				while(!cpu_pready)
-					begin
-						@(posedge cpu_pclk);
-					end
-				address_reg = address_reg;
-				pwrite_reg = 1'b0;
-				psel_reg = 1'b0;
-				penable_reg = 1'b0;
-			$display("at %0t end of read transfer", $time);
+				if (!cpu_pslverr) begin
+					while(!cpu_pready)
+						begin
+							@(posedge cpu_pclk);
+						end
+					address_reg = address_reg;
+					pwrite_reg = 1'b0;
+					psel_reg = 1'b0;
+					penable_reg = 1'b0;
+					$display("at %0t end of read transfer", $time);
+				end
+				else begin
+					address_reg = 8'bZZZZ_ZZZZ; // APB protocol documents => if there is an error => reutrn an invalid data
+					pwrite_reg = 1'b0;
+					psel_reg = 1'b0;
+					penable_reg = 1'b0;
+					$display("at %0t end of read transfer", $time);
+				end		
 		end
 	endtask
 
@@ -101,5 +120,5 @@ module CPU_model(
 	assign cpu_psel 	= psel_reg;
 	assign cpu_penable 	= penable_reg;
 
-// still could process the slverr signal //
+// need to check slave error at T3 both read and write transfers//
 endmodule	
