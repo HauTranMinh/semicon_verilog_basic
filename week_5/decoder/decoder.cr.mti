@@ -1,0 +1,22 @@
+D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_4/decoder/register.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_4/decoder/decoder_sub1.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder_sub
+
+Top level modules:
+	decoder_sub
+
+} {} {}}
