@@ -1,0 +1,41 @@
+D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder_sub
+
+Top level modules:
+	decoder_sub
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v {0 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module CPU_model
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v(85): BEGIN - END required around task/function statements
+
+} {4.0 5.0} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v {0 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module system_signal
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v(7): (vlog-2110) Illegal reference to net "sys_clk".
+
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v(8): (vlog-2110) Illegal reference to net "sys_clk".
+
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v(12): (vlog-2110) Illegal reference to net "sys_resetn".
+
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v(14): (vlog-2110) Illegal reference to net "sys_resetn".
+
+** Error: D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v(16): (vlog-2110) Illegal reference to net "sys_resetn".
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder_tb
+
+Top level modules:
+	decoder_tb
+
+} {} {}}

@@ -4,7 +4,7 @@ module CPU_model(
 	input cpu_presetn,
 	input cpu_pready,
 	input cpu_pslverr,
-	input  [7:0] cpu_prdata,
+	input [7:0] cpu_prdata,
 
 	output [7:0] cpu_paddr,
 	output [7:0] cpu_pwdata,
@@ -18,26 +18,34 @@ module CPU_model(
 
 // read <= addess
 // task read: read transfer APB protocol
+//==================================================================//
+// declare internal connection //
+//==================================================================//
+
+	reg [7:0] address_reg;
+	reg [7:0] data_reg;
+	reg pwrite_reg; 
+	reg psel_reg; 
+	reg penable_reg; 
 
 //==================================================================//
 // Task write CPU model //
 //==================================================================//
-
-	task write_CPU(input [7:0] address, data);
+	task write_CPU(input reg [7:0] address, data);
 		begin
 			// setup phase
 			@(posedge cpu_pclk); // T1 <=> setup phase
 				#1; // depend on user
-				cpu_paddr = address;
-				cpu_pwrite = 1;
-				cpu_psel = 1;
-				cpu_pwdata = data;
-				cpu_penable = 0;
+				address_reg = address;
+				pwrite_reg = 1'b1;
+				psel_reg = 1'b1;
+				data_reg = data;
+				penable_reg = 1'b0;
 			$display("at %0t start write data = 'h%0h to address = 'h%0h", $time, data, address);
  
 			@(posedge cpu_pclk); //T2 <=> access phase 
 				#1;
-				cpu_penable = 1;
+				penable_reg = 1'b1;
 			$display("at %0t acces phase of writing data", $time);
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
@@ -45,40 +53,53 @@ module CPU_model(
 					begin
 						@(posedge cpu_pclk);
 					end
-				cpu_paddr = 8'h00;
-				cpu_pwrite = 0;
-				cpu_psel = 0;
-				cpu_pwdata = 8'h00;
-				cpu_penable = 0;
+				address_reg = 8'h00;
+				pwrite_reg = 1'b0;
+				psel_reg = 1'b0;
+				data_reg = 8'h00;
+				penable_reg = 1'b0;
 			$display("at %0t transfer done", $time);
 	
 		end
 	endtask
+//==================================================================//
+// Task read CPU model //
+//==================================================================//
+	task read_cpu(input reg	[7:0] address, output reg [7:0] value_of_reg);
+		begin
+			@(posedge cpu_pclk); // T1 setup phase
+				#1;
+				address_reg = address;
+				pwrite_reg = 1'b0;
+				psel_reg = 1'b1;
+				penable_reg = 1'b0;
+			$display("at %0t start to read data at address 'h%0h", $time, address);
 
-	task read_cpu(input	[7:0] address, output [7:0] value_of_reg);
-		@(posedge cpu_pclk); // T1 setup phase
-			#1;
-			cpu_paddr = address;
-			cpu_pwrite = 1'b0;
-			cpu_psel = 1'b1;
-			cpu_penable = 1'b0;
+			@(posedge cpu_pclk); // T2 access phase
+				#1;
+				penable_reg = 1'b1;
+				value_of_reg  = cpu_prdata; // need to check
+			$display("at %0t data at address 'h%0h is 'h%0h", $time, address, value_of_reg);
 
-		@(posedge cpu_pclk); // T2 access phase
-			#1;
-			cpu_penable = 1'b1;
-			value_of_reg  = cpu_prdata;
-
-		@(posedge cpu_pclk); // T3 end of access phase
-			#1;
-			while(!cpu_pready)
-				begin
-					@(posedge cpu_pclk)
-				end
-			cpu_paddr = cpu_paddr;
-			cpu_pwrite = 1'b0;
-			cpu_psel = 1'b0;
-			cpu_penable = 1'b0;
+			@(posedge cpu_pclk); // T3 end of access phase
+				#1;
+				while(!cpu_pready)
+					begin
+						@(posedge cpu_pclk);
+					end
+				address_reg = address_reg;
+				pwrite_reg = 1'b0;
+				psel_reg = 1'b0;
+				penable_reg = 1'b0;
+			$display("at %0t end of read transfer", $time);
+		end
 	endtask
 
+	assign cpu_paddr 	= address_reg;
+	assign cpu_pwdata 	= data_reg;
+	assign cpu_pwrite 	= pwrite_reg;
+	assign cpu_psel 	= psel_reg;
+	assign cpu_penable 	= penable_reg;
+
 // still could process the slverr signal //
-endmodule
+endmodule	

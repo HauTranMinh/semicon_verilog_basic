@@ -3,17 +3,23 @@ module system_signal(
 	output sys_clk,
 	output sys_resetn);
 	
+	reg clk;
+	reg reset_n;
+
 	initial begin
-		sys_clk = 0;
-		forever #5 sys_clk = ~sys_clk;
+		clk = 1'b0;
+		forever #5 clk = ~clk;
 	end
 
 	initial begin
-		sys_resetn = 1'b1;
+		reset_n = 1'b1;
 		#30;
-		sys_resetn = 1'b0;
+		reset_n = 1'b0;
 		#50;
-		sys_resetn = 1'b1;
+		reset_n = 1'b1;
 	end
 	
+	assign sys_clk = clk;
+	assign sys_resetn = reset_n;
+
 endmodule

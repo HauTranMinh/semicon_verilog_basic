@@ -5,12 +5,13 @@ module decoder (
 	input penable,
 	input pwrite,
 	input [7:0] paddr, pwdata,
+
+	output [7:0] prdata,
 	output pready,
 	output psvlerr);
 // INTERNAL CONNECTION //
 	wire [7:0] select_reg;
-	// reg ready_reg;
-	// reg svlerr_reg;
+
 //---------------------------------------------------------------//
 
 //------------------------DECODER SUB----------------------------//
@@ -28,7 +29,8 @@ module decoder (
 		.select_reg(select_reg),
 		.pwdata(pwdata),
 		.pready(pready),
-		.psvlerr(psvlerr));
+		.psvlerr(psvlerr),
+		.prdata(prdata));
 
 //================================================================//
 	// assign pready = ready_reg;
