@@ -122,8 +122,9 @@ module register(
 			// reset
 			svlerr_reg <= 1'b0;
 		end
-		else if (select_reg == 8'h00) begin
+		else if (select_reg == 8'h00 && ready_reg == 1'b1) begin
 			svlerr_reg <= 1'b1;
+			value_of_reg <= 8'bxxxx_xxxx;
 		end
 		else begin
 			svlerr_reg <= 1'b0;

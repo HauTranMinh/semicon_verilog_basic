@@ -50,7 +50,7 @@ module CPU_model(
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
 				#1;
-				if(!cpu_pslverr) begin
+				if(!cpu_pslverr) begin // == 0 
 					while(!cpu_pready) 
 						begin
 							@(posedge cpu_pclk);
@@ -75,7 +75,7 @@ module CPU_model(
 //==================================================================//
 // Task read CPU model //
 //==================================================================//
-	task read_cpu(input reg	[7:0] address, output reg [7:0] value_of_reg);
+	task read_cpu(input [7:0] address, output [7:0] value_of_reg);
 		begin
 			@(posedge cpu_pclk); // T1 setup phase
 				#1;
@@ -105,7 +105,7 @@ module CPU_model(
 					$display("at %0t end of read transfer", $time);
 				end
 				else begin
-					address_reg = 8'bZZZZ_ZZZZ; // APB protocol documents => if there is an error => reutrn an invalid data
+					address_reg = 8'bXXXX_XXXX; // APB protocol documents => if there is an error => reutrn an invalid data
 					pwrite_reg = 1'b0;
 					psel_reg = 1'b0;
 					penable_reg = 1'b0;
