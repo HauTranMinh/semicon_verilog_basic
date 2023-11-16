@@ -50,26 +50,28 @@ module CPU_model(
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
 				#1;
-				if(!cpu_pslverr) begin // == 0 
+				
 					while(!cpu_pready) 
 						begin
-							@(posedge cpu_pclk);
+							if (cpu_pslverr) begin
+								$display("at %0t write transfer has a error", $time);
+								address_reg = 8'h00;
+								pwrite_reg = 1'b0;
+								psel_reg = 1'b0;
+								data_reg = 8'h00;
+								penable_reg = 1'b0;
+							end
+							else begin
+								@(posedge cpu_pclk);
+									address_reg = 8'h00;
+									pwrite_reg = 1'b0;
+									psel_reg = 1'b0;
+									data_reg = 8'h00;
+									penable_reg = 1'b0;
+								$display("at %0t transfer done", $time);
+							end
+							
 						end
-						address_reg = 8'h00;
-						pwrite_reg = 1'b0;
-						psel_reg = 1'b0;
-						data_reg = 8'h00;
-						penable_reg = 1'b0;
-					$display("at %0t transfer done", $time);
-				end
-				else begin
-					address_reg = 8'h00;
-					pwrite_reg = 1'b0;
-					psel_reg = 1'b0;
-					data_reg = 8'h00;
-					penable_reg = 1'b0;
-					$display("at %0t write transfer has a error", $time);
-				end
 		end
 	endtask
 //==================================================================//
@@ -93,24 +95,20 @@ module CPU_model(
 
 			@(posedge cpu_pclk); // T3 end of access phase
 				#1;
-				if (!cpu_pslverr) begin
-					while(!cpu_pready)
-						begin
-							@(posedge cpu_pclk);
+				while(!cpu_pready)
+					begin
+						if (cpu_pslverr) begin
+							$display("at %0t end of read transfer", $time);
 						end
-					address_reg = address_reg;
-					pwrite_reg = 1'b0;
-					psel_reg = 1'b0;
-					penable_reg = 1'b0;
-					$display("at %0t end of read transfer", $time);
-				end
-				else begin
-					address_reg = 8'bXXXX_XXXX; // APB protocol documents => if there is an error => reutrn an invalid data
-					pwrite_reg = 1'b0;
-					psel_reg = 1'b0;
-					penable_reg = 1'b0;
-					$display("at %0t end of read transfer", $time);
-				end		
+						else begin
+							@(posedge cpu_pclk);
+							address_reg = address_reg;
+							pwrite_reg = 1'b0;
+							psel_reg = 1'b0;
+							penable_reg = 1'b0;
+							$display("at %0t end of read transfer", $time);
+						end
+					end	
 		end
 	endtask
 
