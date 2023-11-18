@@ -21,142 +21,161 @@ Z9 OL;O;10.2c;57
 Z10 dD:/SEMICON_VERILOG_COURCES/week_3/fsm
 Z11 !s110 1699714814
 T_opt1
-Z12 V@biG_zmU1VX@ldjOW7klL0
-R2
-R4
-Z13 =1-6c24087848a9-654f969d-162-5a14
+Z12 V<1aK]ni03=YgjP6<9JMhh3
+Z13 04 10 4 work basic_test fast 0
+Z14 =1-6c24087848a9-6558bab2-be-4244
 R7
-Z14 n@_opt1
+Z15 n@_opt1
 R9
 R10
-Z15 !s110 1699714717
+Z16 !s110 1700313778
 T_opt2
-Z16 VNfE?MkX>fWiW_ed`<QO1R1
+Z17 VNfE?MkX>fWiW_ed`<QO1R1
 R5
-Z17 =1-6c24087848a9-654f96f1-112-4cd8
+Z18 =1-6c24087848a9-654f96f1-112-4cd8
 R7
-Z18 n@_opt2
+Z19 n@_opt2
 R9
 R10
-Z19 !s110 1699714801
-vCPU_model
-Z20 !s100 j74FP3^`YXR?]YCjj3DX32
-Z21 IcnLjD<gGC@l=9kEcXPMo21
-Z22 V`JN@9S9cnhjKRR_L]QIcM3
-Z23 dD:/SEMICON_VERILOG_COURCES/week_5/decoder
-Z24 w1700053890
-Z25 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
-Z26 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
+Z20 !s110 1699714801
+vbasic_test
+Z21 !s110 1700318907
+!i10b 1
+Z22 !s100 zRDffkk`7flfA<N[8^7]i2
+Z23 I@>Z]:h_ez7gd^c9K:bKl<1
+Z24 V`JN@9S9cnhjKRR_L]QIcM3
+Z25 dD:/SEMICON_VERILOG_COURCES/week_5/decoder
+Z26 w1700316111
+Z27 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v
+Z28 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v
 L0 1
-Z27 OL;L;10.2c;57
+Z29 OL;L;10.2c;57
+r1
+!s85 0
+31
+!s108 1700318907.216000
+!s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v|
+Z30 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v|
+!i111 0
+Z31 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vCPU_model
+Z32 !s100 P=8OdD8^IjKA@mQaQUC=@0
+Z33 IHJ3;aP9AEYLj?Zga:f^Yn0
+R24
+R25
+Z34 w1700311709
+Z35 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
+Z36 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
+L0 1
+R29
 r1
 31
-Z28 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
-Z29 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z30 n@c@p@u_model
-Z31 !s110 1700054293
-Z32 !s108 1700054293.011000
-Z33 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
+Z37 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
+R31
+Z38 n@c@p@u_model
+Z39 !s110 1700318906
+Z40 !s108 1700318906.960000
+Z41 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder
-R31
-Z34 !s100 72;O02bFl@O6S`=H`C>9M3
-Z35 I:ObcaThCEe]M2i]jNi>8;3
-R22
-R23
-Z36 w1700051364
-Z37 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
-Z38 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
+Z42 !s100 ME3W]<1_WU@2gfDEXlWgb2
+Z43 IPZOjkS01VXXK0zRez<Xmb2
+R24
+R25
+Z44 w1700316104
+Z45 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
+Z46 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
 L0 1
-R27
+R29
 r1
 31
-Z39 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
-R29
-Z40 !s108 1700054293.049000
-Z41 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
+Z47 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
+R31
+R21
+Z48 !s108 1700318907.002000
+Z49 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder_sub
-R31
-Z42 !s100 hC;eL7k3GVdcUE091izC03
-Z43 IA;YD4@6X[<SRNRlA7[KFb3
-R22
-R23
-Z44 w1699714677
-Z45 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v
-Z46 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v
+R21
+Z50 !s100 hC;eL7k3GVdcUE091izC03
+Z51 IA;YD4@6X[<SRNRlA7[KFb3
+R24
+R25
+Z52 w1700288898
+Z53 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v
+Z54 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v
 L0 1
-R27
+R29
 r1
 31
-Z47 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
-R29
-Z48 !s108 1700054293.088000
-Z49 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
+Z55 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
+R31
+Z56 !s108 1700318907.045000
+Z57 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder_tb
-R31
-Z50 !s100 LkFi4>QTjPFFb_W7=BWAz3
-Z51 IaTTC;9aJ1Cb7d0SJE=QT>0
-R22
-R23
-Z52 w1699716544
-Z53 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
-Z54 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
+R21
+Z58 !s100 eDh]igO]F?<@`O_UfU<<F0
+Z59 Ie_@F:^l8fa<m0B5_??k9E0
+R24
+R25
+Z60 w1700312622
+Z61 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
+Z62 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
 L0 1
-R27
+R29
 r1
 31
-Z55 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
-R29
-Z56 !s108 1700054293.125000
-Z57 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
+Z63 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
+R31
+Z64 !s108 1700318907.086000
+Z65 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
 !i10b 1
 !s85 0
 !i111 0
 vregister
-R31
-Z58 !s100 :D]>F]5_XS2QKhCQ4DLRa0
-Z59 Il:K9HP>AWO1K@iCS0=COj3
-R22
-R23
-Z60 w1700052938
-Z61 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
-Z62 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
+Z66 !s110 1700313766
+Z67 IRoBX9BVY?GY_fn<Z3mdjh0
+R24
+R25
+Z68 w1700312724
+Z69 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
+Z70 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
 L0 1
-R27
+R29
 r1
 31
-Z63 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
-R29
+R31
+Z71 !s100 DTgQhLM5WZZNoL^5SVZ=@1
+Z72 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
+Z73 !s108 1700313766.890000
+Z74 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
 !i10b 1
 !s85 0
-Z64 !s108 1700054293.164000
-Z65 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
 !i111 0
 vsystem_signal
+R21
+Z75 !s100 e`TDid:[iLJ9jGzz5?JZT0
+Z76 I3H_L1LMGUH55HWRPA??f?2
+R24
+R25
+Z77 w1700310968
+Z78 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
+Z79 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
+L0 1
+R29
+r1
+31
+Z80 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
 R31
 !i10b 1
-Z66 !s100 e`TDid:[iLJ9jGzz5?JZT0
-Z67 I3H_L1LMGUH55HWRPA??f?2
-R22
-R23
-Z68 w1700047819
-Z69 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
-Z70 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
-L0 1
-R27
-r1
 !s85 0
-31
-!s108 1700054293.203000
-!s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
-Z71 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
+Z81 !s108 1700318907.174000
+Z82 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
 !i111 0
-R29

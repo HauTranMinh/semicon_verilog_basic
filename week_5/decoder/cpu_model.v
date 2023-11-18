@@ -77,7 +77,7 @@ module CPU_model(
 //==================================================================//
 // Task read CPU model //
 //==================================================================//
-	task read_cpu(input [7:0] address, output [7:0] value_of_reg);
+	task read_CPU(input [7:0] address, output [7:0] value_of_reg);
 		begin
 			@(posedge cpu_pclk); // T1 setup phase
 				#1;

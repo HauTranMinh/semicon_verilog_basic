@@ -36,7 +36,7 @@ module decoder (
 //================================================================//
 	// assign pready = ready_reg;
 	// assign psvlerr = svlerr_reg;
-	assign pready = 1'b1;
+	// assign pready = 1'b1;
 //  done  //
 
 endmodule
