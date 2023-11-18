@@ -1,11 +1,11 @@
 module decoder_tb();
 // declare net datatype for testing signal //
-	reg pclk;
-	reg preset_n;
-	reg psel;
-	reg penable;
-	reg pwrite;
-	reg [7:0] paddr, pwdata;
+	wire pclk;
+	wire preset_n;
+	wire psel;
+	wire penable;
+	wire pwrite;
+	wire [7:0] paddr, pwdata, prdata;
 	wire pready, psvlerr;
 
 	decoder dut(
@@ -15,62 +15,43 @@ module decoder_tb();
 		.penable(penable),
 		.pwrite(pwrite),
 		.pwdata(pwdata),
+		.prdata(prdata),
 		.paddr(paddr),
 		.pready(pready),
 		.psvlerr(psvlerr));
-// Pclock generator //
-	initial begin
-		pclk = 0;
-		forever #5 pclk = ~pclk;
-	end
 
-// test case //
-	initial begin
-		pclk = 0;
-		preset_n = 0;
-		#50;
+	system_signal system(
+		.sys_clk(pclk),
+		.sys_resetn(preset_n));
 
-		pclk = 0;
-		preset_n = 0;
-		psel = 0;
-		penable = 0;
-		pwrite = 0;
-		#5;
-		paddr = 8'h00;
-		pwdata = 8'haa;
-		#30;
 
-		pclk = 1;
-		preset_n = 1;
-		psel = 1;
-		penable = 1;
-		pwrite = 1;
-		#5;
-		paddr = 8'h01;
-		pwdata = 8'hfa;
-		#30;
+	cpu_model cpu(
+		.cpu_clk(pclk),
+		.cpu_presetn(preset_n),
+		.cpu_pready(pready),
+		.cpu_pslverr(psvlerr),
+		.cpu_prdata(prdata),
 
-		pclk = 1;
-		preset_n = 1;
-		psel = 1;
-		penable = 1;
-		pwrite = 1;
-		#5;
-		paddr = $random();
-		pwdata = $random();
-		#30;
+		.cpu_paddr(paddr),
+		.cpu_pwdata(pwdata),
+		.cpu_psel(psel),
+		.cpu_penable(penable),
+		.cpu_pwrite(pwrite));
 
-		pclk = 1;
-		preset_n = 1;
-		psel = 1;
-		penable = 1;
-		pwrite = 1;
-		#5;
-		paddr = $random();
-		pwdata = $random();
-		#30;
+	task get_results(input flag);
+		begin
+			if (flag) begin
+				$display("===================================");
+				$display("================FAIL===============");
+				$display("===================================");
+			end
+			else begin
+				$display("===================================");
+				$display("================PASS===============");
+				$display("===================================");
+			end
+		end
 
-		$finish;
-	end
+	endtask
 	
 endmodule

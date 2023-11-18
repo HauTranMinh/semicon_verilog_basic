@@ -13,10 +13,11 @@ module decoder (
 	wire [7:0] select_reg;
 
 //---------------------------------------------------------------//
-
 //------------------------DECODER SUB----------------------------//
 	decoder_sub sub_module(.paddr(paddr), .select_reg(select_reg));
 // => return one hot code for memory register                   //
+
+
 //--------------------------------------------------------------//
 // REGSITOR //
 
@@ -35,6 +36,7 @@ module decoder (
 //================================================================//
 	// assign pready = ready_reg;
 	// assign psvlerr = svlerr_reg;
+	assign pready = 1'b1;
 //  done  //
 
 endmodule
