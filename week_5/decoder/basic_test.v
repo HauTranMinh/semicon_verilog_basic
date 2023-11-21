@@ -8,7 +8,7 @@ module basic_test();
 	reg [7:0] rdata_5;
 	reg [7:0] rdata_6;
 	reg [7:0] rdata_7;
-	reg [7:0] rdata_8;
+	reg [7:0] rdata_0;
 	reg [7:0] rdata, wdata;
 	reg [7:0] addr;
 	integer i;
@@ -17,7 +17,7 @@ module basic_test();
 
 	initial begin
 		#10;
-
+		
 		for(i = 0; i<10; i = i + 1)
 		begin
 			addr = i;

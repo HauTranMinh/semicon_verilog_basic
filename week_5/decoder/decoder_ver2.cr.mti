@@ -19,6 +19,20 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	system_signal
 
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module basic_test
+
+Top level modules:
+	basic_test
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module decoder_tb
