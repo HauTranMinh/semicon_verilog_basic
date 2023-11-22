@@ -18,28 +18,28 @@ Z2 OL;O;10.2c;57
 Z3 dD:/SEMICON_VERILOG_COURCES/week_3/fsm
 !s110 1700570834
 T_opt1
-!s110 1700570964
-Vg9NXAXXZIg[aXDh5_>=IQ1
+V2<e:<@CTJ4M@OmF03N[ic0
 R1
-=1-6c24087848a9-655ca753-3b2-2960
+=1-6c24087848a9-655cae4a-124-47d8
 Z4 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt1
 R2
+R3
+!s110 1700572746
 T_opt2
-V;gfD<<6]@GUXNWbj^M>;01
-04 10 4 work decoder_tb fast 0
-=1-6c24087848a9-655a30ff-1e2-54b4
+!s110 1700660550
+VM:E@d>OU5ijB@oTOBfK8b3
+R1
+=1-6c24087848a9-655e0545-3b4-134
 R4
 n@_opt2
 R2
-R3
-!s110 1700409599
 vbasic_test
-Z5 !s110 1700570960
-I7TfQXi9MO[jQanSM[0O9N2
+Z5 !s110 1700660546
+IaN_S@geJR_C:J__4CB8O?3
 Z6 V`JN@9S9cnhjKRR_L]QIcM3
 Z7 dD:/SEMICON_VERILOG_COURCES/week_5/decoder
-w1700410206
+w1700660392
 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v
 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v
 L0 1
@@ -47,18 +47,18 @@ Z8 OL;L;10.2c;57
 r1
 31
 Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-!s100 lgBge:EW>i69WeF8R:C>=2
+!s100 UF<^TCGBL91T_inzE`ZM[3
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v|
 !i10b 1
 !s85 0
-!s108 1700570960.194000
+!s108 1700660546.131000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/basic_test.v|
 !i111 0
 vCPU_model
-IHJ3;aP9AEYLj?Zga:f^Yn0
+ImF7g^]i2KJ<j0_KnC8A<=0
 R6
 R7
-w1700410825
+w1700660469
 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v
 L0 1
@@ -67,19 +67,20 @@ r1
 31
 R9
 n@c@p@u_model
-!s100 P=8OdD8^IjKA@mQaQUC=@0
+Z10 !s110 1700660545
+!s100 SPG5_YV7fW6MBh0T<1:g[2
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
-!s110 1700570959
-!s108 1700570959.956000
+!s108 1700660545.887000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/cpu_model.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder
+R10
 IPZOjkS01VXXK0zRez<Xmb2
 R6
 R7
-w1700410854
+w1700657262
 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v
 L0 1
@@ -87,16 +88,15 @@ R8
 r1
 31
 R9
-R5
 !s100 ME3W]<1_WU@2gfDEXlWgb2
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
-!s108 1700570959.996000
+!s108 1700660545.934000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder_sub
-R5
+R10
 IA;YD4@6X[<SRNRlA7[KFb3
 R6
 R7
@@ -110,13 +110,12 @@ r1
 R9
 !s100 hC;eL7k3GVdcUE091izC03
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
-!s108 1700570960.035000
+!s108 1700660545.975000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_sub1.v|
 !i10b 1
 !s85 0
 !i111 0
 vdecoder_tb
-R5
 Ie_@F:^l8fa<m0B5_??k9E0
 R6
 R7
@@ -128,19 +127,20 @@ R8
 r1
 31
 R9
+R5
 !s100 eDh]igO]F?<@`O_UfU<<F0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
-!s108 1700570960.074000
+!s108 1700660546.014000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/decoder_tb.v|
 !i10b 1
 !s85 0
 !i111 0
 vregister
 R5
-I8Ngj_HgJU6_fTXbD?PJM`3
+IX3aF:I?Zl?=hZh>M@GgaD0
 R6
 R7
-w1700570957
+w1700660537
 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v
 L0 1
@@ -149,8 +149,8 @@ r1
 31
 R9
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
-!s100 N<N@@NW>0O?l1QJNN<g:N2
-!s108 1700570960.116000
+!s100 ]0K2k@=Hg3W`3B2UScl5j0
+!s108 1700660546.055000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/register.v|
 !i10b 1
 !s85 0
@@ -160,7 +160,7 @@ R5
 I3H_L1LMGUH55HWRPA??f?2
 R6
 R7
-w1700310968
+w1700654388
 8D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
 FD:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v
 L0 1
@@ -170,7 +170,7 @@ r1
 R9
 !s100 e`TDid:[iLJ9jGzz5?JZT0
 !s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
-!s108 1700570960.155000
+!s108 1700660546.093000
 !s107 D:/SEMICON_VERILOG_COURCES/week_5/decoder/system_signals.v|
 !i10b 1
 !s85 0

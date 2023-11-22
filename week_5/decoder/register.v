@@ -11,16 +11,22 @@ module register(
 	output pready,	
 	output psvlerr);
 
-`define  WAIT_CYCLES  2
+
 
 //---------------internal connection-------------------//
 	// reg [7:0] memory_reg [7:0];
 	reg [7:0] reg_A, reg_B, reg_C, reg_D, reg_E, reg_F, reg_G, reg_H;
 	reg svlerr_reg;
 	reg [7:0] data_reg; 
-	reg [1:0] count;
+	reg [5:0] count;
 	reg ready_reg;
-	//assign pready = 1'b1;
+
+//=======================================================================================//	
+	assign psvlerr = svlerr_reg;
+	assign prdata = data_reg;
+	assign pready = ready_reg;
+
+	
 //=======================================================================================//	
 	always @(posedge pclk or negedge preset_n) begin
 	 	if (~preset_n) begin
@@ -40,14 +46,14 @@ module register(
 //==================== ABB protocol write transfer process===============================//
 	 	else if (psel && pwrite && penable && pready) begin
 	 		case (select_reg)
-	 			8'b0000_0001: reg_A <= pwdata;
-	 			8'b0000_0010: reg_B <= pwdata;
-	 			8'b0000_0100: reg_C <= pwdata;
-	 			8'b0000_1000: reg_D <= pwdata;
-	 			8'b0001_0000: reg_E <= pwdata;
-	 			8'b0010_0000: reg_F <= pwdata;
-	 			8'b0100_0000: reg_G <= pwdata;
-	 			8'b1000_0000: reg_H <= pwdata;
+	 			8'b0000_0001: reg_A <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0000_0010: reg_B <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0000_0100: reg_C <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0000_1000: reg_D <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0001_0000: reg_E <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0010_0000: reg_F <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b0100_0000: reg_G <= pwdata; //svlerr_reg <= 1'b0;
+	 			8'b1000_0000: reg_H <= pwdata; //svlerr_reg <= 1'b0;
 	 			// if access address is reserved
 	 			default: svlerr_reg <= 1'b1; 
 	 		endcase
@@ -92,25 +98,25 @@ module register(
 //===============================================================================//
 //===================pready APB protocol=========================================//
 //=================================================================================//
+	`define WAIT_CYCLES 0
 	always @(posedge pclk or negedge preset_n) begin
 		if (~preset_n) begin
 			// reset
 			ready_reg 	<= 1'b0;
-			count 		<= 2'b00;
+			count 		<= 6'b00_00_00;
 		end
-		else if (psel && penable && (count == 2'b00)) begin
-			#2;
+		else if (psel && penable && (count == 6'b00_00_00)) begin
+			//#2;
 			ready_reg <= 1'b0;
 		end
-		else if (psel == 1'b1) begin
-			if(count == `WAIT_CYCLES)
-			begin
-				count <= 2'b00;
-				#2;
-				ready_reg <= 1'b1;
+		else if (psel) begin
+			if(count != `WAIT_CYCLES) begin
+				count <= count + 1'b1; 
 			end
 			else begin
-				count <= count + 1; 
+				count <= 6'b00_00_00;
+				#2;
+				ready_reg <= 1'b1;
 			end
 		end
 		else begin
@@ -120,8 +126,5 @@ module register(
 
 	
 //=================================================================================//
-	assign psvlerr = svlerr_reg;
-	assign prdata = data_reg;
-	assign pready = ready_reg;
 	
 endmodule

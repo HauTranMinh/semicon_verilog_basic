@@ -33,9 +33,9 @@ module basic_test();
 				$display("FAIL");
 			end
 		end
-		#10;
+		#1;
 			top.get_results(flag);
-		#10;
+		#5000;
 
 
 		$finish();

@@ -46,13 +46,13 @@ module CPU_model(
 			@(posedge cpu_pclk); //T2 <=> access phase 
 				#1;
 				penable_reg = 1'b1;
+				
 			$display("at %0t acces phase of writing data", $time);
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
 				#1;
-				
-					while(!cpu_pready) 
-						begin
+					while(cpu_pready) begin
+						
 							if (cpu_pslverr) begin
 								$display("at %0t write transfer has a error", $time);
 								address_reg = 8'h00;
@@ -70,8 +70,8 @@ module CPU_model(
 									penable_reg = 1'b0;
 								$display("at %0t transfer done", $time);
 							end
-							
 						end
+					@(posedge cpu_pclk);				
 		end
 	endtask
 //==================================================================//
@@ -90,12 +90,12 @@ module CPU_model(
 			@(posedge cpu_pclk); // T2 access phase
 				#1;
 				penable_reg = 1'b1;
-				value_of_reg  = cpu_prdata; // need to check
+				value_of_reg  = cpu_prdata;
 			$display("at %0t data at address 'h%0h is 'h%0h", $time, address, value_of_reg);
 
 			@(posedge cpu_pclk); // T3 end of access phase
 				#1;
-				while(!cpu_pready)
+				while(cpu_pready)
 					begin
 						if (cpu_pslverr) begin
 							$display("at %0t end of read transfer", $time);
@@ -108,7 +108,8 @@ module CPU_model(
 							penable_reg = 1'b0;
 							$display("at %0t end of read transfer", $time);
 						end
-					end	
+					end
+				@(posedge cpu_pclk);	
 		end
 	endtask
 
