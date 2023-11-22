@@ -18,6 +18,7 @@ module basic_test();
 	initial begin
 		#10;
 		
+			
 		for(i = 0; i<10; i = i + 1)
 		begin
 			addr = i;
@@ -35,7 +36,7 @@ module basic_test();
 		end
 		#1;
 			top.get_results(flag);
-		#5000;
+		#100;
 
 
 		$finish();

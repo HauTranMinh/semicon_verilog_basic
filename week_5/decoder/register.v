@@ -105,19 +105,22 @@ module register(
 			ready_reg 	<= 1'b0;
 			count 		<= 6'b00_00_00;
 		end
-		else if (psel && penable && (count == 6'b00_00_00)) begin
-			//#2;
-			ready_reg <= 1'b0;
+		else if (psel && penable && (count == `WAIT_CYCLES)) begin
+			#2;
+			ready_reg <= 1'b1;
+			count <= 6'b00_00_00;
+		// else if (psel) begin
+		// 	if(count == `WAIT_CYCLES) begin
+		// 		count <= 6'b00_00_00;
+		// 		#2;
+		// 		ready_reg <= 1'b1;
+		// 	end
+		// 	else begin
+		// 		count <= count + 1'b1; 
+		// 	end
 		end
-		else if (psel) begin
-			if(count != `WAIT_CYCLES) begin
-				count <= count + 1'b1; 
-			end
-			else begin
-				count <= 6'b00_00_00;
-				#2;
-				ready_reg <= 1'b1;
-			end
+		else if(psel && penable && (count != `WAIT_CYCLES)) begin
+			count <= count + 1'b1;
 		end
 		else begin
 			ready_reg <= 1'b0;
