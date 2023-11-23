@@ -17,9 +17,9 @@ module testcase_1();
 	decoder_tb top();
 
 	initial begin
-		#30;
+		#100; // delay for transient time
 			// case 1
-			for(i = 0; i<8; i = i+1) begin //test reset
+			for(i = 0; i<8; i = i+1) begin //test reset 
 				address = i;
 				wdata = $random();
 				top.cpu.write_CPU(address, wdata);
@@ -29,17 +29,16 @@ module testcase_1();
 			for(i = 0; i<8; i = i+1) begin 
 				address = i;
 				top.cpu.read_CPU(address, wdata);
-			end
-
-			if (rdata == 8'h00) begin
-				flag = 0;
-				$display("at %0t", $time);
-				$display("PASS");
-			end
-			else begin
-				flag = 1;
-				$display("at %0t", $time);
-				$display("FAIL");
+				if (rdata == 8'h00) begin
+					flag = 0;
+					$display("at %0t", $time);
+					$display("PASS");
+				end
+				else begin
+					flag = 1;
+					$display("at %0t", $time);
+					$display("FAIL");
+				end
 			end
 
 		//case 2

@@ -8,7 +8,7 @@ module system_signal(
 
 	initial begin
 		clk = 1'b0;
-		forever #10 clk = ~clk;
+		forever #1 clk = ~clk;
 	end
 
 	initial begin

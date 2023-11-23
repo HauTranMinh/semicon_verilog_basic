@@ -98,7 +98,7 @@ module register(
 //===============================================================================//
 //===================pready APB protocol=========================================//
 //=================================================================================//
-	`define WAIT_CYCLES 0
+	`define WAIT_CYCLES 2
 	always @(posedge pclk or negedge preset_n) begin
 		if (~preset_n) begin
 			// reset
