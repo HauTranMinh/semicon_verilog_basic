@@ -1,0 +1,188 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/questasim64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+V4CD43KU:2KM1ic9GYEb8d2
+04 10 4 work testcase_1 fast 0
+=1-6c24087848a9-655f22ae-22c-f38
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.2c;57
+Z3 dC:/questasim64_10.2c/examples
+!s110 1700733614
+T_opt1
+!s110 1700733771
+VDhm9I45jFJj=JG<=1D=kd2
+04 10 4 work basic_test fast 0
+=1-6c24087848a9-655f234b-34b-3b28
+R1
+n@_opt1
+R2
+vbasic_test
+Z4 !s110 1700733611
+IAZ8N2@BEEL>dDf_Rhf1dB3
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z6 dD:/SEMICON_VERILOG_COURCES/week_6/sim
+w1700732938
+8D:/SEMICON_VERILOG_COURCES/week_6/testcase/basic_test.v
+FD:/SEMICON_VERILOG_COURCES/week_6/testcase/basic_test.v
+L0 1
+Z7 OL;L;10.2c;57
+r1
+31
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 KzEail5e75CP;i5Gh2`0_2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/testcase/basic_test.v|
+!s108 1700733611.744000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/testcase/basic_test.v|
+!i10b 1
+!s85 0
+!i111 0
+vCPU_model
+R4
+I]Egak]^aLB4Z=jekE4;WG3
+R5
+R6
+w1700730745
+8D:/SEMICON_VERILOG_COURCES/week_6/vip/cpu_model.v
+FD:/SEMICON_VERILOG_COURCES/week_6/vip/cpu_model.v
+L0 1
+R7
+r1
+31
+R8
+n@c@p@u_model
+!s100 @S4F93M@E@dh_BGc89lF63
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/vip/cpu_model.v|
+!s108 1700733611.896000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/vip/cpu_model.v|
+!i10b 1
+!s85 0
+!i111 0
+vdecoder
+IYTomF>Y]>>]GUFg`nz2dn0
+R5
+R6
+w1700715597
+8D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder.v
+FD:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder.v
+L0 1
+R7
+r1
+31
+R8
+R4
+!s100 ME3W]<1_WU@2gfDEXlWgb2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder.v|
+!s108 1700733611.449000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder.v|
+!i10b 1
+!s85 0
+!i111 0
+vdecoder_sub
+R4
+IcI?<;Y7kX1W=ai=PFaVZJ0
+R5
+R6
+w1700288898
+8D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder_sub1.v
+FD:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder_sub1.v
+L0 1
+R7
+r1
+31
+R8
+!s100 hC;eL7k3GVdcUE091izC03
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder_sub1.v|
+!s108 1700733611.528000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/rtl/decoder_sub1.v|
+!i10b 1
+!s85 0
+!i111 0
+vdecoder_tb
+R4
+IU3cK?Nk2k@UJa`C:OZNd]3
+R5
+R6
+w1700410837
+8D:/SEMICON_VERILOG_COURCES/week_6/testbench/decoder_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_6/testbench/decoder_tb.v
+L0 1
+R7
+r1
+31
+R8
+!s100 eDh]igO]F?<@`O_UfU<<F0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/testbench/decoder_tb.v|
+!s108 1700733611.670000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/testbench/decoder_tb.v|
+!i10b 1
+!s85 0
+!i111 0
+vregister
+R4
+I?^hb[C5lmB^=bkOKjKgdZ3
+R5
+R6
+w1700666699
+8D:/SEMICON_VERILOG_COURCES/week_6/rtl/register.v
+FD:/SEMICON_VERILOG_COURCES/week_6/rtl/register.v
+L0 1
+R7
+r1
+31
+R8
+!s100 SAYazaQ7=[c=Q[RQM]]HL2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/rtl/register.v|
+!s108 1700733611.597000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/rtl/register.v|
+!i10b 1
+!s85 0
+!i111 0
+vsystem_signal
+R4
+IT=YTO@3aOhdP80nnon`9:0
+R5
+R6
+w1700733500
+8D:/SEMICON_VERILOG_COURCES/week_6/vip/system_signals.v
+FD:/SEMICON_VERILOG_COURCES/week_6/vip/system_signals.v
+L0 1
+R7
+r1
+31
+R8
+!s100 Ba8`O5JFgF7eFND`0D2JX3
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/vip/system_signals.v|
+!i10b 1
+!s85 0
+!s108 1700733611.973000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/vip/system_signals.v|
+!i111 0
+vtestcase_1
+R4
+IeoZLm7NzK=bP3ikPI<We;1
+R5
+R6
+w1700733606
+8D:/SEMICON_VERILOG_COURCES/week_6/testcase/testcase_1.v
+FD:/SEMICON_VERILOG_COURCES/week_6/testcase/testcase_1.v
+L0 1
+R7
+r1
+31
+R8
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/testcase/testcase_1.v|
+!s100 ]Q8jc8BZM@2fV4d^_QAAJ2
+!s108 1700733611.817000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/testcase/testcase_1.v|
+!i10b 1
+!s85 0
+!i111 0
