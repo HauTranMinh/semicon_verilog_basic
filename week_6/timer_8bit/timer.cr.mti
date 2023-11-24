@@ -1,0 +1,32 @@
+D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/timer.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/timer.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module read_write_control
+
+Top level modules:
+	read_write_control
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module select_clock
+
+Top level modules:
+	select_clock
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module registor
+
+Top level modules:
+	registor
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module encoder
+
+Top level modules:
+	encoder
+
+} {} {}}

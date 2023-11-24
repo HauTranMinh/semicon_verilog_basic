@@ -1,0 +1,231 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/sim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+Vo_P1=`jVK@_OHn7oP4=]h2
+04 10 4 work testcase_1 fast 0
+=1-6c24087848a9-65606a4d-144-47d4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+Z1 dD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/sim
+!s110 1700817485
+vCPU_model
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+31
+I4KX>mJ4S2RHXWgmTU<GR12
+R1
+w1700795933
+8../vip/cpu_model.v
+F../vip/cpu_model.v
+L0 1
+Z3 OL;L;10.2c;57
+Z4 !s108 1700817483.853000
+Z5 !s107 ../testcase/testcase_1.v|../testbench/timer_tb.v|../vip/system_signals.v|../vip/cpu_model.v|../rtl/timer_pready.v|../rtl/timer.v|../rtl/select_clock.v|../rtl/registor.v|../rtl/read_write_control.v|../rtl/encoder.v|../rtl/decoder.v|
+Z6 !s90 -f|compile.f|
+Z7 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@c@p@u_model
+!s85 0
+!s100 mPna93AA2VN1L`CoUO<_N3
+!i10b 1
+!i111 0
+vdecoder
+R2
+r1
+31
+IgzP]@S6[m[hPBAFLZJUQ<2
+R1
+w1700817448
+8../rtl/decoder.v
+F../rtl/decoder.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 4GWAJ2Y_]Zm;8M06G_=?;2
+!i10b 1
+!i111 0
+vencoder
+R2
+r1
+31
+IG8nkH_RTO=j6WFL<G5ZGB3
+R1
+w1700817073
+8../rtl/encoder.v
+F../rtl/encoder.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 SAG=:GbPY]hhEnIVc6AKg2
+!i10b 1
+!i111 0
+vread_write_control
+R2
+r1
+31
+I9Zejo]]^Tno3We_1R1=B60
+R1
+w1700814931
+8../rtl/read_write_control.v
+F../rtl/read_write_control.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 =61_A5Be9D1iA>>X_l==50
+!i10b 1
+!i111 0
+vregistor
+R2
+r1
+31
+I0nKA>4E3LnO6C@B:L1jE70
+R1
+w1700814400
+8../rtl/registor.v
+F../rtl/registor.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 eG6JzQOAn<czBzNcM2<V`0
+!i10b 1
+!i111 0
+vselect_clock
+!s110 1700817483
+IFOU?G0N]J>c]^6zZgTM9_2
+R2
+R1
+w1700806931
+8../rtl/select_clock.v
+F../rtl/select_clock.v
+L0 1
+R3
+r1
+31
+R4
+R5
+R6
+R7
+!s100 XADHUE0`;JW8:=G^FBRC33
+!i10b 1
+!s85 0
+!i111 0
+vsystem_signal
+R2
+r1
+!s85 0
+31
+I6jQz`oS0H3M<FR<TS0Ijj0
+R1
+w1700816729
+8../vip/system_signals.v
+F../vip/system_signals.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s100 ]1RYF=8_=Mnc4WWY4C0D`3
+!i10b 1
+!i111 0
+vtestbench
+IgOTFbXMV5mAm5F]e^l8Ym0
+R2
+R1
+w1700815679
+Z8 8../testbench/timer_tb.v
+Z9 F../testbench/timer_tb.v
+L0 1
+R3
+r1
+31
+R5
+R6
+R7
+!s110 1700816583
+!s100 ?ZQDiBM3S^obR=kC3zk`S1
+!s108 1700816583.862000
+!i10b 1
+!s85 0
+!i111 0
+vtestcase_1
+R2
+r1
+31
+Ide>l`MCjFimi7ULfN`Aaj3
+R1
+w1700817481
+8../testcase/testcase_1.v
+F../testcase/testcase_1.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!i10b 1
+!s100 iY9Q8R;F@Khlna?3CgIbk0
+!i111 0
+vtimer_pready
+R2
+r1
+31
+I_VAa0:mG1^R[QkS[=7Gl`3
+R1
+w1700816582
+8../rtl/timer_pready.v
+F../rtl/timer_pready.v
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 NHz:ag9d29SPQon<PjF>]3
+!i10b 1
+!i111 0
+vtimer_tb
+R2
+r1
+31
+Ibl:_:?9[F3f0:RzaNm`CT1
+R1
+w1700816733
+R8
+R9
+L0 1
+R3
+R4
+R5
+R6
+R7
+!s85 0
+!s100 bQB[eCB92FoM[HN8faOW_1
+!i10b 1
+!i111 0
