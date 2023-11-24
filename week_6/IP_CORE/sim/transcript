@@ -1,0 +1,146 @@
+# Reading C:/questasim64_10.2c/tcl/vsim/pref.tcl 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -gui -novopt work.testcase_1 
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.testcase_1
+# Loading work.testcase_1
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.decoder_tb
+# Loading work.decoder_tb
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.decoder
+# Loading work.decoder
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.decoder_sub
+# Loading work.decoder_sub
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.register
+# Loading work.register
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.system_signal
+# Loading work.system_signal
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_6/sim/work.CPU_model
+# Loading work.CPU_model
+add wave -position insertpoint sim:/testcase_1/top/dut/*
+add wave -position insertpoint sim:/testcase_1/top/dut/memory_reg/*
+run -all
+# at 110 start write data = 'h24 to address = 'h0
+# at 120 acces phase of writing data
+# at 150 start write data = 'h81 to address = 'h1
+# at 160 acces phase of writing data
+# at 190 start write data = 'h9 to address = 'h2
+# at 200 acces phase of writing data
+# at 230 start write data = 'h63 to address = 'h3
+# at 240 acces phase of writing data
+# at 270 start write data = 'hd to address = 'h4
+# at 280 acces phase of writing data
+# at 310 start write data = 'h8d to address = 'h5
+# at 320 acces phase of writing data
+# at 350 start write data = 'h65 to address = 'h6
+# at 360 acces phase of writing data
+# at 390 start write data = 'h12 to address = 'h7
+# at 400 acces phase of writing data
+# at 500 start to read data at address 'h0
+# at 510 data at address 'h0 is 'h0
+# at 525
+# PASS
+# at 540 start to read data at address 'h1
+# at 550 data at address 'h1 is 'h0
+# at 565
+# PASS
+# at 580 start to read data at address 'h2
+# at 590 data at address 'h2 is 'h0
+# at 605
+# PASS
+# at 620 start to read data at address 'h3
+# at 630 data at address 'h3 is 'h0
+# at 645
+# PASS
+# at 660 start to read data at address 'h4
+# at 670 data at address 'h4 is 'h0
+# at 685
+# PASS
+# at 700 start to read data at address 'h5
+# at 710 data at address 'h5 is 'h0
+# at 725
+# PASS
+# at 740 start to read data at address 'h6
+# at 750 data at address 'h6 is 'h0
+# at 765
+# PASS
+# at 780 start to read data at address 'h7
+# at 790 data at address 'h7 is 'h0
+# at 805
+# PASS
+# at 840 start write data = 'h1 to address = 'h0
+# at 850 acces phase of writing data
+# at 880 start write data = 'hd to address = 'h1
+# at 890 acces phase of writing data
+# at 920 start write data = 'h76 to address = 'h2
+# at 930 acces phase of writing data
+# at 960 start write data = 'h3d to address = 'h3
+# at 970 acces phase of writing data
+# at 1000 start write data = 'hed to address = 'h4
+# at 1010 acces phase of writing data
+# at 1040 start write data = 'h8c to address = 'h5
+# at 1050 acces phase of writing data
+# at 1080 start write data = 'hf9 to address = 'h6
+# at 1090 acces phase of writing data
+# at 1120 start write data = 'hc6 to address = 'h7
+# at 1130 acces phase of writing data
+# at 1230 start write data = 'hc5 to address = 'h0
+# at 1240 acces phase of writing data
+# at 1270 start to read data at address 'h0
+# at 1280 data at address 'h0 is 'h0
+# at 1295
+# FAIL
+# at 1310 start write data = 'haa to address = 'h1
+# at 1320 acces phase of writing data
+# at 1350 start to read data at address 'h1
+# at 1360 data at address 'h1 is 'h0
+# at 1375
+# FAIL
+# at 1390 start write data = 'he5 to address = 'h2
+# at 1400 acces phase of writing data
+# at 1430 start to read data at address 'h2
+# at 1440 data at address 'h2 is 'h0
+# at 1455
+# FAIL
+# at 1470 start write data = 'h77 to address = 'h3
+# at 1480 acces phase of writing data
+# at 1510 start to read data at address 'h3
+# at 1520 data at address 'h3 is 'h0
+# at 1535
+# FAIL
+# at 1550 start write data = 'h12 to address = 'h4
+# at 1560 acces phase of writing data
+# at 1590 start to read data at address 'h4
+# at 1600 data at address 'h4 is 'h0
+# at 1615
+# FAIL
+# at 1630 start write data = 'h8f to address = 'h5
+# at 1640 acces phase of writing data
+# at 1670 start to read data at address 'h5
+# at 1680 data at address 'h5 is 'h0
+# at 1695
+# FAIL
+# at 1710 start write data = 'hf2 to address = 'h6
+# at 1720 acces phase of writing data
+# at 1750 start to read data at address 'h6
+# at 1760 data at address 'h6 is 'h0
+# at 1775
+# FAIL
+# at 1790 start write data = 'hce to address = 'h7
+# at 1800 acces phase of writing data
+# at 1830 start to read data at address 'h7
+# at 1840 data at address 'h7 is 'h0
+# at 1855
+# FAIL
+# ===================================
+# ================FAIL===============
+# ===================================
+# 1
+# Break in Module testcase_1 at ../testcase/testcase_1.v line 73

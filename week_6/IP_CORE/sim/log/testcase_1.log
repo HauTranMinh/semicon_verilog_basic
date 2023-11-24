@@ -1,0 +1,139 @@
+# vsim -do {testcase_1.ucdb; log -r /*;run -all; exit} -l testcase_1.log -voptargs=+acc work.testcase_1 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.testcase_1(fast)
+# Loading work.decoder_tb(fast)
+# Loading work.decoder(fast)
+# Loading work.decoder_sub(fast)
+# Loading work.register(fast)
+# Loading work.system_signal(fast)
+# Loading work.CPU_model(fast)
+# testcase_1.ucdb 
+# invalid command name "testcase_1.ucdb"
+#  log -r /* 
+# run -all 
+# at 110 start write data = 'h24 to address = 'h0
+# at 120 acces phase of writing data
+# at 150 start write data = 'h81 to address = 'h1
+# at 160 acces phase of writing data
+# at 190 start write data = 'h9 to address = 'h2
+# at 200 acces phase of writing data
+# at 230 start write data = 'h63 to address = 'h3
+# at 240 acces phase of writing data
+# at 270 start write data = 'hd to address = 'h4
+# at 280 acces phase of writing data
+# at 310 start write data = 'h8d to address = 'h5
+# at 320 acces phase of writing data
+# at 350 start write data = 'h65 to address = 'h6
+# at 360 acces phase of writing data
+# at 390 start write data = 'h12 to address = 'h7
+# at 400 acces phase of writing data
+# Initialize 8 registers
+# at 500 start to read data at address 'h0
+# at 535 end of read transfer
+# at 535
+# PASS
+# at 550 start to read data at address 'h1
+# at 585 end of read transfer
+# at 585
+# PASS
+# at 600 start to read data at address 'h2
+# at 635 end of read transfer
+# at 635
+# PASS
+# at 650 start to read data at address 'h3
+# at 685 end of read transfer
+# at 685
+# PASS
+# at 700 start to read data at address 'h4
+# at 735 end of read transfer
+# at 735
+# PASS
+# at 750 start to read data at address 'h5
+# at 785 end of read transfer
+# at 785
+# PASS
+# at 800 start to read data at address 'h6
+# at 835 end of read transfer
+# at 835
+# PASS
+# at 850 start to read data at address 'h7
+# at 885 end of read transfer
+# at 885
+# PASS
+# at 920 start write data = 'h1 to address = 'h0
+# at 930 acces phase of writing data
+# at 960 start write data = 'hd to address = 'h1
+# at 970 acces phase of writing data
+# at 1000 start write data = 'h76 to address = 'h2
+# at 1010 acces phase of writing data
+# at 1040 start write data = 'h3d to address = 'h3
+# at 1050 acces phase of writing data
+# at 1080 start write data = 'hed to address = 'h4
+# at 1090 acces phase of writing data
+# at 1120 start write data = 'h8c to address = 'h5
+# at 1130 acces phase of writing data
+# at 1160 start write data = 'hf9 to address = 'h6
+# at 1170 acces phase of writing data
+# at 1200 start write data = 'hc6 to address = 'h7
+# at 1210 acces phase of writing data
+# Initialize 8 registers
+# at 1310 start write data = 'hc5 to address = 'h0
+# at 1320 acces phase of writing data
+# at 1350 start to read data at address 'h0
+# at 1385 end of read transfer
+# at 1385 wdata=197 rdata=197
+# PASS
+# at 1400 start write data = 'haa to address = 'h1
+# at 1410 acces phase of writing data
+# at 1440 start to read data at address 'h1
+# at 1475 end of read transfer
+# at 1475 wdata=170 rdata=170
+# PASS
+# at 1490 start write data = 'he5 to address = 'h2
+# at 1500 acces phase of writing data
+# at 1530 start to read data at address 'h2
+# at 1565 end of read transfer
+# at 1565 wdata=229 rdata=229
+# PASS
+# at 1580 start write data = 'h77 to address = 'h3
+# at 1590 acces phase of writing data
+# at 1620 start to read data at address 'h3
+# at 1655 end of read transfer
+# at 1655 wdata=119 rdata=119
+# PASS
+# at 1670 start write data = 'h12 to address = 'h4
+# at 1680 acces phase of writing data
+# at 1710 start to read data at address 'h4
+# at 1745 end of read transfer
+# at 1745 wdata=18 rdata=18
+# PASS
+# at 1760 start write data = 'h8f to address = 'h5
+# at 1770 acces phase of writing data
+# at 1800 start to read data at address 'h5
+# at 1835 end of read transfer
+# at 1835 wdata=143 rdata=143
+# PASS
+# at 1850 start write data = 'hf2 to address = 'h6
+# at 1860 acces phase of writing data
+# at 1890 start to read data at address 'h6
+# at 1925 end of read transfer
+# at 1925 wdata=242 rdata=242
+# PASS
+# at 1940 start write data = 'hce to address = 'h7
+# at 1950 acces phase of writing data
+# at 1980 start to read data at address 'h7
+# at 2015 end of read transfer
+# at 2015 wdata=206 rdata=206
+# PASS
+# ===================================
+# ================PASS===============
+# ===================================
