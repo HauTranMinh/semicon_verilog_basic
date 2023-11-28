@@ -36,10 +36,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft5tyrh8".
+#           Attempting to use alternate WLF file "./wlft4000k1".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft5tyrh8
+#           Using alternate file: ./wlft4000k1
 # 
 # run -all 
 # at 110 start write data = 'h24 to address = 'h1
@@ -47,28 +47,28 @@
 # at 150 start write data = 'h81 to address = 'h2
 # at 160 acces phase of writing data
 # Initialize 3 registers 1st case
-# at 260 start to read data at address 'h1
+# at 260 start to read data at address 'h0
 # at 295 end of read transfer
 # at 295 wdata=129 rdata=0
 # PASS
-# at 310 start to read data at address 'h2
+# at 310 start to read data at address 'h1
 # at 345 end of read transfer
 # at 345 wdata=129 rdata=0
 # PASS
-# at 380 start write data = 'h9 to address = 'h1
+# at 380 start write data = 'h9 to address = 'h0
 # at 390 acces phase of writing data
-# at 420 start write data = 'h63 to address = 'h2
+# at 420 start write data = 'h63 to address = 'h1
 # at 430 acces phase of writing data
 # Initialize 3 registers 2nd case
-# at 530 start write data = 'hd to address = 'h1
+# at 530 start write data = 'hd to address = 'h0
 # at 540 acces phase of writing data
-# at 570 start to read data at address 'h1
+# at 570 start to read data at address 'h0
 # at 605 end of read transfer
 # at 605 wdata=13 rdata=13
 # PASS
-# at 620 start write data = 'h8d to address = 'h2
+# at 620 start write data = 'h8d to address = 'h1
 # at 630 acces phase of writing data
-# at 660 start to read data at address 'h2
+# at 660 start to read data at address 'h1
 # at 695 end of read transfer
 # at 695 wdata=141 rdata=141
 # PASS

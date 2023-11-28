@@ -8,9 +8,9 @@ module decoder(
 
 	always @(paddr) begin
 		case(paddr) // need to review documents
-			8'b0000_0001: internal_reg = 3'b001;
-			8'b0000_0010: internal_reg = 3'b010;
-			8'b0000_0011: internal_reg = 3'b100;
+			8'h00: internal_reg = 3'b001;
+			8'h01: internal_reg = 3'b010;
+			8'h02: internal_reg = 3'b100;
 			default: internal_reg = 3'b000;
 		endcase
 	end

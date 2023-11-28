@@ -16,7 +16,7 @@ module testcase_1();
 			$display("Initialize 3 registers 1st case");
 			// reset here
 			top.system.reset();
-			for(i = 1; i<3; i = i+1) begin 
+			for(i = 0; i<2; i = i+1) begin 
 				address = i;
 				top.cpu.read_CPU(address, rdata);
 				if (rdata == 8'h00) begin
@@ -33,7 +33,7 @@ module testcase_1();
 
 		//case 2
 		#30;	
-			for(i = 1; i<3; i = i+1) begin //test reset
+			for(i = 0; i<2; i = i+1) begin //test reset
 				address = i;
 				wdata = $random();
 				top.cpu.write_CPU(address, wdata);
@@ -41,7 +41,7 @@ module testcase_1();
 			// reset here
 			top.system.reset();
 			$display("Initialize 3 registers 2nd case");
-			for(i = 1; i<3; i = i+1) begin // write & read 2nd time
+			for(i = 0; i<2; i = i+1) begin // write & read 2nd time
 				address = i;
 				wdata = $random();
 				top.cpu.write_CPU(address, wdata);
