@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/questasim64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1701175710
+VU?gDYXQ<9iia44ze_VoQI3
+04 9 4 work testbench fast 0
+=1-6c24087848a9-6565e19e-126-1654
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vdecoder
+Z0 !s110 1701175693
+IZRWU2c7HnVZA:h`Kj7MPX1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit
+w1701171184
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/decoder.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/decoder.v
+L0 1
+Z3 OL;L;10.2c;57
+r1
+31
+Z4 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/decoder.v|
+!s100 fK2a18B4R2l[L:=M9LN>Q0
+!s108 1701175693.035000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/decoder.v|
+!i10b 1
+!s85 0
+!i111 0
+vencoder
+Z5 !s110 1701175693
+Ii1B7lkNDYWR]1de0NdhZn0
+R1
+R2
+w1700817073
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v
+L0 1
+R3
+r1
+31
+R4
+!s100 SAG=:GbPY]hhEnIVc6AKg2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v|
+!s108 1701175693.075000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/encoder.v|
+!i10b 1
+!s85 0
+!i111 0
+vread_write_control
+R5
+IcJjD]LY[W8W^?MMg<F6Zb1
+R1
+R2
+w1700814931
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v
+L0 1
+R3
+r1
+31
+R4
+!s100 =61_A5Be9D1iA>>X_l==50
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v|
+!s108 1701175693.115000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/read_write_control.v|
+!i10b 1
+!s85 0
+!i111 0
+vregistor
+R5
+I`8RMO^jzfPPXF=2zPd_ZS3
+R1
+R2
+w1701171183
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v
+L0 1
+R3
+r1
+31
+R4
+!s100 eG6JzQOAn<czBzNcM2<V`0
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v|
+!s108 1701175693.154000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/registor.v|
+!i10b 1
+!s85 0
+!i111 0
+vselect_clock
+I@LW6>]iDNLifQAZ`4c6IT3
+R1
+R2
+w1700806931
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v
+L0 1
+R3
+r1
+31
+R4
+!s100 XADHUE0`;JW8:=G^FBRC33
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v|
+!s110 1701175692
+!s108 1701175692.889000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/rtl/select_clock.v|
+!i10b 1
+!s85 0
+!i111 0
+vtestbench
+R5
+IA9f5INE?kjaPg^P;_5FNI0
+R1
+R2
+w1701174782
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/select_clk_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/select_clk_tb.v
+L0 3
+R3
+r1
+31
+R4
+!i10b 1
+!s100 e0XTCdBzDHamm04?VW3_h1
+!s85 0
+!s108 1701175693.196000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/select_clk_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/select_clk_tb.v|
+!i111 0
+vtimer_tb
+IMj0aOLcln;JK[SjhLRbgW1
+R1
+R2
+w1701171188
+8D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/timer_tb.v
+FD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/timer_tb.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/timer_tb.v|
+!s100 bQB[eCB92FoM[HN8faOW_1
+!s108 1701175692.995000
+!s107 D:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/testbench/timer_tb.v|
+!i10b 1
+!s85 0
+!i111 0
