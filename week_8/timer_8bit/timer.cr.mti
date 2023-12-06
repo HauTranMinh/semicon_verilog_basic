@@ -1,0 +1,73 @@
+D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/counter.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/counter.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/overflow_detect.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/overflow_detect.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module overflow_detect
+
+Top level modules:
+	overflow_detect
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/encoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/encoder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module encoder
+
+Top level modules:
+	encoder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module timer
+
+Top level modules:
+	timer
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer_pready.v {2 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer_pready.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module timer_pready
+** Warning: D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer_pready.v(32): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	timer_pready
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module registor_control
+
+Top level modules:
+	registor_control
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module underflow_detect
+
+Top level modules:
+	underflow_detect
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/decoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/decoder.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/registor.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/registor.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module registor
+
+Top level modules:
+	registor
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/select_clock.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/select_clock.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module select_clock
+
+Top level modules:
+	select_clock
+
+} {} {}}

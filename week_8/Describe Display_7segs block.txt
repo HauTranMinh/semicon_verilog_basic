@@ -1,0 +1,29 @@
+Describe Display_7segs block.
+
+General: 
+
+	This is an application for timer_8bits IP projects from Semicon basic course.
+
+Detail:
+	This block have 2 modes which are controlled by a switch.
+	_(1) With HIGH state: this block will automaticcally update value for an variable and output to display on 4 seven segments leds in decimal. The value can be increase or decrease
+			depend on which flag is active. This block will work if and only 1 flag is active otherwise.
+	_(2) With LOW state: This block will grenerate an interrupt to check the input status on sensor pin. If the status is LOW then increase the value and then output to display. 
+			This task will work no matter which flag is using.
+	_ In both state there are always 8 single leds to display the value that's read from TDR registor.
+	_ If there is an error which is determine by pvlerr input This block will not working in any state, and there is an error message on 7 segments leds.
+	_ The frequence of (1)(2) is configurate by user by IP_timer via APB protocol.
+
+ 	+ Note: This is not the final design of this application. 
+		There is a missing input on the image.
+
+
+
+	
+
+
+
+	
+
+
+

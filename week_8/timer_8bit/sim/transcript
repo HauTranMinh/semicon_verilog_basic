@@ -1,0 +1,30 @@
+# Reading C:/questasim64_10.2c/tcl/vsim/pref.tcl 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -gui -novopt work.testcase_1 
+# Loading work.testcase_1
+# Loading work.timer_tb
+# Loading work.read_write_control
+# Loading work.decoder
+# Loading work.registor
+# Loading work.encoder
+# Loading work.timer_pready
+# Loading work.CPU_model
+# Loading work.system_signal
+# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TDR'. The port definition is at: ../rtl/read_write_control.v(10).
+# 
+#         Region: /testcase_1/top/dut
+# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TCR'. The port definition is at: ../rtl/read_write_control.v(11).
+# 
+#         Region: /testcase_1/top/dut
+# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TSR'. The port definition is at: ../rtl/read_write_control.v(12).
+# 
+#         Region: /testcase_1/top/dut
