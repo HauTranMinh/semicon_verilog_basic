@@ -1,4 +1,6 @@
 # vsim -do {read_write_3_register.ucdb; log -r /*;run -all; exit} -l read_write_3_register.log -voptargs=+acc work.read_write_3_register 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
 # //
@@ -23,6 +25,12 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
+# 
+#         Region: /read_write_3_register/top/dut/ovf_detect
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
+# 
+#         Region: /read_write_3_register/top/dut/ovf_detect
 # read_write_3_register.ucdb 
 # invalid command name "read_write_3_register.ucdb"
 #  log -r /* 
@@ -30,10 +38,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft4ytib1".
+#           Attempting to use alternate WLF file "./wlftygidii".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft4ytib1
+#           Using alternate file: ./wlftygidii
 # 
 # run -all 
 # ==============================================================================
@@ -89,7 +97,7 @@
 # write 8'b1111_1101 to TSR at 825
 # at 840 start to read data at address 'h2
 # at 875 end of read transfer
-# at 875 wdata=253 write to TSR is rdata=1
+# at 875 wdata=253 rdata=0
 # ====================================PASS=============================
 # TEST NO .03
 # 
@@ -98,8 +106,8 @@
 # write 8'b1111_1110 to TSR at 1085
 # at 1100 start to read data at address 'h2
 # at 1135 end of read transfer
-# at 1135 wdata=254 write to TSR is rdata=2
-# ====================================PASS=============================
+# at 1135 wdata=254 rdata=2
+# ====================================FAIL=============================
 # TEST NO .04
 # 
 # at 1320 start write data = 'hff to address = 'h2
@@ -107,7 +115,7 @@
 # write 8'b1111_1111 to TSR at 1345
 # at 1360 start to read data at address 'h2
 # at 1395 end of read transfer
-# at 1395 wdata=255 write to TSR is rdata=0
+# at 1395 wdata=255 rdata=0
 # ====================================PASS=============================
 # ===================================
 # ================PASS===============

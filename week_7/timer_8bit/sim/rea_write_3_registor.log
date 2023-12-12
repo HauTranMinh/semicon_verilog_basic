@@ -1,0 +1,6 @@
+# vsim -do {rea_write_3_registor.ucdb; log -r /*;run -all; exit} -l rea_write_3_registor.log -voptargs=+acc work.rea_write_3_registor 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: Failed to find design unit work.rea_write_3_registor.
+# Optimization failed
+# Error loading design

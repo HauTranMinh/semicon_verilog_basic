@@ -25,6 +25,12 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
+# 
+#         Region: /read_write_TSR/top/dut/ovf_detect
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
+# 
+#         Region: /read_write_TSR/top/dut/ovf_detect
 # read_write_TSR.ucdb 
 # invalid command name "read_write_TSR.ucdb"
 #  log -r /* 
@@ -32,10 +38,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlftq8e5ha".
+#           Attempting to use alternate WLF file "./wlftmi8k1d".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftq8e5ha
+#           Using alternate file: ./wlftmi8k1d
 # 
 # run -all 
 # ==============================================================================
@@ -57,25 +63,25 @@
 # write 8'b1111_1101 to TSR at 475
 # at 490 start to read data at address 'h2
 # at 525 end of read transfer
-# at 525 wdata=253 write to TSR is rdata=1
-# ====================================PASS=============================
+# at 525 wdata=253 rdata=1
+# ====================================FAIL=============================
 # TEST NO .03
 # 
-# at 710 start write data = 'hfe to address = 'h2
-# at 720 acces phase of writing data
-# write 8'b1111_1110 to TSR at 735
-# at 750 start to read data at address 'h2
-# at 785 end of read transfer
-# at 785 wdata=254 write to TSR is rdata=2
-# ====================================PASS=============================
+# at 810 start write data = 'hfe to address = 'h2
+# at 820 acces phase of writing data
+# write 8'b1111_1110 to TSR at 835
+# at 850 start to read data at address 'h2
+# at 885 end of read transfer
+# at 885 wdata=254 rdata=2
+# ====================================FAIL=============================
 # TEST NO .04
 # 
-# at 970 start write data = 'hff to address = 'h2
-# at 980 acces phase of writing data
-# write 8'b1111_1111 to TSR at 995
-# at 1010 start to read data at address 'h2
-# at 1045 end of read transfer
-# at 1045 wdata=255 write to TSR is rdata=0
+# at 1070 start write data = 'hff to address = 'h2
+# at 1080 acces phase of writing data
+# write 8'b1111_1111 to TSR at 1095
+# at 1110 start to read data at address 'h2
+# at 1145 end of read transfer
+# at 1145 wdata=255 rdata=0
 # ====================================PASS=============================
 # ===================================
 # ================PASS===============
