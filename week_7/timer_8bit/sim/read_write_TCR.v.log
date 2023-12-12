@@ -1,0 +1,5 @@
+# vsim -do {read_write_TCR.v.ucdb; log -r /*;run -all; exit} -l read_write_TCR.v.log -voptargs=+acc work.read_write_TCR.v 
+# ** Error: (vsim-19) Failed to access library 'work.read_write_TCR' at "work.read_write_TCR".
+# 
+# No such file or directory. (errno = ENOENT)
+# Error loading design

@@ -1,6 +1,4 @@
 # vsim -do {testcase_1.ucdb; log -r /*;run -all; exit} -l testcase_1.log -voptargs=+acc work.testcase_1 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
 # //
@@ -13,22 +11,18 @@
 # //
 # Loading work.testcase_1(fast)
 # Loading work.timer_tb(fast)
-# Loading work.read_write_control(fast)
+# Loading work.timer(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.registor_control(fast)
 # Loading work.decoder(fast)
 # Loading work.registor(fast)
 # Loading work.encoder(fast)
 # Loading work.timer_pready(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TDR'. The port definition is at: ../rtl/read_write_control.v(10).
-# 
-#         Region: /testcase_1/top/dut
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TCR'. The port definition is at: ../rtl/read_write_control.v(11).
-# 
-#         Region: /testcase_1/top/dut
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TSR'. The port definition is at: ../rtl/read_write_control.v(12).
-# 
-#         Region: /testcase_1/top/dut
 # testcase_1.ucdb 
 # invalid command name "testcase_1.ucdb"
 #  log -r /* 
@@ -36,15 +30,15 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft4000k1".
+#           Attempting to use alternate WLF file "./wlftyei9xg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft4000k1
+#           Using alternate file: ./wlftyei9xg
 # 
 # run -all 
-# at 110 start write data = 'h24 to address = 'h1
+# at 110 start write data = 'h24 to address = 'h0
 # at 120 acces phase of writing data
-# at 150 start write data = 'h81 to address = 'h2
+# at 150 start write data = 'h81 to address = 'h1
 # at 160 acces phase of writing data
 # Initialize 3 registers 1st case
 # at 260 start to read data at address 'h0

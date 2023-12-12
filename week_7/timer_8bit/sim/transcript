@@ -9,22 +9,7 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -gui -novopt work.testcase_1 
-# Loading work.testcase_1
-# Loading work.timer_tb
-# Loading work.read_write_control
-# Loading work.decoder
-# Loading work.registor
-# Loading work.encoder
-# Loading work.timer_pready
-# Loading work.CPU_model
-# Loading work.system_signal
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TDR'. The port definition is at: ../rtl/read_write_control.v(10).
+# vsim -gui -novopt work.read_write_TDR 
+# ** Error: (vsim-3170) Could not find 'D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.read_write_TDR'.
 # 
-#         Region: /testcase_1/top/dut
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TCR'. The port definition is at: ../rtl/read_write_control.v(11).
-# 
-#         Region: /testcase_1/top/dut
-# ** Warning: (vsim-3015) ../testbench/timer_tb.v(25): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'TSR'. The port definition is at: ../rtl/read_write_control.v(12).
-# 
-#         Region: /testcase_1/top/dut
+# Error loading design

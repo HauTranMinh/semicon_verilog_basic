@@ -1,0 +1,116 @@
+# vsim -do {non_exist_address.ucdb; log -r /*;run -all; exit} -l non_exist_address.log -voptargs=+acc work.non_exist_address 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.non_exist_address(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# non_exist_address.ucdb 
+# invalid command name "non_exist_address.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlftai3dws".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftai3dws
+# 
+# run -all 
+# ==============================================================================
+# ============================TCR_read_write_test_begin=========================
+# ==============================================================================
+# TEST NO .  1
+# 
+# at 190 start write data = 'h24 to address = 'h4
+# at 200 acces phase of writing data
+# write random value to register at 215
+# at 230 start to read data at address 'h4
+# at 265 read transfer has a error
+# at 265 wdata=36 rdata=x
+# ====================================PASS=============================
+# TEST NO .  2
+# 
+# at 280 start write data = 'h81 to address = 'h5
+# at 290 acces phase of writing data
+# write random value to register at 305
+# at 320 start to read data at address 'h5
+# at 355 read transfer has a error
+# at 355 wdata=129 rdata=x
+# ====================================PASS=============================
+# TEST NO .  3
+# 
+# at 370 start write data = 'h9 to address = 'h6
+# at 380 acces phase of writing data
+# write random value to register at 395
+# at 410 start to read data at address 'h6
+# at 445 read transfer has a error
+# at 445 wdata=9 rdata=x
+# ====================================PASS=============================
+# TEST NO .  4
+# 
+# at 460 start write data = 'h63 to address = 'h7
+# at 470 acces phase of writing data
+# write random value to register at 485
+# at 500 start to read data at address 'h7
+# at 535 read transfer has a error
+# at 535 wdata=99 rdata=x
+# ====================================PASS=============================
+# TEST NO .  5
+# 
+# at 550 start write data = 'hd to address = 'h8
+# at 560 acces phase of writing data
+# write random value to register at 575
+# at 590 start to read data at address 'h8
+# at 625 read transfer has a error
+# at 625 wdata=13 rdata=x
+# ====================================PASS=============================
+# TEST NO .  6
+# 
+# at 640 start write data = 'h8d to address = 'h9
+# at 650 acces phase of writing data
+# write random value to register at 665
+# at 680 start to read data at address 'h9
+# at 715 read transfer has a error
+# at 715 wdata=141 rdata=x
+# ====================================PASS=============================
+# TEST NO .  7
+# 
+# at 730 start write data = 'h65 to address = 'ha
+# at 740 acces phase of writing data
+# write random value to register at 755
+# at 770 start to read data at address 'ha
+# at 805 read transfer has a error
+# at 805 wdata=101 rdata=x
+# ====================================PASS=============================
+# TEST NO .  8
+# 
+# at 820 start write data = 'h12 to address = 'hb
+# at 830 acces phase of writing data
+# write random value to register at 845
+# at 860 start to read data at address 'hb
+# at 895 read transfer has a error
+# at 895 wdata=18 rdata=x
+# ====================================PASS=============================
+# ===================================
+# ================PASS===============
+# ===================================

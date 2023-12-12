@@ -1,0 +1,496 @@
+# vsim -do {read_write_TCR.ucdb; log -r /*;run -all; exit} -l read_write_TCR.log -voptargs=+acc work.read_write_TCR 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.read_write_TCR(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# read_write_TCR.ucdb 
+# invalid command name "read_write_TCR.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlft7f9fd8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7f9fd8
+# 
+# run -all 
+# ==============================================================================
+# ============================TCR_read_write_test_begin=========================
+# ==============================================================================
+# TEST NO .  0
+# 
+# at 190 start write data = 'h24 to address = 'h1
+# at 200 acces phase of writing data
+# write random value to TCR at 215
+# at 230 start to read data at address 'h1
+# at 265 end of read transfer
+# at 265 wdata=36 rdata=36
+# ====================================PASS=============================
+# TEST NO .  1
+# 
+# at 280 start write data = 'h81 to address = 'h1
+# at 290 acces phase of writing data
+# write random value to TCR at 305
+# at 320 start to read data at address 'h1
+# at 355 end of read transfer
+# at 355 wdata=129 rdata=129
+# ====================================PASS=============================
+# TEST NO .  2
+# 
+# at 370 start write data = 'h9 to address = 'h1
+# at 380 acces phase of writing data
+# write random value to TCR at 395
+# at 410 start to read data at address 'h1
+# at 445 end of read transfer
+# at 445 wdata=9 rdata=9
+# ====================================PASS=============================
+# TEST NO .  3
+# 
+# at 460 start write data = 'h63 to address = 'h1
+# at 470 acces phase of writing data
+# write random value to TCR at 485
+# at 500 start to read data at address 'h1
+# at 535 end of read transfer
+# at 535 wdata=99 rdata=99
+# ====================================PASS=============================
+# TEST NO .  4
+# 
+# at 550 start write data = 'hd to address = 'h1
+# at 560 acces phase of writing data
+# write random value to TCR at 575
+# at 590 start to read data at address 'h1
+# at 625 end of read transfer
+# at 625 wdata=13 rdata=13
+# ====================================PASS=============================
+# TEST NO .  5
+# 
+# at 640 start write data = 'h8d to address = 'h1
+# at 650 acces phase of writing data
+# write random value to TCR at 665
+# at 680 start to read data at address 'h1
+# at 715 end of read transfer
+# at 715 wdata=141 rdata=141
+# ====================================PASS=============================
+# TEST NO .  6
+# 
+# at 730 start write data = 'h65 to address = 'h1
+# at 740 acces phase of writing data
+# write random value to TCR at 755
+# at 770 start to read data at address 'h1
+# at 805 end of read transfer
+# at 805 wdata=101 rdata=101
+# ====================================PASS=============================
+# TEST NO .  7
+# 
+# at 820 start write data = 'h12 to address = 'h1
+# at 830 acces phase of writing data
+# write random value to TCR at 845
+# at 860 start to read data at address 'h1
+# at 895 end of read transfer
+# at 895 wdata=18 rdata=18
+# ====================================PASS=============================
+# TEST NO .  8
+# 
+# at 910 start write data = 'h1 to address = 'h1
+# at 920 acces phase of writing data
+# write random value to TCR at 935
+# at 950 start to read data at address 'h1
+# at 985 end of read transfer
+# at 985 wdata=1 rdata=1
+# ====================================PASS=============================
+# TEST NO .  9
+# 
+# at 1000 start write data = 'hd to address = 'h1
+# at 1010 acces phase of writing data
+# write random value to TCR at 1025
+# at 1040 start to read data at address 'h1
+# at 1075 end of read transfer
+# at 1075 wdata=13 rdata=13
+# ====================================PASS=============================
+# TEST NO . 10
+# 
+# at 1090 start write data = 'h76 to address = 'h1
+# at 1100 acces phase of writing data
+# write random value to TCR at 1115
+# at 1130 start to read data at address 'h1
+# at 1165 end of read transfer
+# at 1165 wdata=118 rdata=118
+# ====================================PASS=============================
+# TEST NO . 11
+# 
+# at 1180 start write data = 'h3d to address = 'h1
+# at 1190 acces phase of writing data
+# write random value to TCR at 1205
+# at 1220 start to read data at address 'h1
+# at 1255 end of read transfer
+# at 1255 wdata=61 rdata=61
+# ====================================PASS=============================
+# TEST NO . 12
+# 
+# at 1270 start write data = 'hed to address = 'h1
+# at 1280 acces phase of writing data
+# write random value to TCR at 1295
+# at 1310 start to read data at address 'h1
+# at 1345 end of read transfer
+# at 1345 wdata=237 rdata=237
+# ====================================PASS=============================
+# TEST NO . 13
+# 
+# at 1360 start write data = 'h8c to address = 'h1
+# at 1370 acces phase of writing data
+# write random value to TCR at 1385
+# at 1400 start to read data at address 'h1
+# at 1435 end of read transfer
+# at 1435 wdata=140 rdata=140
+# ====================================PASS=============================
+# TEST NO . 14
+# 
+# at 1450 start write data = 'hf9 to address = 'h1
+# at 1460 acces phase of writing data
+# write random value to TCR at 1475
+# at 1490 start to read data at address 'h1
+# at 1525 end of read transfer
+# at 1525 wdata=249 rdata=249
+# ====================================PASS=============================
+# TEST NO . 15
+# 
+# at 1540 start write data = 'hc6 to address = 'h1
+# at 1550 acces phase of writing data
+# write random value to TCR at 1565
+# at 1580 start to read data at address 'h1
+# at 1615 end of read transfer
+# at 1615 wdata=198 rdata=198
+# ====================================PASS=============================
+# TEST NO . 16
+# 
+# at 1630 start write data = 'hc5 to address = 'h1
+# at 1640 acces phase of writing data
+# write random value to TCR at 1655
+# at 1670 start to read data at address 'h1
+# at 1705 end of read transfer
+# at 1705 wdata=197 rdata=197
+# ====================================PASS=============================
+# TEST NO . 17
+# 
+# at 1720 start write data = 'haa to address = 'h1
+# at 1730 acces phase of writing data
+# write random value to TCR at 1745
+# at 1760 start to read data at address 'h1
+# at 1795 end of read transfer
+# at 1795 wdata=170 rdata=170
+# ====================================PASS=============================
+# TEST NO . 18
+# 
+# at 1810 start write data = 'he5 to address = 'h1
+# at 1820 acces phase of writing data
+# write random value to TCR at 1835
+# at 1850 start to read data at address 'h1
+# at 1885 end of read transfer
+# at 1885 wdata=229 rdata=229
+# ====================================PASS=============================
+# TEST NO . 19
+# 
+# at 1900 start write data = 'h77 to address = 'h1
+# at 1910 acces phase of writing data
+# write random value to TCR at 1925
+# at 1940 start to read data at address 'h1
+# at 1975 end of read transfer
+# at 1975 wdata=119 rdata=119
+# ====================================PASS=============================
+# TEST NO . 20
+# 
+# at 1990 start write data = 'h12 to address = 'h1
+# at 2000 acces phase of writing data
+# write random value to TCR at 2015
+# at 2030 start to read data at address 'h1
+# at 2065 end of read transfer
+# at 2065 wdata=18 rdata=18
+# ====================================PASS=============================
+# TEST NO . 21
+# 
+# at 2080 start write data = 'h8f to address = 'h1
+# at 2090 acces phase of writing data
+# write random value to TCR at 2105
+# at 2120 start to read data at address 'h1
+# at 2155 end of read transfer
+# at 2155 wdata=143 rdata=143
+# ====================================PASS=============================
+# TEST NO . 22
+# 
+# at 2170 start write data = 'hf2 to address = 'h1
+# at 2180 acces phase of writing data
+# write random value to TCR at 2195
+# at 2210 start to read data at address 'h1
+# at 2245 end of read transfer
+# at 2245 wdata=242 rdata=242
+# ====================================PASS=============================
+# TEST NO . 23
+# 
+# at 2260 start write data = 'hce to address = 'h1
+# at 2270 acces phase of writing data
+# write random value to TCR at 2285
+# at 2300 start to read data at address 'h1
+# at 2335 end of read transfer
+# at 2335 wdata=206 rdata=206
+# ====================================PASS=============================
+# TEST NO . 24
+# 
+# at 2350 start write data = 'he8 to address = 'h1
+# at 2360 acces phase of writing data
+# write random value to TCR at 2375
+# at 2390 start to read data at address 'h1
+# at 2425 end of read transfer
+# at 2425 wdata=232 rdata=232
+# ====================================PASS=============================
+# TEST NO . 25
+# 
+# at 2440 start write data = 'hc5 to address = 'h1
+# at 2450 acces phase of writing data
+# write random value to TCR at 2465
+# at 2480 start to read data at address 'h1
+# at 2515 end of read transfer
+# at 2515 wdata=197 rdata=197
+# ====================================PASS=============================
+# TEST NO . 26
+# 
+# at 2530 start write data = 'h5c to address = 'h1
+# at 2540 acces phase of writing data
+# write random value to TCR at 2555
+# at 2570 start to read data at address 'h1
+# at 2605 end of read transfer
+# at 2605 wdata=92 rdata=92
+# ====================================PASS=============================
+# TEST NO . 27
+# 
+# at 2620 start write data = 'hbd to address = 'h1
+# at 2630 acces phase of writing data
+# write random value to TCR at 2645
+# at 2660 start to read data at address 'h1
+# at 2695 end of read transfer
+# at 2695 wdata=189 rdata=189
+# ====================================PASS=============================
+# TEST NO . 28
+# 
+# at 2710 start write data = 'h2d to address = 'h1
+# at 2720 acces phase of writing data
+# write random value to TCR at 2735
+# at 2750 start to read data at address 'h1
+# at 2785 end of read transfer
+# at 2785 wdata=45 rdata=45
+# ====================================PASS=============================
+# TEST NO . 29
+# 
+# at 2800 start write data = 'h65 to address = 'h1
+# at 2810 acces phase of writing data
+# write random value to TCR at 2825
+# at 2840 start to read data at address 'h1
+# at 2875 end of read transfer
+# at 2875 wdata=101 rdata=101
+# ====================================PASS=============================
+# TEST NO . 30
+# 
+# at 2890 start write data = 'h63 to address = 'h1
+# at 2900 acces phase of writing data
+# write random value to TCR at 2915
+# at 2930 start to read data at address 'h1
+# at 2965 end of read transfer
+# at 2965 wdata=99 rdata=99
+# ====================================PASS=============================
+# TEST NO . 31
+# 
+# at 2980 start write data = 'ha to address = 'h1
+# at 2990 acces phase of writing data
+# write random value to TCR at 3005
+# at 3020 start to read data at address 'h1
+# at 3055 end of read transfer
+# at 3055 wdata=10 rdata=10
+# ====================================PASS=============================
+# TEST NO . 32
+# 
+# at 3070 start write data = 'h80 to address = 'h1
+# at 3080 acces phase of writing data
+# write random value to TCR at 3095
+# at 3110 start to read data at address 'h1
+# at 3145 end of read transfer
+# at 3145 wdata=128 rdata=128
+# ====================================PASS=============================
+# TEST NO . 33
+# 
+# at 3160 start write data = 'h20 to address = 'h1
+# at 3170 acces phase of writing data
+# write random value to TCR at 3185
+# at 3200 start to read data at address 'h1
+# at 3235 end of read transfer
+# at 3235 wdata=32 rdata=32
+# ====================================PASS=============================
+# TEST NO . 34
+# 
+# at 3250 start write data = 'haa to address = 'h1
+# at 3260 acces phase of writing data
+# write random value to TCR at 3275
+# at 3290 start to read data at address 'h1
+# at 3325 end of read transfer
+# at 3325 wdata=170 rdata=170
+# ====================================PASS=============================
+# TEST NO . 35
+# 
+# at 3340 start write data = 'h9d to address = 'h1
+# at 3350 acces phase of writing data
+# write random value to TCR at 3365
+# at 3380 start to read data at address 'h1
+# at 3415 end of read transfer
+# at 3415 wdata=157 rdata=157
+# ====================================PASS=============================
+# TEST NO . 36
+# 
+# at 3430 start write data = 'h96 to address = 'h1
+# at 3440 acces phase of writing data
+# write random value to TCR at 3455
+# at 3470 start to read data at address 'h1
+# at 3505 end of read transfer
+# at 3505 wdata=150 rdata=150
+# ====================================PASS=============================
+# TEST NO . 37
+# 
+# at 3520 start write data = 'h13 to address = 'h1
+# at 3530 acces phase of writing data
+# write random value to TCR at 3545
+# at 3560 start to read data at address 'h1
+# at 3595 end of read transfer
+# at 3595 wdata=19 rdata=19
+# ====================================PASS=============================
+# TEST NO . 38
+# 
+# at 3610 start write data = 'hd to address = 'h1
+# at 3620 acces phase of writing data
+# write random value to TCR at 3635
+# at 3650 start to read data at address 'h1
+# at 3685 end of read transfer
+# at 3685 wdata=13 rdata=13
+# ====================================PASS=============================
+# TEST NO . 39
+# 
+# at 3700 start write data = 'h53 to address = 'h1
+# at 3710 acces phase of writing data
+# write random value to TCR at 3725
+# at 3740 start to read data at address 'h1
+# at 3775 end of read transfer
+# at 3775 wdata=83 rdata=83
+# ====================================PASS=============================
+# TEST NO . 40
+# 
+# at 3790 start write data = 'h6b to address = 'h1
+# at 3800 acces phase of writing data
+# write random value to TCR at 3815
+# at 3830 start to read data at address 'h1
+# at 3865 end of read transfer
+# at 3865 wdata=107 rdata=107
+# ====================================PASS=============================
+# TEST NO . 41
+# 
+# at 3880 start write data = 'hd5 to address = 'h1
+# at 3890 acces phase of writing data
+# write random value to TCR at 3905
+# at 3920 start to read data at address 'h1
+# at 3955 end of read transfer
+# at 3955 wdata=213 rdata=213
+# ====================================PASS=============================
+# TEST NO . 42
+# 
+# at 3970 start write data = 'h2 to address = 'h1
+# at 3980 acces phase of writing data
+# write random value to TCR at 3995
+# at 4010 start to read data at address 'h1
+# at 4045 end of read transfer
+# at 4045 wdata=2 rdata=2
+# ====================================PASS=============================
+# TEST NO . 43
+# 
+# at 4060 start write data = 'hae to address = 'h1
+# at 4070 acces phase of writing data
+# write random value to TCR at 4085
+# at 4100 start to read data at address 'h1
+# at 4135 end of read transfer
+# at 4135 wdata=174 rdata=174
+# ====================================PASS=============================
+# TEST NO . 44
+# 
+# at 4150 start write data = 'h1d to address = 'h1
+# at 4160 acces phase of writing data
+# write random value to TCR at 4175
+# at 4190 start to read data at address 'h1
+# at 4225 end of read transfer
+# at 4225 wdata=29 rdata=29
+# ====================================PASS=============================
+# TEST NO . 45
+# 
+# at 4240 start write data = 'hcf to address = 'h1
+# at 4250 acces phase of writing data
+# write random value to TCR at 4265
+# at 4280 start to read data at address 'h1
+# at 4315 end of read transfer
+# at 4315 wdata=207 rdata=207
+# ====================================PASS=============================
+# TEST NO . 46
+# 
+# at 4330 start write data = 'h23 to address = 'h1
+# at 4340 acces phase of writing data
+# write random value to TCR at 4355
+# at 4370 start to read data at address 'h1
+# at 4405 end of read transfer
+# at 4405 wdata=35 rdata=35
+# ====================================PASS=============================
+# TEST NO . 47
+# 
+# at 4420 start write data = 'ha to address = 'h1
+# at 4430 acces phase of writing data
+# write random value to TCR at 4445
+# at 4460 start to read data at address 'h1
+# at 4495 end of read transfer
+# at 4495 wdata=10 rdata=10
+# ====================================PASS=============================
+# TEST NO . 48
+# 
+# at 4510 start write data = 'hca to address = 'h1
+# at 4520 acces phase of writing data
+# write random value to TCR at 4535
+# at 4550 start to read data at address 'h1
+# at 4585 end of read transfer
+# at 4585 wdata=202 rdata=202
+# ====================================PASS=============================
+# TEST NO . 49
+# 
+# at 4600 start write data = 'h3c to address = 'h1
+# at 4610 acces phase of writing data
+# write random value to TCR at 4625
+# at 4640 start to read data at address 'h1
+# at 4675 end of read transfer
+# at 4675 wdata=60 rdata=60
+# ====================================PASS=============================
+# ===================================
+# ================PASS===============
+# ===================================

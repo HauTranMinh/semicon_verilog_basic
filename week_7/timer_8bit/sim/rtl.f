@@ -1,7 +1,10 @@
 ../rtl/decoder.v
 ../rtl/encoder.v
-../rtl/read_write_control.v
+../rtl/register_control.v
 ../rtl/registor.v
 ../rtl/select_clock.v
 ../rtl/timer.v
+../rtl/counter.v
+../rtl/underflow_detect.v
+../rtl/overflow_detect.v
 ../rtl/timer_pready.v
