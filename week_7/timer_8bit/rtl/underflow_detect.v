@@ -1,8 +1,8 @@
 module underflow_detect(
 	input pclk,
 	input preset_n,
-	input last_counter,
-	input counter,
+	input [7:0] last_counter,
+	input [7:0] counter,
 	input up_down,
 	input load,
 	input enable,

@@ -4,7 +4,7 @@ module registor(
 	input psel,
 	input penable,
 	input pwrite,
-	input [2:0] select_reg, // memory reg address
+	input [2:0] select_reg, 	// memory reg address
 	input [7:0] pwdata,		// data for transfer
 	input pready,
 	input overflow_flag,
@@ -59,12 +59,16 @@ module registor(
 	always @(posedge pclk or posedge preset_n) begin
 		// TSR process
 		if (~preset_n) begin
-			TSR_reg[0] <= 1'b0; // set flag == 0;
-			clear_reg[0] <= 1'b0; 
+			TSR_reg [1:0] <= 2'b00; // set flag == 0;
+			clear_reg[1:0] <= 2'b00; 
 		end
 		else if ((psel) && (penable) && (pready) && select_reg[2] && 
-				 (pwdata[1:0] != 2'b11) && (~TSR_reg[1] || TSR_reg[0] && !pwdata[0])) begin
-			TSR_reg[0]<= pwdata[0]; // write 0 by software
+				 (pwdata[1:0] != 2'b11) && (~TSR_reg[1] || TSR_reg[1] && (~pwdata[0]))) begin
+			//TSR_reg[0] 	<= pwdata[0]; // write 0 by software
+			//TSR_reg[1] 	<= TSR_reg[1];
+			TSR_reg[0] <= 1'b0;
+			clear_reg[0] 	<= 1'b0;
+			 		
 		end
 		else if(overflow_flag) begin  // write 1 by hardware
 			TSR_reg[0] <= 1'b1;
@@ -80,12 +84,14 @@ module registor(
 	always @(posedge pclk or posedge preset_n) begin
 		// TSR process
 		if (~preset_n) begin
-			TSR_reg[1] <= 1'b0;
-			clear_reg[1] <= 1'b0;
+			TSR_reg [1:0] <= 2'b00;
+			clear_reg[1:0] <= 2'b00;
 		end
 		else if ((psel) && (penable) && (pready) && select_reg[2] &&
-				 (pwdata[1:0] != 2'b11) && (~TSR_reg[0] || TSR_reg[1] && !pwdata[1])) begin
-			TSR_reg[1] <= pwdata[1];
+				 (pwdata[1:0] != 2'b11) && (~TSR_reg[0] || TSR_reg[0] && (~pwdata[1]))) begin
+			TSR_reg[1] <= 1'b0;
+			//TSR_reg[1] 	<= pwdata[1];
+			clear_reg[1] 	<= 1'b0;
 		end
 		else if(underflow_flag) begin
 			TSR_reg[1] <= 1'b1;

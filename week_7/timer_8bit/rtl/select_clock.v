@@ -1,6 +1,6 @@
 module select_clock(
 	//I/O ports declare here
-	input clk,
+	input pclk,
 	input preset_n,
 	input [1:0] cks,
 	output int_clk);
@@ -20,7 +20,7 @@ always @(cks) begin
 	endcase
 end
 // decisre here
-always @(posedge clk or negedge preset_n) begin
+always @(posedge pclk or negedge preset_n) begin
 	if(~preset_n)begin
 		clk2 <= 1'b0;
 	end

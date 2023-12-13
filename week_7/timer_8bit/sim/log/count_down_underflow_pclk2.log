@@ -1,5 +1,5 @@
 # vsim -do {count_down_underflow_pclk2.ucdb; log -r /*;run -all; exit} -l count_down_underflow_pclk2.log -voptargs=+acc work.count_down_underflow_pclk2 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -25,6 +25,12 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
+# 
+#         Region: /count_down_underflow_pclk2/top/dut/ovf_detect
+# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
+# 
+#         Region: /count_down_underflow_pclk2/top/dut/ovf_detect
 # count_down_underflow_pclk2.ucdb 
 # invalid command name "count_down_underflow_pclk2.ucdb"
 #  log -r /* 
@@ -32,10 +38,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft98rtgw".
+#           Attempting to use alternate WLF file "./wlftkezv4b".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft98rtgw
+#           Using alternate file: ./wlftkezv4b
 # 
 # run -all 
 # ==============================================================================

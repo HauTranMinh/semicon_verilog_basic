@@ -5,14 +5,15 @@ module counter(
 	input [7:0] TCR,
 	input clk_in,
 
-	output counter,
-	output last_counter);
+	output [7:0] counter_signal,
+	output [7:0] last_counter);
 //===========================internal register==============================//
 	reg [7:0] counter_reg;
-	reg last_counter_reg;
+	reg [7:0] last_counter_reg;
 	reg last_clk_internal;
 	wire count_enable; // for edge detector
 
+	assign counter_signal = counter_reg;
 	assign last_counter = last_counter_reg;
 //================================Control Logic=============================//	
 	assign count_enable = (~last_clk_internal) & clk_in; 

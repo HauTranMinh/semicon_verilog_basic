@@ -7,7 +7,7 @@ module timer(
 	input penable,
 	input [7:0] pwdata,
 	input [7:0] paddr,
-	input [1:0] cks,
+	// input [1:0] cks,
 	
 	output pready,
 	output pslverr,
@@ -20,30 +20,12 @@ module timer(
 	wire [7:0] TDR;
 	wire [7:0] TCR;
 	wire [7:0] TSR;
-	wire counter_wire;
-	wire last_counter_wire;
-	wire overflow_flag_wire;
-	wire underflow_flag_wire;
+	wire [7:0] counter_wire;
+	wire [7:0] last_counter_wire;
 	wire [1:0] clear_flag;
 //=============================SUB module===================================//
 
-	select_clock select_clock(
-		.clk(pclk),
-		.preset_n(preset_n),
-		.cks(cks),
-		.int_clk(internal_clock));
-
-	counter counter(
-		.clk(pclk),
-		.preset_n(preset_n),
-		.clk_in(internal_clock),
-		.TDR(TDR),
-		.TCR(TCR),
-
-		.counter(counter_wire),
-		.last_counter(last_counter_wire));
-
-	register_control reg_control(
+	registor_control reg_control(
 		.pclk(pclk),
 		.preset_n(preset_n),
 		.psel(psel),
@@ -51,8 +33,8 @@ module timer(
 		.pwrite(pwrite),
 		.paddr(paddr),
 		.pwdata(pwdata),
-		.overflow_flag(overflow_flag_wire),
-		.underflow_flag(underflow_flag_wire),
+		.overflow_flag(overflow_flag),
+		.underflow_flag(underflow_flag),
 
 		.TDR(TDR),
 		.TCR(TCR),
@@ -62,8 +44,24 @@ module timer(
 		.pready(pready),
 		.pslverr(pslverr));
 
+	select_clock select_clock(
+		.pclk(pclk),
+		.preset_n(preset_n),
+		.cks(TCR[1:0]),
+		.int_clk(internal_clock));
+
+	counter counter_module(
+		.pclk(pclk),
+		.preset_n(preset_n),
+		.clk_in(internal_clock),
+		.TDR(TDR),
+		.TCR(TCR),
+
+		.counter_signal(counter_wire),
+		.last_counter(last_counter_wire));
+
 	overflow_detect ovf_detect(
-		.clk(pclk),
+		.pclk(pclk),
 		.preset_n(preset_n),
 		.counter(counter_wire),
 		.last_counter(last_counter_wire),
