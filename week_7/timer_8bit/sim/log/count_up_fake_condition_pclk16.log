@@ -1,0 +1,82 @@
+# vsim -do {count_up_fake_condition_pclk16.ucdb; log -r /*;run -all; exit} -l count_up_fake_condition_pclk16.log -voptargs=+acc work.count_up_fake_condition_pclk16 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.count_up_fake_condition_pclk16(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# count_up_fake_condition_pclk16.ucdb 
+# invalid command name "count_up_fake_condition_pclk16.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlft3j0swe".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft3j0swe
+# 
+# run -all 
+# ==============================================================================
+# ===================COUNT UP AND RESET PCLK 16_test_begin=======================
+# ==============================================================================
+# 
+# 
+# =============================LOAD 8'H00 AND TO TDR============================
+# 
+# 
+# random is 0
+# at 190 start write data = 'h0 to address = 'h0
+# at 200 acces phase of writing data
+# at 225 transfer done
+# load value TDR at 225 to counter_reg
+# at 240 start write data = 'h80 to address = 'h1
+# at 250 acces phase of writing data
+# at 275 transfer done
+# =============================LOAD 8'HFF AND TO TDR============================
+# 
+# 
+# random is 255
+# at 290 start write data = 'hff to address = 'h0
+# at 300 acces phase of writing data
+# at 325 transfer done
+# load value TDR at 325 to counter_reg
+# at 340 start write data = 'h80 to address = 'h1
+# at 350 acces phase of writing data
+# at 375 transfer done
+# load value TDR at 375 to counter_reg
+# at 390 start write data = 'h33 to address = 'h1
+# at 400 acces phase of writing data
+# at 425 transfer done
+# =============================check TSR============================
+# 
+# 
+# at 440 start to read data at address 'h2
+# at 475 end of read transfer
+# PASS
+# 
+# 
+# ===================================
+# ================PASS===============
+# ===================================

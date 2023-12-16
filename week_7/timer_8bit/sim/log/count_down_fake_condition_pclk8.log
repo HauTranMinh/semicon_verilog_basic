@@ -1,4 +1,6 @@
 # vsim -do {count_down_fake_condition_pclk8.ucdb; log -r /*;run -all; exit} -l count_down_fake_condition_pclk8.log -voptargs=+acc work.count_down_fake_condition_pclk8 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
 # //
@@ -30,10 +32,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlfta04ev0".
+#           Attempting to use alternate WLF file "./wlftwiz1fv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlfta04ev0
+#           Using alternate file: ./wlftwiz1fv
 # 
 # run -all 
 # ==============================================================================

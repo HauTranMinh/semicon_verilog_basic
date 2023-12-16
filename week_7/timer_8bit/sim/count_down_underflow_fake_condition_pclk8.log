@@ -1,0 +1,6 @@
+# vsim -do {count_down_underflow_fake_condition_pclk8.ucdb; log -r /*;run -all; exit} -l count_down_underflow_fake_condition_pclk8.log -voptargs=+acc work.count_down_underflow_fake_condition_pclk8 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: Failed to find design unit work.count_down_underflow_fake_condition_pclk8.
+# Optimization failed
+# Error loading design

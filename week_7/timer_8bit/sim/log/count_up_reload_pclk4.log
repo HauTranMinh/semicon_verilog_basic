@@ -1,0 +1,133 @@
+# vsim -do {count_up_reload_pclk4.ucdb; log -r /*;run -all; exit} -l count_up_reload_pclk4.log -voptargs=+acc work.count_up_reload_pclk4 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.count_up_reload_pclk4(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# count_up_reload_pclk4.ucdb 
+# invalid command name "count_up_reload_pclk4.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlfthit8n5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfthit8n5
+# 
+# run -all 
+# ==============================================================================
+# =====================COUNT UP AND RELOAD PCLK 4_test_begin====================
+# ==============================================================================
+# 
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# random is 36
+# at 190 start write data = 'h24 to address = 'h0
+# at 200 acces phase of writing data
+# at 225 transfer done
+# load value TDR at 225 to counter_reg
+# at 240 start write data = 'h80 to address = 'h1
+# at 250 acces phase of writing data
+# at 275 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 290 start write data = 'h11 to address = 'h1
+# at 300 acces phase of writing data
+# at 325 transfer done
+# count for 4400
+# 
+# 
+# ==========================DISABLE timer=====================================
+# 
+# 
+# at 4730 start write data = 'h1 to address = 'h1
+# at 4740 acces phase of writing data
+# at 4765 transfer done
+# ad 4765 timer is disable for reload
+# 
+# 
+# ==========================check flag before reload=========================
+# 
+# 
+# at 4780 start to read data at address 'h2
+# at 4815 end of read transfer
+# ad 4815 TSR is 'h=0
+# PASS
+# =====================Reload TDR to timer======================================
+# 
+# 
+# random is 129
+# at 4830 start write data = 'h81 to address = 'h0
+# at 4840 acces phase of writing data
+# at 4865 transfer done
+# load value TDR at 4865 to counter_reg
+# at 4880 start write data = 'h80 to address = 'h1
+# at 4890 acces phase of writing data
+# at 4915 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 4930 start write data = 'h11 to address = 'h1
+# at 4940 acces phase of writing data
+# at 4965 transfer done
+# 
+# 
+# ==========================FINAL CHECK timer====================================
+# 
+# 
+# at 10060 start to read data at address 'h2
+# at 10095 end of read transfer
+# ad 10095 TSR is 'h=1
+# PASS
+# 
+# 
+# ==========================CLEAR FLAG =========================================
+# 
+# 
+# at 10110 start to read data at address 'h2
+# at 10145 end of read transfer
+# ad 10145 TSR is 'h=0
+# PASS
+# ===================================
+# ================PASS===============
+# ===================================

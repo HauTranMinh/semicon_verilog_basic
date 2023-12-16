@@ -1,0 +1,133 @@
+# vsim -do {count_up_reload_pclk8.ucdb; log -r /*;run -all; exit} -l count_up_reload_pclk8.log -voptargs=+acc work.count_up_reload_pclk8 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.count_up_reload_pclk8(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# count_up_reload_pclk8.ucdb 
+# invalid command name "count_up_reload_pclk8.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlftarkkex".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftarkkex
+# 
+# run -all 
+# ==============================================================================
+# =====================COUNT UP AND RELOAD PCLK 8_test_begin====================
+# ==============================================================================
+# 
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# random is 36
+# at 190 start write data = 'h24 to address = 'h0
+# at 200 acces phase of writing data
+# at 225 transfer done
+# load value TDR at 225 to counter_reg
+# at 240 start write data = 'h80 to address = 'h1
+# at 250 acces phase of writing data
+# at 275 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 290 start write data = 'h12 to address = 'h1
+# at 300 acces phase of writing data
+# at 325 transfer done
+# count for 8800
+# 
+# 
+# ==========================DISABLE timer=====================================
+# 
+# 
+# at 9130 start write data = 'h2 to address = 'h1
+# at 9140 acces phase of writing data
+# at 9165 transfer done
+# ad 9165 timer is disable for reload
+# 
+# 
+# ==========================check flag before reload=========================
+# 
+# 
+# at 9180 start to read data at address 'h2
+# at 9215 end of read transfer
+# ad 9215 TSR is 'h=0
+# PASS
+# =====================Reload TDR to timer======================================
+# 
+# 
+# random is 129
+# at 9230 start write data = 'h81 to address = 'h0
+# at 9240 acces phase of writing data
+# at 9265 transfer done
+# load value TDR at 9265 to counter_reg
+# at 9280 start write data = 'h80 to address = 'h1
+# at 9290 acces phase of writing data
+# at 9315 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 9330 start write data = 'h12 to address = 'h1
+# at 9340 acces phase of writing data
+# at 9365 transfer done
+# 
+# 
+# ==========================FINAL CHECK timer====================================
+# 
+# 
+# at 19540 start to read data at address 'h2
+# at 19575 end of read transfer
+# ad 19575 TSR is 'h=1
+# PASS
+# 
+# 
+# ==========================CLEAR FLAG =========================================
+# 
+# 
+# at 19590 start to read data at address 'h2
+# at 19625 end of read transfer
+# ad 19625 TSR is 'h=0
+# PASS
+# ===================================
+# ================PASS===============
+# ===================================

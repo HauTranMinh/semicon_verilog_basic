@@ -9,9 +9,9 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -gui -novopt work.count_down_fake_condition_pclk2 
-# Refreshing D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.count_down_fake_condition_pclk2
-# Loading work.count_down_fake_condition_pclk2
+# vsim -gui -novopt work.count_up_overflow_pclk8_pause 
+# Refreshing D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.count_up_overflow_pclk8_pause
+# Loading work.count_up_overflow_pclk8_pause
 # Refreshing D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.timer_tb
 # Loading work.timer_tb
 # Refreshing D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.timer
@@ -38,109 +38,90 @@
 # Loading work.CPU_model
 # Refreshing D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim/work.system_signal
 # Loading work.system_signal
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/dut/*
+add wave -position insertpoint sim:/count_up_overflow_pclk8_pause/top/dut/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlfthfc94i".
+#           Attempting to use alternate WLF file "./wlftst6iwf".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlfthfc94i
+#           Using alternate file: ./wlftst6iwf
 # 
 run -all
 # ==============================================================================
-# ===================COUNT DOWN AND RESET PCLK 8_test_begin=====================
+# ===================COUNT UP WITH PAUSE PCLK 8_test_begin======================
 # ==============================================================================
 # 
 # 
-# =============================LOAD 8'H00 AND TO TDR============================
+# =====================load TDR to timer========================================
 # 
 # 
-# random is 0
-# at 190 start write data = 'h0 to address = 'h0
+# at 190 start write data = 'h24 to address = 'h0
 # at 200 acces phase of writing data
 # at 225 transfer done
 # load value TDR at 225 to counter_reg
 # at 240 start write data = 'h80 to address = 'h1
 # at 250 acces phase of writing data
 # at 275 transfer done
-# =============================LOAD 8'HFF AND TO TDR============================
 # 
 # 
-# random is 255
-# at 290 start write data = 'hff to address = 'h0
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 290 start write data = 'h12 to address = 'h1
 # at 300 acces phase of writing data
 # at 325 transfer done
-# load value TDR at 325 to counter_reg
-# at 340 start write data = 'h80 to address = 'h1
-# at 350 acces phase of writing data
-# at 375 transfer done
-# load value TDR at 375 to counter_reg
-# at 390 start write data = 'h30 to address = 'h1
-# at 400 acces phase of writing data
-# at 425 transfer done
-# =============================check TSR============================
+# count for 8720
 # 
 # 
-# at 440 start to read data at address 'h2
-# at 475 end of read transfer
+# =============================wait for random time=================================
+# 
+# 
+# at 9050 start write data = 'h2 to address = 'h1
+# at 9060 acces phase of writing data
+# at 9085 transfer done
+# random value for wait time is 8720
+# 
+# 
+# =====================check flag before continue=============================
+# 
+# 
+# at 17810 start to read data at address 'h2
+# at 17845 end of read transfer
+# PASS
+# 
+# 
+# ======================== continue to count=================================
+# 
+# 
+# at 17860 start write data = 'h12 to address = 'h1
+# at 17870 acces phase of writing data
+# at 17895 transfer done
+# 
+# 
+# ===================check flag after pause time=============================
+# 
+# 
+# at 26630 start to read data at address 'h2
+# at 26665 end of read transfer
 # FAIL
+# at 26680 start write data = 'h2 to address = 'h2
+# at 26690 acces phase of writing data
+# at 26715 transfer done
+# =================================CLEAR TSR================================
 # 
+# at 26820 start to read data at address 'h2
+# at 26855 end of read transfer
+# =======================================PASS==================================
 # 
 # ===================================
-# ================FAIL===============
+# ================PASS===============
 # ===================================
 # 1
-# Break in Module count_down_fake_condition_pclk2 at ../testcase/count_down_fake_condition_pclk2.v line 79
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/dut/select_clock/*
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/dut/reg_control/*
-restart -f
-run -all
-# ==============================================================================
-# ===================COUNT DOWN AND RESET PCLK 8_test_begin=====================
-# ==============================================================================
-# 
-# 
-# =============================LOAD 8'H00 AND TO TDR============================
-# 
-# 
-# random is 0
-# at 190 start write data = 'h0 to address = 'h0
-# at 200 acces phase of writing data
-# at 225 transfer done
-# load value TDR at 225 to counter_reg
-# at 240 start write data = 'h80 to address = 'h1
-# at 250 acces phase of writing data
-# at 275 transfer done
-# =============================LOAD 8'HFF AND TO TDR============================
-# 
-# 
-# random is 255
-# at 290 start write data = 'hff to address = 'h0
-# at 300 acces phase of writing data
-# at 325 transfer done
-# load value TDR at 325 to counter_reg
-# at 340 start write data = 'h80 to address = 'h1
-# at 350 acces phase of writing data
-# at 375 transfer done
-# load value TDR at 375 to counter_reg
-# at 390 start write data = 'h30 to address = 'h1
-# at 400 acces phase of writing data
-# at 425 transfer done
-# =============================check TSR============================
-# 
-# 
-# at 440 start to read data at address 'h2
-# at 475 end of read transfer
-# FAIL
-# 
-# 
-# ===================================
-# ================FAIL===============
-# ===================================
-# 1
-# Break in Module count_down_fake_condition_pclk2 at ../testcase/count_down_fake_condition_pclk2.v line 79
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/dut/*
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/*
-add wave -position insertpoint sim:/count_down_fake_condition_pclk2/top/dut/*
+# Break in Module count_up_overflow_pclk8_pause at ../testcase/count_down_fake_condition_pclk8.v line 145
