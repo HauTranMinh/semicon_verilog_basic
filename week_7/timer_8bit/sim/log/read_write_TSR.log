@@ -1,5 +1,5 @@
 # vsim -do {read_write_TSR.ucdb; log -r /*;run -all; exit} -l read_write_TSR.log -voptargs=+acc work.read_write_TSR 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -25,12 +25,6 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
-# 
-#         Region: /read_write_TSR/top/dut/ovf_detect
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
-# 
-#         Region: /read_write_TSR/top/dut/ovf_detect
 # read_write_TSR.ucdb 
 # invalid command name "read_write_TSR.ucdb"
 #  log -r /* 
@@ -38,10 +32,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft01xv7x".
+#           Attempting to use alternate WLF file "./wlftk1yshd".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft01xv7x
+#           Using alternate file: ./wlftk1yshd
 # 
 # run -all 
 # ==============================================================================
@@ -51,109 +45,121 @@
 # 
 # at 190 start write data = 'hfc to address = 'h2
 # at 200 acces phase of writing data
-# write 8'b1111_1100 to TSR at 215
-# at 230 start to read data at address 'h2
-# at 265 end of read transfer
-# at 265 wdata=252 rdata=0
+# at 225 transfer done
+# write 8'b1111_1100 to TSR at 225
+# at 240 start to read data at address 'h2
+# at 275 end of read transfer
+# at 275 wdata=252 rdata=0
 # ====================================PASS=============================
 # TEST NO .02
 # 
-# at 450 start write data = 'hfd to address = 'h2
-# at 460 acces phase of writing data
-# write 8'b1111_1101 to TSR at 475
-# at 490 start to read data at address 'h2
-# at 525 end of read transfer
-# at 525 wdata=253 rdata=0
+# at 460 start write data = 'hfd to address = 'h2
+# at 470 acces phase of writing data
+# at 495 transfer done
+# write 8'b1111_1101 to TSR at 495
+# at 510 start to read data at address 'h2
+# at 545 end of read transfer
+# at 545 wdata=253 rdata=0
 # ====================================PASS=============================
 # TEST NO .03
 # 
-# at 810 start write data = 'hfe to address = 'h2
-# at 820 acces phase of writing data
-# write 8'b1111_1110 to TSR at 835
-# at 850 start to read data at address 'h2
-# at 885 end of read transfer
-# at 885 wdata=254 rdata=0
+# at 830 start write data = 'hfe to address = 'h2
+# at 840 acces phase of writing data
+# at 865 transfer done
+# write 8'b1111_1110 to TSR at 865
+# at 880 start to read data at address 'h2
+# at 915 end of read transfer
+# at 915 wdata=254 rdata=0
 # ====================================PASS=============================
 # TEST NO .04
 # 
-# at 1070 start write data = 'hff to address = 'h2
-# at 1080 acces phase of writing data
-# write 8'b1111_1111 to TSR at 1095
-# at 1110 start to read data at address 'h2
-# at 1145 end of read transfer
-# at 1145 wdata=255 rdata=0
+# at 1100 start write data = 'hff to address = 'h2
+# at 1110 acces phase of writing data
+# at 1135 transfer done
+# write 8'b1111_1111 to TSR at 1135
+# at 1150 start to read data at address 'h2
+# at 1185 end of read transfer
+# at 1185 wdata=255 rdata=0
 # ====================================PASS=============================
 # TEST No 5
 # 
-# at 1330 start write data = 'h24 to address = 'h2
-# at 1340 acces phase of writing data
-# write wdata='h36 to TSR at 1355
-# at 1370 start to read data at address 'h2
-# at 1405 end of read transfer
-# at 1405 wdata=36 rdata=0
+# at 1370 start write data = 'h24 to address = 'h2
+# at 1380 acces phase of writing data
+# at 1405 transfer done
+# write wdata='h36 to TSR at 1405
+# at 1420 start to read data at address 'h2
+# at 1455 end of read transfer
+# at 1455 wdata=36 rdata=0
 # ====================================PASS=============================
 # TEST No 6
 # 
-# at 1590 start write data = 'h81 to address = 'h2
-# at 1600 acces phase of writing data
-# write wdata='h129 to TSR at 1615
-# at 1630 start to read data at address 'h2
-# at 1665 end of read transfer
-# at 1665 wdata=129 rdata=0
+# at 1640 start write data = 'h81 to address = 'h2
+# at 1650 acces phase of writing data
+# at 1675 transfer done
+# write wdata='h129 to TSR at 1675
+# at 1690 start to read data at address 'h2
+# at 1725 end of read transfer
+# at 1725 wdata=129 rdata=0
 # ====================================PASS=============================
 # TEST No 7
 # 
-# at 1850 start write data = 'h9 to address = 'h2
-# at 1860 acces phase of writing data
-# write wdata='h9 to TSR at 1875
-# at 1890 start to read data at address 'h2
-# at 1925 end of read transfer
-# at 1925 wdata=9 rdata=0
+# at 1910 start write data = 'h9 to address = 'h2
+# at 1920 acces phase of writing data
+# at 1945 transfer done
+# write wdata='h9 to TSR at 1945
+# at 1960 start to read data at address 'h2
+# at 1995 end of read transfer
+# at 1995 wdata=9 rdata=0
 # ====================================PASS=============================
 # TEST No 8
 # 
-# at 2110 start write data = 'h63 to address = 'h2
-# at 2120 acces phase of writing data
-# write wdata='h99 to TSR at 2135
-# at 2150 start to read data at address 'h2
-# at 2185 end of read transfer
-# at 2185 wdata=99 rdata=0
+# at 2180 start write data = 'h63 to address = 'h2
+# at 2190 acces phase of writing data
+# at 2215 transfer done
+# write wdata='h99 to TSR at 2215
+# at 2230 start to read data at address 'h2
+# at 2265 end of read transfer
+# at 2265 wdata=99 rdata=0
 # ====================================PASS=============================
 # TEST No 9
 # 
-# at 2370 start write data = 'hd to address = 'h2
-# at 2380 acces phase of writing data
-# write wdata='h13 to TSR at 2395
-# at 2410 start to read data at address 'h2
-# at 2445 end of read transfer
-# at 2445 wdata=13 rdata=0
+# at 2450 start write data = 'hd to address = 'h2
+# at 2460 acces phase of writing data
+# at 2485 transfer done
+# write wdata='h13 to TSR at 2485
+# at 2500 start to read data at address 'h2
+# at 2535 end of read transfer
+# at 2535 wdata=13 rdata=0
 # ====================================PASS=============================
 # TEST No 10
 # 
-# at 2630 start write data = 'h8d to address = 'h2
-# at 2640 acces phase of writing data
-# write wdata='h141 to TSR at 2655
-# at 2670 start to read data at address 'h2
-# at 2705 end of read transfer
-# at 2705 wdata=141 rdata=0
+# at 2720 start write data = 'h8d to address = 'h2
+# at 2730 acces phase of writing data
+# at 2755 transfer done
+# write wdata='h141 to TSR at 2755
+# at 2770 start to read data at address 'h2
+# at 2805 end of read transfer
+# at 2805 wdata=141 rdata=0
 # ====================================PASS=============================
 # TEST No 11
 # 
-# at 2890 start write data = 'h65 to address = 'h2
-# at 2900 acces phase of writing data
-# write wdata='h101 to TSR at 2915
-# at 2930 start to read data at address 'h2
-# at 2965 end of read transfer
-# at 2965 wdata=101 rdata=0
+# at 2990 start write data = 'h65 to address = 'h2
+# at 3000 acces phase of writing data
+# at 3025 transfer done
+# write wdata='h101 to TSR at 3025
+# at 3040 start to read data at address 'h2
+# at 3075 end of read transfer
+# at 3075 wdata=101 rdata=0
 # ====================================PASS=============================
 # TEST No 12
 # 
-# at 3150 start write data = 'h12 to address = 'h2
-# at 3160 acces phase of writing data
-# write wdata='h18 to TSR at 3175
-# at 3190 start to read data at address 'h2
-# at 3225 end of read transfer
-# at 3225 wdata=18 rdata=0
+# at 3260 start write data = 'h12 to address = 'h2
+# at 3270 acces phase of writing data
+# at 3295 transfer done
+# write wdata='h18 to TSR at 3295
+# at 3310 start to read data at address 'h2
+# at 3345 end of read transfer
+# at 3345 wdata=18 rdata=0
 # ====================================PASS=============================
 # ===================================
 # ================PASS===============

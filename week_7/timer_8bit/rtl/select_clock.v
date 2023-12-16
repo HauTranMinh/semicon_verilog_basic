@@ -11,7 +11,7 @@ reg clk2, clk4, clk8, clk16;
 assign int_clk = select_clock;
 
 
-always @(cks) begin
+always @(cks or posedge pclk) begin
 	case(cks)
 		2'b00: select_clock = clk2;
 		2'b01: select_clock = clk4;

@@ -38,10 +38,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlft88yw5t".
+#           Attempting to use alternate WLF file "./wlft32g6d6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft88yw5t
+#           Using alternate file: ./wlft32g6d6
 # 
 # run -all 
 # ==============================================================================

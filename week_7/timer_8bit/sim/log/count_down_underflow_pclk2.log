@@ -1,5 +1,5 @@
 # vsim -do {count_down_underflow_pclk2.ucdb; log -r /*;run -all; exit} -l count_down_underflow_pclk2.log -voptargs=+acc work.count_down_underflow_pclk2 
-# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -25,12 +25,6 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
-# 
-#         Region: /count_down_underflow_pclk2/top/dut/ovf_detect
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
-# 
-#         Region: /count_down_underflow_pclk2/top/dut/ovf_detect
 # count_down_underflow_pclk2.ucdb 
 # invalid command name "count_down_underflow_pclk2.ucdb"
 #  log -r /* 
@@ -38,10 +32,10 @@
 # 
 #           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
 # 
-#           Attempting to use alternate WLF file "./wlftkezv4b".
+#           Attempting to use alternate WLF file "./wlfte70n9v".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftkezv4b
+#           Using alternate file: ./wlfte70n9v
 # 
 # run -all 
 # ==============================================================================
@@ -52,21 +46,293 @@
 # =====================load TDR to timer========================================
 # 
 # 
-# at 190 start write data = 'h64 to address = 'h0
-# at 200 acces phase of writing data
-# write value to TDR at 215
+# at 370 start write data = 'hff to address = 'h0
+# at 380 acces phase of writing data
+# load value TDR at 395 to counter_reg
+# at 410 start write data = 'h80 to address = 'h1
+# at 420 acces phase of writing data
 # 
 # 
-# =====================load TCR to timer========================================
+# =====================configurate TCR to timer=================================
 # 
 # 
-# at 230 start write data = 'hb0 to address = 'h1
-# at 240 acces phase of writing data
-# write configuration 176 to TCR at 255
-# read TSR=x register at 2305
-# at 2310 start to read data at address 'h2
-# at 2345 end of read transfer
-# ======================================FAIL===================================
+# at 450 start write data = 'h30 to address = 'h1
+# at 460 acces phase of writing data
+# write configuration 48 to TCR at 475
+# at 5980 start to read data at address 'h2
+# at 6015 end of read transfer
+# read TSR=2 register at 6015
+# =======================================PASS==================================
+# 
+# at 6030 start write data = 'h1 to address = 'h2
+# at 6040 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 6160 start to read data at address 'h2
+# at 6195 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 6380 start write data = 'hff to address = 'h0
+# at 6390 acces phase of writing data
+# load value TDR at 6405 to counter_reg
+# at 6420 start write data = 'h80 to address = 'h1
+# at 6430 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 6460 start write data = 'h30 to address = 'h1
+# at 6470 acces phase of writing data
+# write configuration 48 to TCR at 6485
+# at 11990 start to read data at address 'h2
+# at 12025 end of read transfer
+# read TSR=2 register at 12025
+# =======================================PASS==================================
+# 
+# at 12040 start write data = 'h1 to address = 'h2
+# at 12050 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 12170 start to read data at address 'h2
+# at 12205 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 12390 start write data = 'hff to address = 'h0
+# at 12400 acces phase of writing data
+# load value TDR at 12415 to counter_reg
+# at 12430 start write data = 'h80 to address = 'h1
+# at 12440 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 12470 start write data = 'h30 to address = 'h1
+# at 12480 acces phase of writing data
+# write configuration 48 to TCR at 12495
+# at 18000 start to read data at address 'h2
+# at 18035 end of read transfer
+# read TSR=2 register at 18035
+# =======================================PASS==================================
+# 
+# at 18050 start write data = 'h1 to address = 'h2
+# at 18060 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 18180 start to read data at address 'h2
+# at 18215 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 18400 start write data = 'hff to address = 'h0
+# at 18410 acces phase of writing data
+# load value TDR at 18425 to counter_reg
+# at 18440 start write data = 'h80 to address = 'h1
+# at 18450 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 18480 start write data = 'h30 to address = 'h1
+# at 18490 acces phase of writing data
+# write configuration 48 to TCR at 18505
+# at 24010 start to read data at address 'h2
+# at 24045 end of read transfer
+# read TSR=2 register at 24045
+# =======================================PASS==================================
+# 
+# at 24060 start write data = 'h1 to address = 'h2
+# at 24070 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 24190 start to read data at address 'h2
+# at 24225 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 24410 start write data = 'hff to address = 'h0
+# at 24420 acces phase of writing data
+# load value TDR at 24435 to counter_reg
+# at 24450 start write data = 'h80 to address = 'h1
+# at 24460 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 24490 start write data = 'h30 to address = 'h1
+# at 24500 acces phase of writing data
+# write configuration 48 to TCR at 24515
+# at 30020 start to read data at address 'h2
+# at 30055 end of read transfer
+# read TSR=2 register at 30055
+# =======================================PASS==================================
+# 
+# at 30070 start write data = 'h1 to address = 'h2
+# at 30080 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 30200 start to read data at address 'h2
+# at 30235 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 30420 start write data = 'hff to address = 'h0
+# at 30430 acces phase of writing data
+# load value TDR at 30445 to counter_reg
+# at 30460 start write data = 'h80 to address = 'h1
+# at 30470 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 30500 start write data = 'h30 to address = 'h1
+# at 30510 acces phase of writing data
+# write configuration 48 to TCR at 30525
+# at 36030 start to read data at address 'h2
+# at 36065 end of read transfer
+# read TSR=2 register at 36065
+# =======================================PASS==================================
+# 
+# at 36080 start write data = 'h1 to address = 'h2
+# at 36090 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 36210 start to read data at address 'h2
+# at 36245 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 36430 start write data = 'hff to address = 'h0
+# at 36440 acces phase of writing data
+# load value TDR at 36455 to counter_reg
+# at 36470 start write data = 'h80 to address = 'h1
+# at 36480 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 36510 start write data = 'h30 to address = 'h1
+# at 36520 acces phase of writing data
+# write configuration 48 to TCR at 36535
+# at 42040 start to read data at address 'h2
+# at 42075 end of read transfer
+# read TSR=2 register at 42075
+# =======================================PASS==================================
+# 
+# at 42090 start write data = 'h1 to address = 'h2
+# at 42100 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 42220 start to read data at address 'h2
+# at 42255 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 42440 start write data = 'hff to address = 'h0
+# at 42450 acces phase of writing data
+# load value TDR at 42465 to counter_reg
+# at 42480 start write data = 'h80 to address = 'h1
+# at 42490 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 42520 start write data = 'h30 to address = 'h1
+# at 42530 acces phase of writing data
+# write configuration 48 to TCR at 42545
+# at 48050 start to read data at address 'h2
+# at 48085 end of read transfer
+# read TSR=2 register at 48085
+# =======================================PASS==================================
+# 
+# at 48100 start write data = 'h1 to address = 'h2
+# at 48110 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 48230 start to read data at address 'h2
+# at 48265 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 48450 start write data = 'hff to address = 'h0
+# at 48460 acces phase of writing data
+# load value TDR at 48475 to counter_reg
+# at 48490 start write data = 'h80 to address = 'h1
+# at 48500 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 48530 start write data = 'h30 to address = 'h1
+# at 48540 acces phase of writing data
+# write configuration 48 to TCR at 48555
+# at 54060 start to read data at address 'h2
+# at 54095 end of read transfer
+# read TSR=2 register at 54095
+# =======================================PASS==================================
+# 
+# at 54110 start write data = 'h1 to address = 'h2
+# at 54120 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 54240 start to read data at address 'h2
+# at 54275 end of read transfer
+# =======================================PASS==================================
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 54460 start write data = 'hff to address = 'h0
+# at 54470 acces phase of writing data
+# load value TDR at 54485 to counter_reg
+# at 54500 start write data = 'h80 to address = 'h1
+# at 54510 acces phase of writing data
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# at 54540 start write data = 'h30 to address = 'h1
+# at 54550 acces phase of writing data
+# write configuration 48 to TCR at 54565
+# at 60070 start to read data at address 'h2
+# at 60105 end of read transfer
+# read TSR=2 register at 60105
+# =======================================PASS==================================
+# 
+# at 60120 start write data = 'h1 to address = 'h2
+# at 60130 acces phase of writing data
+# ===========================CLEAR TSR================================
+# 
+# at 60250 start to read data at address 'h2
+# at 60285 end of read transfer
+# =======================================PASS==================================
+# 
 # ===================================
-# ================FAIL===============
+# ================PASS===============
 # ===================================

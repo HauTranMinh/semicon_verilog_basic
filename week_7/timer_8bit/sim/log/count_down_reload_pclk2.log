@@ -1,0 +1,133 @@
+# vsim -do {count_down_reload_pclk2.ucdb; log -r /*;run -all; exit} -l count_down_reload_pclk2.log -voptargs=+acc work.count_down_reload_pclk2 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.count_down_reload_pclk2(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# count_down_reload_pclk2.ucdb 
+# invalid command name "count_down_reload_pclk2.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlftsy50c5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftsy50c5
+# 
+# run -all 
+# ==============================================================================
+# ===================COUNT DOWN AND RELOAD PCLK 2_test_begin====================
+# ==============================================================================
+# 
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# random is 36
+# at 190 start write data = 'h24 to address = 'h0
+# at 200 acces phase of writing data
+# at 225 transfer done
+# load value TDR at 225 to counter_reg
+# at 240 start write data = 'h80 to address = 'h1
+# at 250 acces phase of writing data
+# at 275 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 290 start write data = 'h30 to address = 'h1
+# at 300 acces phase of writing data
+# at 325 transfer done
+# count for 370
+# 
+# 
+# ==========================DISABLE timer=====================================
+# 
+# 
+# at 700 start write data = 'h20 to address = 'h1
+# at 710 acces phase of writing data
+# at 735 transfer done
+# ad 735 timer is disable for reload
+# 
+# 
+# ==========================check flag before reload=========================
+# 
+# 
+# at 750 start to read data at address 'h2
+# at 785 end of read transfer
+# ad 785 TSR is 'h=0
+# PASS
+# =====================Reload TDR to timer======================================
+# 
+# 
+# random is 129
+# at 800 start write data = 'h81 to address = 'h0
+# at 810 acces phase of writing data
+# at 835 transfer done
+# load value TDR at 835 to counter_reg
+# at 850 start write data = 'h80 to address = 'h1
+# at 860 acces phase of writing data
+# at 885 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 900 start write data = 'h30 to address = 'h1
+# at 910 acces phase of writing data
+# at 935 transfer done
+# 
+# 
+# ==========================FINAL CHECK timer====================================
+# 
+# 
+# at 3550 start to read data at address 'h2
+# at 3585 end of read transfer
+# ad 3585 TSR is 'h=2
+# PASS
+# 
+# 
+# ==========================CLEAR FLAG =========================================
+# 
+# 
+# at 3600 start to read data at address 'h2
+# at 3635 end of read transfer
+# ad 3635 TSR is 'h=0
+# PASS
+# ===================================
+# ================PASS===============
+# ===================================

@@ -38,8 +38,8 @@ module counter(
 				counter_reg <= TDR;
 			end
 			else begin // load bit == 0 => normal operation
-				if (TCR[4]) begin
-					if (TCR[3]) begin // up_down bit == 1 => countdown
+				if (TCR[4]) begin // enable bit == HIGH => enable to count
+					if (TCR[5]) begin // up_down bit == 1 => countdown
 						if (count_enable) begin // count_enable == 1 => are able to count 
 							counter_reg <= counter_reg - 1'b1;
 						end

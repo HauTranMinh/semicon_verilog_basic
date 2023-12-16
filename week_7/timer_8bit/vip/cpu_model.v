@@ -35,7 +35,7 @@ module CPU_model(
 		begin
 			// setup phase
 			@(posedge cpu_pclk); // T1 <=> setup phase
-				#5; // depend on user
+			#5; // depend on user
 				address_reg = address;
 				pwrite_reg = 1'b1;
 				psel_reg = 1'b1;
@@ -50,22 +50,21 @@ module CPU_model(
 
 			@(posedge cpu_pclk); //T3 <=> end of access phase
 				#2;
-					while(cpu_pready) begin
-							if (cpu_pslverr) begin
-								$display("at %0t write transfer has a error", $time);
-								end
-							else begin
-								address_reg = 8'h00;
-								pwrite_reg = 1'b0;
-								psel_reg = 1'b0;
-								data_reg = 8'h00;
-								penable_reg = 1'b0;
-								$display("at %0t transfer done", $time);
-								end
-							end		
-				@(posedge cpu_pclk);
-		end
-				
+				while(!cpu_pready) begin
+					@(posedge cpu_pclk);
+				end
+				if (cpu_pslverr) begin
+					$display("at %0t write transfer has a error", $time);
+					end
+				else begin
+					address_reg = 8'h00;
+					pwrite_reg = 1'b0;
+					psel_reg = 1'b0;
+					data_reg = 8'h00;
+					penable_reg = 1'b0;
+					$display("at %0t transfer done", $time);
+				end		
+		end		
 	endtask
 //==================================================================//
 // Task read CPU model //

@@ -13,60 +13,81 @@ module count_down_underflow_pclk2();
 		top.system.reset();
 		#100;
 		$display("==============================================================================");
-		$display("============Read_write_3Read_write_3_register_register_test_begin=============");
+		$display("============COUNT DOWN PCLK 2__test_begin=============");
 		$display("==============================================================================");
 		$display("\n");
-
+		
+		for(i = 0; i<10; i = i+1) begin
 		
 		$display("=====================load TDR to timer========================================");
 		$display("\n");
+		
+		top.system.reset();
+		#100;
 
 		address = 8'h00; // TDR addess using APB protocol to write
-		wdata = 8'h64; // Load 'd100 to TDR => Timer need to count down 100 internal clock to send out underflag
-		
-		// write to Timer 
+		wdata = 8'hff; // Load 'd255 to TDR => Timer need to count down 255 internal clock to send out underflag
+		// write to TDR registor 
 		top.cpu.write_CPU(address, wdata);
-		$display("write value to TDR at %0t", $time);
+
+		address = 8'h01;
+		wdata = 8'b10_00_00_00;
+		$display("load value TDR at %0t to counter_reg", $time);
+		top.cpu.write_CPU(address, wdata);
 
 		#10;
 		
 		$display("\n");
-		$display("=====================load TCR to timer========================================");
+		$display("=====================configurate TCR to timer=================================");
 		$display("\n");
 
 		
 		address = 8'h01; // TCR addess using APB protocol to write
-		wdata = 8'b10_11_00_00; // Load 8'b10_11_00_00 to TCR => set timer to count down with internal clock = 2T pclk 
+		wdata = 8'b00_11_00_00; // Load 8'b00_11_00_00 to TCR => set timer to count down with internal clock = 2T pclk 
 
 		// load = TCR[7] = 1 => load to register
 		// up/dw bit = 1 => count down
 		// en bit => enable timer
 		// cks [1:0] = 00 => internal clock = 2T Pclk external 
-		// ====> timer need more than (100 * 2) + 1 signal clock to send out underflow flag;
+		// ====> timer need more than (255 * 2) + 1 signal clock to send out underflow flag;
 		
 		// write to Timer
-		address = 8'h01;
 		top.cpu.write_CPU(address, wdata);
 		$display("write configuration %0d to TCR at %0t", wdata, $time);
 
-		// T pclk = 10 DVTG => ((100*2) + 1) * 10 = 2010 DVTG 
+		// T pclk = 10 DVTG => ((255*2) * 10) + 1 = 5111 DVTG ==> depend on check flow code  
 		// timer need at least 2010 DVTG to send out underflag
-		#2050 // make sure to capture underflow flag
+		#5500; // make sure to capture underflow flag
 
-		
-		$display("read TSR=%0d register at %0t", rdata, $time);
 		address = 8'h02;
 		top.cpu.read_CPU(address, rdata);
-
+		$display("read TSR=%0d register at %0t", rdata, $time);
 		if (rdata[1] == 1'b1) begin
 			flag = 0;
-			$display("=======================================PASS==================================");
+			$display("=======================================PASS==================================\n");
 		end
 		else begin
 			flag = 1;
-			$display("======================================FAIL===================================");
-
+			$display("======================================FAIL===================================\n");
 		end
+		
+		address = 8'h02;
+		wdata = 8'b0000_0001;
+		top.cpu.write_CPU(address, wdata);
+		$display("===========================CLEAR TSR================================\n");
+		#100;
+		top.cpu.read_CPU(address, rdata);
+		if (rdata[1] == 1'b0) begin
+			flag = 0;
+			$display("=======================================PASS==================================\n");
+		end
+		else begin
+			flag = 1;
+			$display("======================================FAIL===================================\n");
+		end
+		end
+
+
 		#100;
 		top.get_results(flag);
 		#100;

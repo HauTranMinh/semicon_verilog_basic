@@ -1,0 +1,114 @@
+# vsim -do {count_down_underflow_pclk2_pause.ucdb; log -r /*;run -all; exit} -l count_down_underflow_pclk2_pause.log -voptargs=+acc work.count_down_underflow_pclk2_pause 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.count_down_underflow_pclk2_pause(fast)
+# Loading work.timer_tb(fast)
+# Loading work.timer(fast)
+# Loading work.registor_control(fast)
+# Loading work.decoder(fast)
+# Loading work.registor(fast)
+# Loading work.encoder(fast)
+# Loading work.timer_pready(fast)
+# Loading work.select_clock(fast)
+# Loading work.counter(fast)
+# Loading work.overflow_detect(fast)
+# Loading work.underflow_detect(fast)
+# Loading work.CPU_model(fast)
+# Loading work.system_signal(fast)
+# count_down_underflow_pclk2_pause.ucdb 
+# invalid command name "count_down_underflow_pclk2_pause.ucdb"
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
+# 
+#           Attempting to use alternate WLF file "./wlfta76mf3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfta76mf3
+# 
+# run -all 
+# ==============================================================================
+# ===================COUNT DOWN WITH PAUSE PCLK 2_test_begin====================
+# ==============================================================================
+# 
+# 
+# =====================load TDR to timer========================================
+# 
+# 
+# at 190 start write data = 'h24 to address = 'h0
+# at 200 acces phase of writing data
+# at 225 transfer done
+# load value TDR at 225 to counter_reg
+# at 240 start write data = 'h80 to address = 'h1
+# at 250 acces phase of writing data
+# at 275 transfer done
+# 
+# 
+# =====================configurate TCR to timer=================================
+# 
+# 
+# 
+# 
+# ==========================START timer=========================================
+# 
+# 
+# at 290 start write data = 'h30 to address = 'h1
+# at 300 acces phase of writing data
+# at 325 transfer done
+# count for 360
+# 
+# 
+# =============================wait for random time=================================
+# 
+# 
+# at 690 start write data = 'h20 to address = 'h1
+# at 700 acces phase of writing data
+# at 725 transfer done
+# random value for wait time is 360
+# 
+# 
+# =====================check flag before continue=============================
+# 
+# 
+# at 1090 start to read data at address 'h2
+# at 1125 end of read transfer
+# PASS
+# 
+# 
+# ======================== continue to count=================================
+# 
+# 
+# at 1140 start write data = 'h30 to address = 'h1
+# at 1150 acces phase of writing data
+# at 1175 transfer done
+# 
+# 
+# ===================check flag after pause time=============================
+# 
+# 
+# at 1550 start to read data at address 'h2
+# at 1585 end of read transfer
+# PASS
+# at 1600 start write data = 'h1 to address = 'h2
+# at 1610 acces phase of writing data
+# at 1635 transfer done
+# =================================CLEAR TSR================================
+# 
+# at 1740 start to read data at address 'h2
+# at 1775 end of read transfer
+# =======================================PASS==================================
+# 
+# ===================================
+# ================PASS===============
+# ===================================

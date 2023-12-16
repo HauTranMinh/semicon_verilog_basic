@@ -89,8 +89,8 @@ module registor(
 		end
 		else if ((psel) && (penable) && (pready) && select_reg[2] &&
 				 (pwdata[1:0] != 2'b11) && (~TSR_reg[0] || TSR_reg[0] && (~pwdata[1]))) begin
-			TSR_reg[1] <= 1'b0;
-			//TSR_reg[1] 	<= pwdata[1];
+			//TSR_reg[1] <= 1'b0;
+			TSR_reg[1] 	<= 1'b0;
 			clear_reg[1] 	<= 1'b0;
 		end
 		else if(underflow_flag) begin
