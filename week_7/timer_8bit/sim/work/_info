@@ -9,38 +9,118 @@ Z0 dD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/sim
 !i10e 25
 !i10f 100
 T_opt
-!s110 1702704992
-V1oCISgICl7>^2jcTG7T>G1
-04 23 4 work count_down_reset_pclk16 fast 0
-=1-6c24087848a9-657d3760-12b-4528
+!s110 1702709056
+Vnk8`U;nKMW8fcXHmghUYH0
+04 32 4 work count_down_fake_condition_pclk16 fast 0
+=1-6c24087848a9-657d4740-158-28ac
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 n@_opt
 Z2 OL;O;10.2c;57
 T_opt2
-VmSf<68mhTKPeHjcZAFd0g0
-04 22 4 work count_down_reset_pclk8 fast 0
-=1-6c24087848a9-657d3742-53-2270
+VHWUW<KeR?SXN^Ph]hFYSi2
+04 31 4 work count_down_fake_condition_pclk8 fast 0
+=1-6c24087848a9-657d4713-39f-1dfc
 R1
 n@_opt2
 R2
 Z3 dD:/SEMICON_VERILOG_COURCES/week_6/timer_8bit/sim
-!s110 1702704962
-vcount_down_reload_pclk16
-Z4 !s110 1702704990
-I5c3i;A:;@;=G<KE=5:@;>0
+!s110 1702709012
+vcount_down_fake_condition_pclk16
+Z4 !s110 1702709054
+IZ;jR;nB3>fVPERWjVjogJ2
 Z5 V`JN@9S9cnhjKRR_L]QIcM3
 Z6 dD:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/sim
-w1702702364
-8../testcase/count_down_reload_pclk16.v
-F../testcase/count_down_reload_pclk16.v
+w1702709043
+8../testcase/count_down_fake_condition_pclk16.v
+F../testcase/count_down_fake_condition_pclk16.v
 L0 1
 Z7 OL;L;10.2c;57
 r1
 31
-Z8 !s108 1702704990.762000
-Z9 !s107 ../testcase/test_register_control.v|../testcase/read_write_TDR.v|../testcase/read_write_TCR.v|../testcase/read_write_TSR.v|../testcase/non_exist_address.v|../testcase/read_write_3_register.v|../testcase/count_down_underflow_pclk2_random.v|../testcase/count_down_underflow_pclk2.v|../testcase/count_down_underflow_pclk4.v|../testcase/count_down_underflow_pclk8.v|../testcase/count_down_underflow_pclk16.v|../testcase/count_down_underflow_pclk2_pause.v|../testcase/count_down_underflow_pclk4_pause.v|../testcase/count_down_underflow_pclk8_pause.v|../testcase/count_down_underflow_pclk16_pause.v|../testcase/count_down_reload_pclk2.v|../testcase/count_down_reload_pclk4.v|../testcase/count_down_reload_pclk8.v|../testcase/count_down_reload_pclk16.v|../testcase/count_down_reset_pclk2.v|../testcase/count_down_reset_pclk4.v|../testcase/count_down_reset_pclk8.v|../testcase/count_down_reset_pclk16.v|../testbench/timer_tb.v|../vip/system_signals.v|../vip/cpu_model.v|../rtl/timer_pready.v|../rtl/overflow_detect.v|../rtl/underflow_detect.v|../rtl/counter.v|../rtl/timer.v|../rtl/select_clock.v|../rtl/registor.v|../rtl/register_control.v|../rtl/encoder.v|../rtl/decoder.v|
+Z8 !s108 1702709054.805000
+Z9 !s107 ../testcase/test_register_control.v|../testcase/read_write_TDR.v|../testcase/read_write_TCR.v|../testcase/read_write_TSR.v|../testcase/non_exist_address.v|../testcase/read_write_3_register.v|../testcase/count_down_underflow_pclk2_random.v|../testcase/count_down_underflow_pclk2.v|../testcase/count_down_underflow_pclk4.v|../testcase/count_down_underflow_pclk8.v|../testcase/count_down_underflow_pclk16.v|../testcase/count_down_underflow_pclk2_pause.v|../testcase/count_down_underflow_pclk4_pause.v|../testcase/count_down_underflow_pclk8_pause.v|../testcase/count_down_underflow_pclk16_pause.v|../testcase/count_down_reload_pclk2.v|../testcase/count_down_reload_pclk4.v|../testcase/count_down_reload_pclk8.v|../testcase/count_down_reload_pclk16.v|../testcase/count_down_reset_pclk2.v|../testcase/count_down_reset_pclk4.v|../testcase/count_down_reset_pclk8.v|../testcase/count_down_reset_pclk16.v|../testcase/count_down_fake_condition_pclk2.v|../testcase/count_down_fake_condition_pclk4.v|../testcase/count_down_fake_condition_pclk8.v|../testcase/count_down_fake_condition_pclk16.v|../testbench/timer_tb.v|../vip/system_signals.v|../vip/cpu_model.v|../rtl/timer_pready.v|../rtl/overflow_detect.v|../rtl/underflow_detect.v|../rtl/counter.v|../rtl/timer.v|../rtl/select_clock.v|../rtl/registor.v|../rtl/register_control.v|../rtl/encoder.v|../rtl/decoder.v|
 Z10 !s90 -f|compile.f|
 Z11 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 l<?2W_O9eJQWWk;;egoMo0
+!i10b 1
+!s85 0
+!i111 0
+vcount_down_fake_condition_pclk2
+R4
+IJ]=zhh03fAkFoVgXdO`ZV3
+R5
+R6
+w1702707435
+8../testcase/count_down_fake_condition_pclk2.v
+F../testcase/count_down_fake_condition_pclk2.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!s100 HAK5d>oj`?0foo@beDlKZ1
+!i10b 1
+!s85 0
+!i111 0
+vcount_down_fake_condition_pclk4
+R4
+I?mUZ4K_Gb`iGeeJV4U?=j2
+R5
+R6
+w1702709002
+8../testcase/count_down_fake_condition_pclk4.v
+F../testcase/count_down_fake_condition_pclk4.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!s100 7K;d1Q=I_5dgi8zl?zHhL1
+!i10b 1
+!s85 0
+!i111 0
+vcount_down_fake_condition_pclk8
+R4
+IPeJgGQka?cBG[=_<Sd_To2
+R5
+R6
+w1702709006
+8../testcase/count_down_fake_condition_pclk8.v
+F../testcase/count_down_fake_condition_pclk8.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!s100 7ZPjO_Q8>7DXS;XV717lj1
+!i10b 1
+!s85 0
+!i111 0
+vcount_down_reload_pclk16
+R4
+I5c3i;A:;@;=G<KE=5:@;>0
+R5
+R6
+w1702702364
+8../testcase/count_down_reload_pclk16.v
+F../testcase/count_down_reload_pclk16.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+R11
 !s100 9aI<zicJAc_Z92@TPUD9^0
 !i10b 1
 !s85 0
@@ -116,9 +196,9 @@ L0 1
 R7
 r1
 31
-R9
 R10
 R11
+!s107 ../testcase/test_register_control.v|../testcase/read_write_TDR.v|../testcase/read_write_TCR.v|../testcase/read_write_TSR.v|../testcase/non_exist_address.v|../testcase/read_write_3_register.v|../testcase/count_down_underflow_pclk2_random.v|../testcase/count_down_underflow_pclk2.v|../testcase/count_down_underflow_pclk4.v|../testcase/count_down_underflow_pclk8.v|../testcase/count_down_underflow_pclk16.v|../testcase/count_down_underflow_pclk2_pause.v|../testcase/count_down_underflow_pclk4_pause.v|../testcase/count_down_underflow_pclk8_pause.v|../testcase/count_down_underflow_pclk16_pause.v|../testcase/count_down_reload_pclk2.v|../testcase/count_down_reload_pclk4.v|../testcase/count_down_reload_pclk8.v|../testcase/count_down_reload_pclk16.v|../testcase/count_down_reset_pclk2.v|../testcase/count_down_reset_pclk4.v|../testcase/count_down_reset_pclk8.v|../testcase/count_down_reset_pclk16.v|../testbench/timer_tb.v|../vip/system_signals.v|../vip/cpu_model.v|../rtl/timer_pready.v|../rtl/overflow_detect.v|../rtl/underflow_detect.v|../rtl/counter.v|../rtl/timer.v|../rtl/select_clock.v|../rtl/registor.v|../rtl/register_control.v|../rtl/encoder.v|../rtl/decoder.v|
 !s110 1702704545
 !s108 1702704545.720000
 !s100 6>X5gk2S^kZH0DNZIl8;F1
@@ -127,10 +207,10 @@ R11
 !i111 0
 vcount_down_reset_pclk16
 R4
-I4m`8:M=FzKQ4HE^Fn3P0`0
+I<U_7CCB[f=:6^LmZNjkWl2
 R5
 R6
-w1702704984
+w1702706439
 8../testcase/count_down_reset_pclk16.v
 F../testcase/count_down_reset_pclk16.v
 L0 1
@@ -141,8 +221,8 @@ R8
 R9
 R10
 R11
+!s100 L[Lc8lU8GD844c`CC;TRS2
 !i10b 1
-!s100 1eEjbFbX3CZ_DNVIDZT>Q1
 !s85 0
 !i111 0
 vcount_down_reset_pclk2
@@ -167,10 +247,10 @@ R11
 !i111 0
 vcount_down_reset_pclk4
 R4
-Ig54Wl1WPB[IFenJM=LNZS2
+I;0ib:3UBzJ[]c8cJ6Djn82
 R5
 R6
-w1702704893
+w1702706415
 8../testcase/count_down_reset_pclk4.v
 F../testcase/count_down_reset_pclk4.v
 L0 1
@@ -181,16 +261,16 @@ R8
 R9
 R10
 R11
-!s100 7hDd_5KaQ<lV4VDi@Sm^H0
+!s100 YG1I4MCVlXPd2:JWVncLD0
 !i10b 1
 !s85 0
 !i111 0
 vcount_down_reset_pclk8
 R4
-IU2XdYfd3_lfobbF953SF61
+I7^1a]n1@?RBkcA_@PgfF@3
 R5
 R6
-w1702704956
+w1702706782
 8../testcase/count_down_reset_pclk8.v
 F../testcase/count_down_reset_pclk8.v
 L0 1
@@ -201,7 +281,7 @@ R8
 R9
 R10
 R11
-!s100 ?WAT8CMWC1m[]FeZP6_JR2
+!s100 >Z[1`^IDccbV]VRj6UNYM2
 !i10b 1
 !s85 0
 !i111 0

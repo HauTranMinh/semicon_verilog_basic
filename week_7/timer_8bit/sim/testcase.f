@@ -1,3 +1,7 @@
+../testcase/count_down_fake_condition_pclk16.v
+../testcase/count_down_fake_condition_pclk8.v
+../testcase/count_down_fake_condition_pclk4.v
+../testcase/count_down_fake_condition_pclk2.v
 ../testcase/count_down_reset_pclk16.v
 ../testcase/count_down_reset_pclk8.v
 ../testcase/count_down_reset_pclk4.v
