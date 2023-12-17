@@ -1,5 +1,0 @@
-# vsim -do {count_down_underflow_pclk2_random.v.ucdb; log -r /*;run -all; exit} -l count_down_underflow_pclk2_random.v.log -voptargs=+acc work.count_down_underflow_pclk2_random.v 
-# ** Error: (vsim-19) Failed to access library 'work.count_down_underflow_pclk2_random' at "work.count_down_underflow_pclk2_random".
-# 
-# No such file or directory. (errno = ENOENT)
-# Error loading design

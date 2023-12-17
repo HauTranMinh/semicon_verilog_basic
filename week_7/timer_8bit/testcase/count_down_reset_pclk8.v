@@ -12,7 +12,7 @@ module count_down_reset_pclk8();
 		top.system.reset();
 		#100;
 		$display("==============================================================================");
-		$display("===================COUNT DOWN AND RESET PCLK 2_test_begin=====================");
+		$display("===================COUNT DOWN AND RESET PCLK 8_test_begin=====================");
 		$display("==============================================================================");
 		$display("\n");	
 

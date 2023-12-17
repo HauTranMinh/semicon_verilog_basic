@@ -1,5 +1,0 @@
-# vsim -do {count_down_fake_condition_pclk2.v.ucdb; log -r /*;run -all; exit} -l count_down_fake_condition_pclk2.v.log -voptargs=+acc work.count_down_fake_condition_pclk2.v 
-# ** Error: (vsim-19) Failed to access library 'work.count_down_fake_condition_pclk2' at "work.count_down_fake_condition_pclk2".
-# 
-# No such file or directory. (errno = ENOENT)
-# Error loading design

@@ -1,0 +1,45 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <link rel="StyleSheet" media="screen" href="../css/hdl2html.css"/>
+</head>
+<body id="hdl2html">
+  <tt><a name="1"/><span style="color:red">%s%%s%%s%%s%%s%1%s%%s%</span><span class="keyword">module</span>%s%encoder(<br/>
+<a name="2"/><span style="color:red">%s%%s%%s%%s%%s%2%s%%s%</span>%t%<span class="keyword">input</span>%s%pclk,%s%<br/>
+<a name="3"/><span style="color:red">%s%%s%%s%%s%%s%3%s%%s%</span>%t%<span class="keyword">input</span>%s%psel,<br/>
+<a name="4"/><span style="color:red">%s%%s%%s%%s%%s%4%s%%s%</span>%t%<span class="keyword">input</span>%s%penable,<br/>
+<a name="5"/><span style="color:red">%s%%s%%s%%s%%s%5%s%%s%</span>%t%<span class="keyword">input</span>%s%pwrite,<br/>
+<a name="6"/><span style="color:red">%s%%s%%s%%s%%s%6%s%%s%</span>%t%<span class="keyword">input</span>%s%[2:0]%s%select_reg,%s%<span class="comment">//%s%memory%s%reg%s%address</span><br/>
+<a name="7"/><span style="color:red">%s%%s%%s%%s%%s%7%s%%s%</span>%t%<span class="keyword">input</span>%s%pready,<br/>
+<a name="8"/><span style="color:red">%s%%s%%s%%s%%s%8%s%%s%</span>%t%<span class="keyword">input</span>%s%[7:0]%s%TDR,<br/>
+<a name="9"/><span style="color:red">%s%%s%%s%%s%%s%9%s%%s%</span>%t%<span class="keyword">input</span>%s%[7:0]%s%TCR,<br/>
+<a name="10"/><span style="color:red">%s%%s%%s%%s%10%s%%s%</span>%t%<span class="keyword">input</span>%s%[7:0]%s%TSR,<br/>
+<a name="11"/><span style="color:red">%s%%s%%s%%s%11%s%%s%</span><br/>
+<a name="12"/><span style="color:red">%s%%s%%s%%s%12%s%%s%</span>%t%<span class="keyword">output</span>%s%[7:0]%s%prdata);%t%%t%<br/>
+<a name="13"/><span style="color:red">%s%%s%%s%%s%13%s%%s%</span><br/>
+<a name="14"/><span style="color:red">%s%%s%%s%%s%14%s%%s%</span><span class="comment">//--------------------------------internal%s%connector%s%reg-------------------------------------------//</span><br/>
+<a name="15"/><span style="color:red">%s%%s%%s%%s%15%s%%s%</span>%t%<span class="keyword">reg</span>%s%[7:0]%s%data_reg;<br/>
+<a name="16"/><span style="color:red">%s%%s%%s%%s%16%s%%s%</span><br/>
+<a name="17"/><span style="color:red">%s%%s%%s%%s%17%s%%s%</span><span class="comment">//-----------------------------------------------------------------------------------------------//</span><br/>
+<a name="18"/><span style="color:red">%s%%s%%s%%s%18%s%%s%</span>%t%<span class="keyword">assign</span>%s%prdata%s%=%s%data_reg;<br/>
+<a name="19"/><span style="color:red">%s%%s%%s%%s%19%s%%s%</span><br/>
+<a name="20"/><span style="color:red">%s%%s%%s%%s%20%s%%s%</span>%t%<span class="keyword">always</span>%s%@(psel%s%<span class="keytype">or</span>%s%pclk%s%<span class="keytype">or</span>%s%penable%s%<span class="keytype">or</span>%s%pready%s%<span class="keytype">or</span>%s%pwrite)%s%<span class="keyword">begin</span><br/>
+<a name="21"/><span style="color:red">%s%%s%%s%%s%21%s%%s%</span>%t%%t%<span class="keyword">if</span>%s%(psel%s%&amp;&amp;%s%pready%s%&amp;&amp;%s%penable%s%&amp;&amp;%s%~pwrite)%s%<span class="keyword">begin</span><br/>
+<a name="22"/><span style="color:red">%s%%s%%s%%s%22%s%%s%</span>%t%%t%%t%<span class="keyword">case</span>(select_reg)<br/>
+<a name="23"/><span style="color:red">%s%%s%%s%%s%23%s%%s%</span>%t%%t%%t%%t%3'b001:%s%%s%data_reg%s%&lt;=%s%TDR;<br/>
+<a name="24"/><span style="color:red">%s%%s%%s%%s%24%s%%s%</span>%t%%t%%t%%t%3'b010:%s%%s%data_reg%s%&lt;=%s%TCR;<br/>
+<a name="25"/><span style="color:red">%s%%s%%s%%s%25%s%%s%</span>%t%%t%%t%%t%3'b100:%t%%s%data_reg%s%&lt;=%s%TSR;<br/>
+<a name="26"/><span style="color:red">%s%%s%%s%%s%26%s%%s%</span>%t%%t%%t%<span class="keyword">endcase</span><br/>
+<a name="27"/><span style="color:red">%s%%s%%s%%s%27%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="28"/><span style="color:red">%s%%s%%s%%s%28%s%%s%</span>%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span><br/>
+<a name="29"/><span style="color:red">%s%%s%%s%%s%29%s%%s%</span>%t%%t%%t%data_reg%s%&lt;=%s%8'hXX;<br/>
+<a name="30"/><span style="color:red">%s%%s%%s%%s%30%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="31"/><span style="color:red">%s%%s%%s%%s%31%s%%s%</span>%t%<span class="keyword">end</span><br/>
+<a name="32"/><span style="color:red">%s%%s%%s%%s%32%s%%s%</span><br/>
+<a name="33"/><span style="color:red">%s%%s%%s%%s%33%s%%s%</span><span class="keyword">endmodule</span></tt>
+<script type="text/javascript" src="../scripts/buildsrcpage.js"></script>
+  
+</body>
+</html>

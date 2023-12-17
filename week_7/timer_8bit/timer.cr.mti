@@ -19,6 +19,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	overflow_detect
 
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/ipcore_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/ipcore_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module timer_tb
+
+Top level modules:
+	timer_tb
+
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/decoder.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/decoder.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module decoder
@@ -40,6 +47,20 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	counter
 
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module timer
+
+Top level modules:
+	timer
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/timer_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/timer_tb.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module timer_tb
+
+Top level modules:
+	timer_tb
+
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/select_clk_tb.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testbench/select_clk_tb.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module testbench
@@ -47,19 +68,19 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	testbench
 
-} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module registor_control
-
-Top level modules:
-	registor_control
-
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/vip/cpu_model.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/vip/cpu_model.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module CPU_model
 
 Top level modules:
 	CPU_model
+
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/register_control.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module registor_control
+
+Top level modules:
+	registor_control
 
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer_pready.v {2 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/timer_pready.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -70,6 +91,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	timer_pready
 
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module underflow_detect
+
+Top level modules:
+	underflow_detect
+
 } {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testcase/testcase_1.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/testcase/testcase_1.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module testcase_1
@@ -77,11 +105,11 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	testcase_1
 
-} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/underflow_detect.v
+} {} {}} D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/registor.v {1 {vlog -work work -vopt D:/SEMICON_VERILOG_COURCES/week_7/timer_8bit/rtl/registor.v
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module underflow_detect
+-- Compiling module registor
 
 Top level modules:
-	underflow_detect
+	registor
 
 } {} {}}

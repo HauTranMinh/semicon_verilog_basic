@@ -1,6 +1,0 @@
-# vsim -do {count_down_pclk2_pause.ucdb; log -r /*;run -all; exit} -l count_down_pclk2_pause.log -voptargs=+acc work.count_down_pclk2_pause 
-# ** Note: (vsim-3812) Design is being optimized...
-# 
-# ** Error: Failed to find design unit work.count_down_pclk2_pause.
-# Optimization failed
-# Error loading design

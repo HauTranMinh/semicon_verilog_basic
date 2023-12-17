@@ -1,4 +1,4 @@
-# vsim -do {count_down_reset_pclk4.ucdb; log -r /*;run -all; exit} -l count_down_reset_pclk4.log -voptargs=+acc work.count_down_reset_pclk4 
+# vsim -coverage -do {coverage save -onexit count_down_reset_pclk4.ucdb; log -r /*;run -all; exit} -l count_down_reset_pclk4.log -voptargs=+acc work.count_down_reset_pclk4 
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
@@ -25,21 +25,11 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# count_down_reset_pclk4.ucdb 
-# invalid command name "count_down_reset_pclk4.ucdb"
+# coverage save -onexit count_down_reset_pclk4.ucdb 
 #  log -r /* 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
-# 
-#           Attempting to use alternate WLF file "./wlftf7dgg7".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftf7dgg7
-# 
 # run -all 
 # ==============================================================================
-# ===================COUNT DOWN AND RESET PCLK 2_test_begin=====================
+# ===================COUNT DOWN AND RESET PCLK 4_test_begin=====================
 # ==============================================================================
 # 
 # 

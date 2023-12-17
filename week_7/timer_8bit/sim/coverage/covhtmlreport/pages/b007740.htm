@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _count_down_underflow_pclk4_top_dut_counter_moduleContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z007499.htm">count_down_underflow_pclk4</a>/<a href="z007563.htm">top</a>/<a href="z007602.htm">dut</a>/<a href="z007740.htm">counter_module</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg7741"/><hr/><table>
+  <tr l="22" lnk="__HDL_srcfile_9.htm#22" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="22" lnk="__HDL_srcfile_9.htm#22" z="		if (~preset_n) begin" h="22" c="g"/>
+  <tr cr="c" t="E" l="26" lnk="__HDL_srcfile_9.htm#26" z="		else begin" h="10773" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg7742"/><hr/><table>
+  <tr l="32" lnk="__HDL_srcfile_9.htm#32" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="32" lnk="__HDL_srcfile_9.htm#32" z="		if (~preset_n) begin" h="21" c="g"/>
+  <tr cr="c" t="T" l="37" lnk="__HDL_srcfile_9.htm#37" z="			if (TCR[7]) begin // Load TDR to counter" h="50" c="g"/>
+  <tr cr="c" t="T" l="41" lnk="__HDL_srcfile_9.htm#41" z="				if (TCR[4]) begin // enable bit == HIGH =&gt; enable to count" h="5269" c="g"/>
+  <tr cr="c" t="E" l="59" lnk="__HDL_srcfile_9.htm#59" z="				else begin" h="206" c="g"/>
+  </table>
+  </div><div><a name="cvg7743"/><hr/><table>
+  <tr l="42" lnk="__HDL_srcfile_9.htm#42" z="					if (TCR[5]) begin // up_down bit == 1 =&gt; countdown" c="R" p="33.33"/><tr/>
+  <tr cr="c" t="I" l="42" lnk="__HDL_srcfile_9.htm#42" z="					if (TCR[5]) begin // up_down bit == 1 =&gt; countdown" h="5269" c="g"/>
+  <tr cr="m" t="T" l="51" lnk="__HDL_srcfile_9.htm#51" z="						if (count_enable) begin // count_enable == 1 =&gt; are able ..." h="0" c="r"/>
+  <tr cr="m" t="E" l="54" lnk="__HDL_srcfile_9.htm#54" z="						else begin // count_enable == 0 =&gt; are not able to count ..." h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg7744"/><hr/><table>
+  <tr l="43" lnk="__HDL_srcfile_9.htm#43" z="						if (count_enable) begin // count_enable == 1 =&gt; are able ..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="43" lnk="__HDL_srcfile_9.htm#43" z="						if (count_enable) begin // count_enable == 1 =&gt; are able ..." h="2634" c="g"/>
+  <tr cr="c" t="E" l="46" lnk="__HDL_srcfile_9.htm#46" z="						else begin // count_enable == 0 =&gt; are not able to count ..." h="2635" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg7745"/><hr/><table>
+  <tr l="70" lnk="__HDL_srcfile_9.htm#70" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="70" lnk="__HDL_srcfile_9.htm#70" z="		if (~preset_n) begin" h="21" c="g"/>
+  <tr cr="c" t="E" l="74" lnk="__HDL_srcfile_9.htm#74" z="		else begin" h="5284" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

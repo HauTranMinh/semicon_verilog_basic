@@ -1,0 +1,93 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <link rel="StyleSheet" media="screen" href="../css/hdl2html.css"/>
+</head>
+<body id="hdl2html">
+  <tt><a name="1"/><span style="color:red">%s%%s%%s%%s%%s%1%s%%s%</span><span class="keyword">module</span>%s%counter(<br/>
+<a name="2"/><span style="color:red">%s%%s%%s%%s%%s%2%s%%s%</span>%t%<span class="keyword">input</span>%s%pclk,<br/>
+<a name="3"/><span style="color:red">%s%%s%%s%%s%%s%3%s%%s%</span>%t%<span class="keyword">input</span>%s%preset_n,<br/>
+<a name="4"/><span style="color:red">%s%%s%%s%%s%%s%4%s%%s%</span>%t%<span class="keyword">input</span>%s%[7:0]%s%TDR,<br/>
+<a name="5"/><span style="color:red">%s%%s%%s%%s%%s%5%s%%s%</span>%t%<span class="keyword">input</span>%s%[7:0]%s%TCR,<br/>
+<a name="6"/><span style="color:red">%s%%s%%s%%s%%s%6%s%%s%</span>%t%<span class="keyword">input</span>%s%clk_in,<br/>
+<a name="7"/><span style="color:red">%s%%s%%s%%s%%s%7%s%%s%</span><br/>
+<a name="8"/><span style="color:red">%s%%s%%s%%s%%s%8%s%%s%</span>%t%<span class="keyword">output</span>%s%[7:0]%s%counter_signal,<br/>
+<a name="9"/><span style="color:red">%s%%s%%s%%s%%s%9%s%%s%</span>%t%<span class="keyword">output</span>%s%[7:0]%s%last_counter);<br/>
+<a name="10"/><span style="color:red">%s%%s%%s%%s%10%s%%s%</span><span class="comment">//===========================internal%s%register==============================//</span><br/>
+<a name="11"/><span style="color:red">%s%%s%%s%%s%11%s%%s%</span>%t%<span class="keyword">reg</span>%s%[7:0]%s%counter_reg;<br/>
+<a name="12"/><span style="color:red">%s%%s%%s%%s%12%s%%s%</span>%t%<span class="keyword">reg</span>%s%[7:0]%s%last_counter_reg;<br/>
+<a name="13"/><span style="color:red">%s%%s%%s%%s%13%s%%s%</span>%t%<span class="keyword">reg</span>%s%last_clk_internal;<br/>
+<a name="14"/><span style="color:red">%s%%s%%s%%s%14%s%%s%</span>%t%<span class="keyword">wire</span>%s%count_enable;%s%<span class="comment">//%s%for%s%edge%s%detector</span><br/>
+<a name="15"/><span style="color:red">%s%%s%%s%%s%15%s%%s%</span><br/>
+<a name="16"/><span style="color:red">%s%%s%%s%%s%16%s%%s%</span>%t%<span class="keyword">assign</span>%s%counter_signal%s%=%s%counter_reg;<br/>
+<a name="17"/><span style="color:red">%s%%s%%s%%s%17%s%%s%</span>%t%<span class="keyword">assign</span>%s%last_counter%s%=%s%last_counter_reg;<br/>
+<a name="18"/><span style="color:red">%s%%s%%s%%s%18%s%%s%</span><span class="comment">//================================Control%s%Logic=============================//%t%</span><br/>
+<a name="19"/><span style="color:red">%s%%s%%s%%s%19%s%%s%</span>%t%<span class="keyword">assign</span>%s%count_enable%s%=%s%(~last_clk_internal)%s%&amp;%s%clk_in;%s%<br/>
+<a name="20"/><span style="color:red">%s%%s%%s%%s%20%s%%s%</span><br/>
+<a name="21"/><span style="color:red">%s%%s%%s%%s%21%s%%s%</span>%t%<span class="keyword">always</span>%s%@(<span class="keyattr">posedge</span>%s%pclk%s%<span class="keytype">or</span>%s%<span class="keyattr">posedge</span>%s%preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="22"/><span style="color:red">%s%%s%%s%%s%22%s%%s%</span>%t%%t%<span class="keyword">if</span>%s%(~preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="23"/><span style="color:red">%s%%s%%s%%s%23%s%%s%</span>%t%%t%%t%<span class="comment">//%s%reset</span><br/>
+<a name="24"/><span style="color:red">%s%%s%%s%%s%24%s%%s%</span>%t%%t%%t%last_clk_internal%s%&lt;=%s%1'b0;<br/>
+<a name="25"/><span style="color:red">%s%%s%%s%%s%25%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="26"/><span style="color:red">%s%%s%%s%%s%26%s%%s%</span>%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span><br/>
+<a name="27"/><span style="color:red">%s%%s%%s%%s%27%s%%s%</span>%t%%t%%t%last_clk_internal%s%&lt;=%s%clk_in;%s%<br/>
+<a name="28"/><span style="color:red">%s%%s%%s%%s%28%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="29"/><span style="color:red">%s%%s%%s%%s%29%s%%s%</span>%t%<span class="keyword">end</span><br/>
+<a name="30"/><span style="color:red">%s%%s%%s%%s%30%s%%s%</span><span class="comment">//=========================================================================//</span><br/>
+<a name="31"/><span style="color:red">%s%%s%%s%%s%31%s%%s%</span>%t%<span class="keyword">always</span>%s%@(<span class="keyattr">posedge</span>%s%pclk%s%<span class="keytype">or</span>%s%<span class="keyattr">posedge</span>%s%preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="32"/><span style="color:red">%s%%s%%s%%s%32%s%%s%</span>%t%%t%<span class="keyword">if</span>%s%(~preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="33"/><span style="color:red">%s%%s%%s%%s%33%s%%s%</span>%t%%t%%t%<span class="comment">//%s%reset</span><br/>
+<a name="34"/><span style="color:red">%s%%s%%s%%s%34%s%%s%</span>%t%%t%%t%counter_reg%s%&lt;=%s%8'h00;<br/>
+<a name="35"/><span style="color:red">%s%%s%%s%%s%35%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="36"/><span style="color:red">%s%%s%%s%%s%36%s%%s%</span>%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span><br/>
+<a name="37"/><span style="color:red">%s%%s%%s%%s%37%s%%s%</span>%t%%t%%t%<span class="keyword">if</span>%s%(TCR[7])%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%Load%s%TDR%s%to%s%counter</span><br/>
+<a name="38"/><span style="color:red">%s%%s%%s%%s%38%s%%s%</span>%t%%t%%t%%t%counter_reg%s%&lt;=%s%TDR;<br/>
+<a name="39"/><span style="color:red">%s%%s%%s%%s%39%s%%s%</span>%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="40"/><span style="color:red">%s%%s%%s%%s%40%s%%s%</span>%t%%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%load%s%bit%s%==%s%0%s%=&gt;%s%normal%s%operation</span><br/>
+<a name="41"/><span style="color:red">%s%%s%%s%%s%41%s%%s%</span>%t%%t%%t%%t%<span class="keyword">if</span>%s%(TCR[4])%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%enable%s%bit%s%==%s%HIGH%s%=&gt;%s%enable%s%to%s%count</span><br/>
+<a name="42"/><span style="color:red">%s%%s%%s%%s%42%s%%s%</span>%t%%t%%t%%t%%t%<span class="keyword">if</span>%s%(TCR[5])%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%up_down%s%bit%s%==%s%1%s%=&gt;%s%countdown</span><br/>
+<a name="43"/><span style="color:red">%s%%s%%s%%s%43%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">if</span>%s%(count_enable)%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%count_enable%s%==%s%1%s%=&gt;%s%are%s%able%s%to%s%count%s%</span><br/>
+<a name="44"/><span style="color:red">%s%%s%%s%%s%44%s%%s%</span>%t%%t%%t%%t%%t%%t%%t%counter_reg%s%&lt;=%s%counter_reg%s%-%s%1'b1;<br/>
+<a name="45"/><span style="color:red">%s%%s%%s%%s%45%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="46"/><span style="color:red">%s%%s%%s%%s%46%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%count_enable%s%==%s%0%s%=&gt;%s%are%s%not%s%able%s%to%s%count%s%</span><br/>
+<a name="47"/><span style="color:red">%s%%s%%s%%s%47%s%%s%</span>%t%%t%%t%%t%%t%%t%%t%counter_reg%s%&lt;=%s%counter_reg;<br/>
+<a name="48"/><span style="color:red">%s%%s%%s%%s%48%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="49"/><span style="color:red">%s%%s%%s%%s%49%s%%s%</span>%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="50"/><span style="color:red">%s%%s%%s%%s%50%s%%s%</span>%t%%t%%t%%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%up_down%s%bit%s%==%s%0%s%=&gt;%s%countup</span><br/>
+<a name="51"/><span style="color:red">%s%%s%%s%%s%51%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">if</span>%s%(count_enable)%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%count_enable%s%==%s%1%s%=&gt;%s%are%s%able%s%to%s%count%s%</span><br/>
+<a name="52"/><span style="color:red">%s%%s%%s%%s%52%s%%s%</span>%t%%t%%t%%t%%t%%t%%t%counter_reg%s%&lt;=%s%counter_reg%s%+%s%1'b1;<br/>
+<a name="53"/><span style="color:red">%s%%s%%s%%s%53%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="54"/><span style="color:red">%s%%s%%s%%s%54%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span>%s%<span class="comment">//%s%count_enable%s%==%s%0%s%=&gt;%s%are%s%not%s%able%s%to%s%count%s%</span><br/>
+<a name="55"/><span style="color:red">%s%%s%%s%%s%55%s%%s%</span>%t%%t%%t%%t%%t%%t%%t%counter_reg%s%&lt;=%s%counter_reg;<br/>
+<a name="56"/><span style="color:red">%s%%s%%s%%s%56%s%%s%</span>%t%%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="57"/><span style="color:red">%s%%s%%s%%s%57%s%%s%</span>%t%%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="58"/><span style="color:red">%s%%s%%s%%s%58%s%%s%</span>%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="59"/><span style="color:red">%s%%s%%s%%s%59%s%%s%</span>%t%%t%%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span><br/>
+<a name="60"/><span style="color:red">%s%%s%%s%%s%60%s%%s%</span>%t%%t%%t%%t%%t%counter_reg%s%&lt;=%s%counter_reg;<br/>
+<a name="61"/><span style="color:red">%s%%s%%s%%s%61%s%%s%</span>%t%%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="62"/><span style="color:red">%s%%s%%s%%s%62%s%%s%</span>%t%%t%%t%<span class="keyword">end</span><br/>
+<a name="63"/><span style="color:red">%s%%s%%s%%s%63%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="64"/><span style="color:red">%s%%s%%s%%s%64%s%%s%</span>%t%<span class="keyword">end</span><br/>
+<a name="65"/><span style="color:red">%s%%s%%s%%s%65%s%%s%</span><br/>
+<a name="66"/><span style="color:red">%s%%s%%s%%s%66%s%%s%</span>%t%<span class="comment">//%s%counter%s%value%s%for%s%compare%s%=&gt;%s%take%s%the%s%previous%s%value%s%of%s%counter%s%reg</span><br/>
+<a name="67"/><span style="color:red">%s%%s%%s%%s%67%s%%s%</span>%t%<span class="comment">//%s%config%s%as%s%an%s%Dff%s%=&gt;%s%delay%s%the%s%previous%s%clk%s%value</span><br/>
+<a name="68"/><span style="color:red">%s%%s%%s%%s%68%s%%s%</span><br/>
+<a name="69"/><span style="color:red">%s%%s%%s%%s%69%s%%s%</span>%t%<span class="keyword">always</span>%s%@(<span class="keyattr">posedge</span>%s%pclk%s%<span class="keytype">or</span>%s%<span class="keyattr">posedge</span>%s%preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="70"/><span style="color:red">%s%%s%%s%%s%70%s%%s%</span>%t%%t%<span class="keyword">if</span>%s%(~preset_n)%s%<span class="keyword">begin</span><br/>
+<a name="71"/><span style="color:red">%s%%s%%s%%s%71%s%%s%</span>%t%%t%%t%<span class="comment">//%s%reset</span><br/>
+<a name="72"/><span style="color:red">%s%%s%%s%%s%72%s%%s%</span>%t%%t%%t%last_counter_reg%s%&lt;=%s%1'b0;<br/>
+<a name="73"/><span style="color:red">%s%%s%%s%%s%73%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="74"/><span style="color:red">%s%%s%%s%%s%74%s%%s%</span>%t%%t%<span class="keyword">else</span>%s%<span class="keyword">begin</span><br/>
+<a name="75"/><span style="color:red">%s%%s%%s%%s%75%s%%s%</span>%t%%t%%t%last_counter_reg%s%&lt;=%s%counter_reg;<br/>
+<a name="76"/><span style="color:red">%s%%s%%s%%s%76%s%%s%</span>%t%%t%<span class="keyword">end</span><br/>
+<a name="77"/><span style="color:red">%s%%s%%s%%s%77%s%%s%</span>%t%<span class="keyword">end</span><br/>
+<a name="78"/><span style="color:red">%s%%s%%s%%s%78%s%%s%</span><br/>
+<a name="79"/><span style="color:red">%s%%s%%s%%s%79%s%%s%</span><br/>
+<a name="80"/><span style="color:red">%s%%s%%s%%s%80%s%%s%</span><span class="keyword">endmodule</span><br/>
+</tt>
+<script type="text/javascript" src="../scripts/buildsrcpage.js"></script>
+  
+</body>
+</html>

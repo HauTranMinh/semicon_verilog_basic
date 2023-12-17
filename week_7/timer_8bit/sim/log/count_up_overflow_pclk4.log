@@ -1,5 +1,5 @@
-# vsim -do {count_up_overflow_pclk4.ucdb; log -r /*;run -all; exit} -l count_up_overflow_pclk4.log -voptargs=+acc work.count_up_overflow_pclk4 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -coverage -do {coverage save -onexit count_up_overflow_pclk4.ucdb; log -r /*;run -all; exit} -l count_up_overflow_pclk4.log -voptargs=+acc work.count_up_overflow_pclk4 
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -25,18 +25,8 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# count_up_overflow_pclk4.ucdb 
-# invalid command name "count_up_overflow_pclk4.ucdb"
+# coverage save -onexit count_up_overflow_pclk4.ucdb 
 #  log -r /* 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
-# 
-#           Attempting to use alternate WLF file "./wlftq24kb3".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftq24kb3
-# 
 # run -all 
 # ==============================================================================
 # =======================COUNT UP PCLK 2__test_begin============================

@@ -1,4 +1,4 @@
-# vsim -do {count_up_fake_condition_pclk4.ucdb; log -r /*;run -all; exit} -l count_up_fake_condition_pclk4.log -voptargs=+acc work.count_up_fake_condition_pclk4 
+# vsim -coverage -do {coverage save -onexit count_up_fake_condition_pclk4.ucdb; log -r /*;run -all; exit} -l count_up_fake_condition_pclk4.log -voptargs=+acc work.count_up_fake_condition_pclk4 
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
@@ -25,18 +25,8 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# count_up_fake_condition_pclk4.ucdb 
-# invalid command name "count_up_fake_condition_pclk4.ucdb"
+# coverage save -onexit count_up_fake_condition_pclk4.ucdb 
 #  log -r /* 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
-# 
-#           Attempting to use alternate WLF file "./wlftj9x7xt".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftj9x7xt
-# 
 # run -all 
 # ==============================================================================
 # ===================COUNT UP AND RESET PCLK 8_test_begin=======================
@@ -66,7 +56,7 @@
 # at 350 acces phase of writing data
 # at 375 transfer done
 # load value TDR at 375 to counter_reg
-# at 390 start write data = 'h31 to address = 'h1
+# at 390 start write data = 'h30 to address = 'h1
 # at 400 acces phase of writing data
 # at 425 transfer done
 # =============================check TSR============================

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _count_up_overflow_pclk16_pause_top_dut_reg_control_registorContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z011070.htm">count_up_overflow_pclk16_pause</a>/<a href="z011267.htm">top</a>/<a href="z011306.htm">dut</a>/<a href="z011356.htm">reg_control</a>/<a href="z011367.htm">registor</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg11368"/><hr/><table>
+  <tr l="34" lnk="__HDL_srcfile_5.htm#34" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="34" lnk="__HDL_srcfile_5.htm#34" z="		if (~preset_n) begin" h="2" c="g"/>
+  <tr cr="c" t="T" l="38" lnk="__HDL_srcfile_5.htm#38" z="		else if (psel &amp;&amp; pwrite &amp;&amp; penable &amp;&amp; pready &amp;&amp; select_reg[0]..." h="1" c="g"/>
+  <tr cr="c" t="E" l="41" lnk="__HDL_srcfile_5.htm#41" z="		else begin" h="40" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg11369"/><hr/><table>
+  <tr l="47" lnk="__HDL_srcfile_5.htm#47" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="47" lnk="__HDL_srcfile_5.htm#47" z="		if (~preset_n) begin" h="2" c="g"/>
+  <tr cr="c" t="T" l="50" lnk="__HDL_srcfile_5.htm#50" z="		else if (psel &amp;&amp; pwrite &amp;&amp; penable &amp;&amp; pready &amp;&amp; select_reg[1]..." h="4" c="g"/>
+  <tr cr="c" t="E" l="53" lnk="__HDL_srcfile_5.htm#53" z="		else begin" h="37" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg11370"/><hr/><table>
+  <tr l="61" lnk="__HDL_srcfile_5.htm#61" z="		if (~preset_n) begin" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="61" lnk="__HDL_srcfile_5.htm#61" z="		if (~preset_n) begin" h="2" c="g"/>
+  <tr cr="c" t="T" l="65" lnk="__HDL_srcfile_5.htm#65" z="		else if ((psel) &amp;&amp; (penable) &amp;&amp; (pready) &amp;&amp; select_reg[2] &amp;&amp; ..." h="4" c="g"/>
+  <tr cr="c" t="T" l="73" lnk="__HDL_srcfile_5.htm#73" z="		else if(overflow_flag) begin  // write 1 by hardware" h="1" c="g"/>
+  <tr cr="c" t="E" l="77" lnk="__HDL_srcfile_5.htm#77" z="		else begin // both hardware and software take no action" h="38" c="g"/>
+  </table>
+  </div><div><a name="cvg11371"/><hr/><table>
+  <tr l="86" lnk="__HDL_srcfile_5.htm#86" z="		if (~preset_n) begin" c="Y" p="75.00"/><tr/>
+  <tr cr="c" t="I" l="86" lnk="__HDL_srcfile_5.htm#86" z="		if (~preset_n) begin" h="2" c="g"/>
+  <tr cr="c" t="T" l="90" lnk="__HDL_srcfile_5.htm#90" z="		else if ((psel) &amp;&amp; (penable) &amp;&amp; (pready) &amp;&amp; select_reg[2] &amp;&amp;" h="4" c="g"/>
+  <tr cr="m" t="T" l="96" lnk="__HDL_srcfile_5.htm#96" z="		else if(underflow_flag) begin" h="0" c="r"/>
+  <tr cr="c" t="E" l="100" lnk="__HDL_srcfile_5.htm#100" z="		else begin // both hardware and software take no action" h="38" c="g"/>
+  </table>
+  </div><div><a name="cvg11372"/><hr/><table>
+  <tr l="108" lnk="__HDL_srcfile_5.htm#108" z="		if (~preset_n) begin" c="Y" p="66.66"/><tr/>
+  <tr cr="c" t="I" l="108" lnk="__HDL_srcfile_5.htm#108" z="		if (~preset_n) begin" h="2" c="g"/>
+  <tr cr="m" t="T" l="112" lnk="__HDL_srcfile_5.htm#112" z="		else if (select_reg == 3'b000) begin" h="0" c="r"/>
+  <tr cr="c" t="E" l="115" lnk="__HDL_srcfile_5.htm#115" z="		else begin" h="20" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

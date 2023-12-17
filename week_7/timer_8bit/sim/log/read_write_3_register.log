@@ -1,5 +1,5 @@
-# vsim -do {read_write_3_register.ucdb; log -r /*;run -all; exit} -l read_write_3_register.log -voptargs=+acc work.read_write_3_register 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -coverage -do {coverage save -onexit read_write_3_register.ucdb; log -r /*;run -all; exit} -l read_write_3_register.log -voptargs=+acc work.read_write_3_register 
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # //  Questa Sim-64
 # //  Version 10.2c Unknown Platform Jul 19 2013
@@ -25,24 +25,8 @@
 # Loading work.underflow_detect(fast)
 # Loading work.CPU_model(fast)
 # Loading work.system_signal(fast)
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'last_counter'. The port definition is at: ../rtl/overflow_detect.v(4).
-# 
-#         Region: /read_write_3_register/top/dut/ovf_detect
-# ** Warning: (vsim-3015) ../rtl/timer.v(73): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'up_down'. The port definition is at: ../rtl/overflow_detect.v(6).
-# 
-#         Region: /read_write_3_register/top/dut/ovf_detect
-# read_write_3_register.ucdb 
-# invalid command name "read_write_3_register.ucdb"
+# coverage save -onexit read_write_3_register.ucdb 
 #  log -r /* 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: LENOVO  Hostname: DESKTOP-AN1R3ON  ProcessID: 24240
-# 
-#           Attempting to use alternate WLF file "./wlftygidii".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftygidii
-# 
 # run -all 
 # ==============================================================================
 # ===========================Read_write_3_register_test_begin===================
@@ -56,22 +40,24 @@
 # 
 # at 190 start write data = 'h24 to address = 'h0
 # at 200 acces phase of writing data
-# write random value to TDR at 215
-# at 230 start to read data at address 'h0
-# at 265 end of read transfer
-# at 265 wdata=36 rdata=36
+# at 225 transfer done
+# write random value to TDR at 225
+# at 240 start to read data at address 'h0
+# at 275 end of read transfer
+# at 275 wdata=36 rdata=36
 # ====================================PASS=============================
 # ==============================================================================
 # =========================Read_write_TCR_register_test_begin===================
 # ==============================================================================
 # 
 # 
-# at 280 start write data = 'h81 to address = 'h1
-# at 290 acces phase of writing data
-# write random value to TCR at 305
-# at 320 start to read data at address 'h1
-# at 355 end of read transfer
-# at 355 wdata=129 rdata=129
+# at 290 start write data = 'h81 to address = 'h1
+# at 300 acces phase of writing data
+# at 325 transfer done
+# write random value to TCR at 325
+# at 340 start to read data at address 'h1
+# at 375 end of read transfer
+# at 375 wdata=129 rdata=129
 # ====================================PASS=============================
 # ==============================================================================
 # =========================Read_write_TDR_register_test_begin===================
@@ -83,39 +69,43 @@
 # ==============================================================================
 # TEST NO .01
 # 
-# at 540 start write data = 'hfc to address = 'h2
-# at 550 acces phase of writing data
-# write 8'b1111_1100 to TSR at 565
-# at 580 start to read data at address 'h2
-# at 615 end of read transfer
-# at 615 wdata=252 rdata=0
+# at 560 start write data = 'hfc to address = 'h2
+# at 570 acces phase of writing data
+# at 595 transfer done
+# write 8'b1111_1100 to TSR at 595
+# at 610 start to read data at address 'h2
+# at 645 end of read transfer
+# at 645 wdata=252 rdata=0
 # ====================================PASS=============================
 # TEST NO .02
 # 
-# at 800 start write data = 'hfd to address = 'h2
-# at 810 acces phase of writing data
-# write 8'b1111_1101 to TSR at 825
-# at 840 start to read data at address 'h2
-# at 875 end of read transfer
-# at 875 wdata=253 rdata=0
+# at 830 start write data = 'hfd to address = 'h2
+# at 840 acces phase of writing data
+# at 865 transfer done
+# write 8'b1111_1101 to TSR at 865
+# at 880 start to read data at address 'h2
+# at 915 end of read transfer
+# at 915 wdata=253 rdata=0
 # ====================================PASS=============================
 # TEST NO .03
 # 
-# at 1060 start write data = 'hfe to address = 'h2
-# at 1070 acces phase of writing data
-# write 8'b1111_1110 to TSR at 1085
-# at 1100 start to read data at address 'h2
-# at 1135 end of read transfer
-# at 1135 wdata=254 rdata=2
-# ====================================FAIL=============================
+# at 1100 start write data = 'hfe to address = 'h2
+# at 1110 acces phase of writing data
+# at 1135 transfer done
+# write 8'b1111_1110 to TSR at 1135
+# at 1150 start to read data at address 'h2
+# at 1185 end of read transfer
+# at 1185 wdata=254 rdata=0
+# ====================================PASS=============================
 # TEST NO .04
 # 
-# at 1320 start write data = 'hff to address = 'h2
-# at 1330 acces phase of writing data
-# write 8'b1111_1111 to TSR at 1345
-# at 1360 start to read data at address 'h2
-# at 1395 end of read transfer
-# at 1395 wdata=255 rdata=0
+# at 1370 start write data = 'hff to address = 'h2
+# at 1380 acces phase of writing data
+# at 1405 transfer done
+# write 8'b1111_1111 to TSR at 1405
+# at 1420 start to read data at address 'h2
+# at 1455 end of read transfer
+# at 1455 wdata=255 rdata=0
 # ====================================PASS=============================
 # ===================================
 # ================PASS===============
